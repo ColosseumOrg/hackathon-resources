@@ -1,0 +1,28 @@
+{
+  "id": "examples",
+  "title": "Examples + Reference",
+  "summary": "Open-source implementations to learn from and build on.",
+  "groups": [
+    {
+      "id": "open-source-refs",
+      "title": "",
+      "links": [
+        {
+          "url": "https://github.com/StockpileLabs/awesome-solana-oss",
+          "hyperlink": "Solana Open-Source Software",
+          "description": "Curated repo of open-source projects to use as references."
+        },
+        {
+          "url": "https://github.com/solana-developers/program-examples",
+          "hyperlink": "Solana Program Examples",
+          "description": "Collection of on-chain program examples in Anchor, Rust, and Python."
+        },
+        {
+          "url": "https://github.com/solana-developers/solana-actions/tree/main/examples",
+          "hyperlink": "Solana Actions Examples",
+          "description": "Action implementations across frameworks like Axum, Cloudflare Workers, and Next.js."
+        }
+      ]
+    }
+  ]
+}

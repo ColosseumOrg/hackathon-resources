@@ -1,0 +1,85 @@
+{
+  "id": "learn",
+  "title": "Learn Solana",
+  "summary": "Guides, courses, and video content for every skill level.",
+  "groups": [
+    {
+      "id": "guides",
+      "title": "Guides",
+      "links": [
+        {
+          "url": "https://www.anchor-lang.com/docs",
+          "hyperlink": "Intro to Anchor",
+          "description": "Get started building programs with the Anchor framework."
+        },
+        {
+          "url": "https://solana.com/developers/guides/dapps/journal",
+          "hyperlink": "Build a CRUD dApp",
+          "description": "Create and deploy both the on-chain program and UI for a CRUD dApp."
+        },
+        {
+          "url": "https://solana.com/developers/guides/wallets/add-solana-wallet-adapter-to-nextjs",
+          "hyperlink": "Add Wallet Adapter to Next.js",
+          "description": "Integrate Solana wallet adapters into Next.js applications."
+        },
+        {
+          "url": "https://solana.com/developers/guides",
+          "hyperlink": "Official Guides",
+          "description": "Curated collection of guides from the Solana developer portal."
+        },
+        {
+          "url": "https://solanacookbook.com/",
+          "hyperlink": "Solana Cookbook",
+          "description": "Popular resource for guides and reference code across Solana development topics."
+        }
+      ]
+    },
+    {
+      "id": "courses",
+      "title": "Courses",
+      "links": [
+        {
+          "url": "https://solana.com/developers/courses",
+          "hyperlink": "THE Solana Courses",
+          "description": "Intermediate self-guided courses covering the breadth of Solana."
+        },
+        {
+          "url": "https://web3.freecodecamp.org/solana",
+          "hyperlink": "FreeCodeCamp",
+          "description": "Interactive Solana course delivered directly from your IDE."
+        },
+        {
+          "url": "https://www.risein.com/courses/build-on-solana",
+          "hyperlink": "RiseIn",
+          "description": "Introductory course with both text and video learning options."
+        },
+        {
+          "url": "https://www.rareskills.io/solana-tutorial",
+          "hyperlink": "RareSkills: ETH to Solana",
+          "description": "Tailored path for Ethereum developers transitioning to Solana."
+        }
+      ]
+    },
+    {
+      "id": "videos",
+      "title": "Videos",
+      "links": [
+        {
+          "url": "https://www.youtube.com/solandy",
+          "hyperlink": "SolAndy",
+          "description": "Weekly Solana developer content spanning tools, guides, and news."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=amAq-WHAFs8",
+          "hyperlink": "Solana Bootcamp",
+          "description": "Comprehensive video crash course — ideal for learning from scratch or refreshing."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pRYs49MqapI&list=PLilwLeBwGuK51Ji870apdb88dnBr1Xqhm",
+          "hyperlink": "Solana Bytes",
+          "description": "Video playlist of byte-sized Solana concepts; concise and essential viewing."
+        }
+      ]
+    }
+  ]
+}

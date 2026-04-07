@@ -1,0 +1,454 @@
+[
+  {
+    "id": "agents-tokenization",
+    "title": "Agents + Tokenization",
+    "summary": "Build AI agents with onchain identity and economic functionality.",
+    "groups": [
+      {
+        "id": "general-agent-tooling",
+        "title": "General Agent Tooling",
+        "links": [
+          {
+            "url": "https://solana.com/skills",
+            "hyperlink": "Solana Agent Skills",
+            "description": "Pre-built skills you can drop into AI agents to interact with Solana programs, tokens, and tooling."
+          }
+        ]
+      },
+      {
+        "id": "metaplex",
+        "title": "Metaplex",
+        "links": [
+          {
+            "url": "https://metaplex.com/docs/agents",
+            "hyperlink": "Metaplex Agent Kit Docs",
+            "description": "Build agents with onchain identity, built-in wallets, and economic primitives."
+          },
+          {
+            "url": "https://developers.metaplex.com/agents/register-agent",
+            "hyperlink": "Register an Agent",
+            "description": "Register an agent onchain through the 014 registry as a Core NFT."
+          },
+          {
+            "url": "https://developers.metaplex.com/agents/run-an-agent",
+            "hyperlink": "Run an Agent",
+            "description": "Connect your runtime and fund the agent wallet so it can operate."
+          },
+          {
+            "url": "https://www.metaplex.com/docs/agents/create-agent-token",
+            "hyperlink": "Launch a Token",
+            "description": "Launch an agent token and add economic functionality from day one."
+          },
+          {
+            "url": "https://www.metaplex.com/docs/agents/skill",
+            "hyperlink": "Metaplex Skill",
+            "description": "Wire Metaplex agent workflows into your coding agent or runtime."
+          },
+          {
+            "url": "https://metaplex.com/agents",
+            "hyperlink": "Agent Registry",
+            "description": "Browse the public registry of onchain agents built with Metaplex."
+          },
+          {
+            "url": "https://developers.metaplex.com/",
+            "hyperlink": "Metaplex Developer Portal",
+            "description": "Broader developer docs for tokenization, digital assets, and Solana builders."
+          }
+        ]
+      },
+      {
+        "id": "world-agents",
+        "title": "World",
+        "links": [
+          {
+            "url": "https://docs.world.org/agents/agent-kit/integrate",
+            "hyperlink": "World AgentKit",
+            "description": "Agent wallets with human-verification context for gated access and paid actions."
+          }
+        ]
+      },
+      {
+        "id": "swig-agents",
+        "title": "Swig",
+        "links": [
+          {
+            "url": "https://build.onswig.com/",
+            "hyperlink": "Swig Smart Wallets",
+            "description": "Programmable wallets with policy controls and delegated execution for agent runtimes."
+          },
+          {
+            "url": "https://build.onswig.com/tutorials/typescript",
+            "hyperlink": "TypeScript SDK Tutorial",
+            "description": "Quick path to giving an agent a programmable wallet with policy controls."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blinks-actions",
+    "title": "Blinks + Actions",
+    "summary": "Build shareable transaction interfaces for any Solana action.",
+    "groups": [
+      {
+        "id": "blinks-actions-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://solana.com/docs/advanced/actions",
+            "hyperlink": "Solana Actions & Blinks",
+            "description": "Specifications, implementation details, and best practices for Solana Actions."
+          },
+          {
+            "url": "https://github.com/dialectlabs/blinks",
+            "hyperlink": "Dialect Blinks",
+            "description": "Component library for building Action Interfaces with customization."
+          },
+          {
+            "url": "https://docs.dialect.to/blinks",
+            "hyperlink": "Dialect Blinks Docs",
+            "description": "Official Dialect documentation for building and distributing Blinks."
+          },
+          {
+            "url": "https://www.npmjs.com/package/@solana/actions",
+            "hyperlink": "@solana/actions",
+            "description": "Official SDK for building specification-compliant Solana Actions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "defi-stablecoins",
+    "title": "DeFi + Stablecoins",
+    "summary": "Build with interest-bearing dollars and stablecoin primitives.",
+    "groups": [
+      {
+        "id": "defi-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://docs.reflect.money/",
+            "hyperlink": "Reflect",
+            "description": "Interest-bearing stablecoin software with decentralized financial strategies."
+          },
+          {
+            "url": "https://npmjs.com/package/@reflectmoney/stable.ts",
+            "hyperlink": "@reflectmoney/stable.ts",
+            "description": "TypeScript SDK for integrating Reflect stablecoin primitives into apps."
+          },
+          {
+            "url": "https://docs.phantom.com/cash",
+            "hyperlink": "Phantom CASH",
+            "description": "Purpose-built Solana stablecoin for payments, tipping, and commerce flows."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "games",
+    "title": "Games",
+    "summary": "Build fully on-chain games or integrate Solana into existing engines.",
+    "groups": [
+      {
+        "id": "game-sdks",
+        "title": "Game SDKs",
+        "links": [
+          {
+            "url": "https://github.com/magicblock-labs/Solana.Unity-SDK",
+            "hyperlink": "Unity SDK",
+            "description": "Solana integration framework for Unity with wallet, NFT, and DEX support."
+          },
+          {
+            "url": "https://turbo.computer/",
+            "hyperlink": "Turbo Rust Engine",
+            "description": "Rust-based 2D game engine designed for fast on-chain game development."
+          },
+          {
+            "url": "https://gameshift.dev/",
+            "hyperlink": "Solana Labs GameShift",
+            "description": "APIs for integrating digital assets and payments into games."
+          },
+          {
+            "url": "https://github.com/Virus-Axel/godot-solana-sdk",
+            "hyperlink": "Godot SDK",
+            "description": "GDExtension plugin bringing Solana blockchain support to Godot 4."
+          },
+          {
+            "url": "https://github.com/Bread-Heads-NFT/phaser-solana-platformer-template",
+            "hyperlink": "Phaser SDK",
+            "description": "Phaser 3 TypeScript template with Solana wallet integration via Web3Auth."
+          },
+          {
+            "url": "https://github.com/staratlasmeta/FoundationKit",
+            "hyperlink": "Unreal SDK (Star Atlas)",
+            "description": "Unreal Engine plugin for Solana with key management and program interaction."
+          },
+          {
+            "url": "https://github.com/Bifrost-Technologies/Solana-Unreal-SDK",
+            "hyperlink": "Unreal SDK (Bifrost Inc)",
+            "description": "Full Solana toolkit for Unreal Engine 5 with wallet, NFT minting, and payments."
+          }
+        ]
+      },
+      {
+        "id": "game-examples",
+        "title": "Examples",
+        "links": [
+          {
+            "url": "https://github.com/solana-developers/solana-game-examples",
+            "hyperlink": "Solana Game Examples",
+            "description": "Nine starter games built with Anchor including chess, sea battles, and 2048."
+          },
+          {
+            "url": "https://github.com/kimo-do/Speedrun2",
+            "hyperlink": "Rebirth Rumble",
+            "description": "Solana Speedrun hackathon entry combining Unity client with on-chain programs."
+          },
+          {
+            "url": "https://github.com/9teMare/solana-speedrun/tree/main",
+            "hyperlink": "Rust Game",
+            "description": "Fully on-chain 2D adventure game built with Turbo engine and Solang contracts."
+          },
+          {
+            "url": "https://deezquest.vercel.app/",
+            "hyperlink": "On-chain Match 3",
+            "description": "Playable match-3 puzzle game with on-chain state and rewards."
+          },
+          {
+            "url": "https://solplay.de/ancientcave/",
+            "hyperlink": "On-chain Roguelike Dungeon",
+            "description": "Browser-based dungeon crawler with procedural generation on Solana."
+          }
+        ]
+      },
+      {
+        "id": "game-videos",
+        "title": "Videos",
+        "links": [
+          {
+            "url": "https://www.youtube.com/watch?v=0P8JeL3TURU&list=PLilwLeBwGuK6NsYMPP_BlVkeQgff0NwvU&ab_channel=Solana",
+            "hyperlink": "Bootcamp Series",
+            "description": "Full Solana game development bootcamp playlist from beginner to advanced."
+          },
+          {
+            "url": "https://youtube.com/watch?v=KT9anz_V9ns",
+            "hyperlink": "Introduction",
+            "description": "Overview of building on-chain games on Solana with key concepts."
+          },
+          {
+            "url": "https://youtube.com/watch?v=YYQtRCXJBgs&t=3s&ab_channel=Solana",
+            "hyperlink": "Energy System",
+            "description": "Implementing time-based energy mechanics for on-chain games."
+          },
+          {
+            "url": "https://youtube.com/watch?v=oKvWZoybv7Y&ab_channel=Solana",
+            "hyperlink": "Session Keys",
+            "description": "Delegate transaction signing so players skip wallet popups mid-game."
+          },
+          {
+            "url": "https://youtube.com/watch?v=ax0Si3Vkvbo&t=252s&ab_channel=Solana",
+            "hyperlink": "Automation",
+            "description": "Automate on-chain game loops with clockwork and scheduled transactions."
+          },
+          {
+            "url": "https://youtube.com/watch?v=zs_yU0IuJxc&ab_channel=Solana",
+            "hyperlink": "Big Accounts",
+            "description": "Strategies for managing large account data in on-chain game state."
+          },
+          {
+            "url": "https://youtube.com/watch?v=_XBvEHwSqJc&ab_channel=SolPlay",
+            "hyperlink": "Solana Pay for Games",
+            "description": "Integrating Solana Pay for in-game purchases and microtransactions."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=jW8ep_bmaIw",
+            "hyperlink": "Advanced Topics",
+            "description": "Deep dive into optimization, compression, and scaling for on-chain games."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=_vQ3bSs3svs&ab_channel=SolPlay",
+            "hyperlink": "Tiny Adventure",
+            "description": "Step-by-step walkthrough building a simple on-chain adventure game."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "governance-daos",
+    "title": "Governance / DAOs",
+    "summary": "Build governance and DAO tooling on Solana.",
+    "groups": [
+      {
+        "id": "daos-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://realms.today",
+            "hyperlink": "Realms",
+            "description": "Governance infrastructure for DAOs with proposals, treasuries, and delegation."
+          },
+          {
+            "url": "https://docs.metadao.fi/",
+            "hyperlink": "MetaDAO",
+            "description": "Fundraising and market-driven governance platform for token launches and communities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "identity-verification",
+    "title": "Identity + Human Verification",
+    "summary": "Add proof-of-human and sybil resistance to your app.",
+    "groups": [
+      {
+        "id": "identity-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://docs.world.org/world-id/idkit/integrate",
+            "hyperlink": "World IDKit",
+            "description": "Zero-knowledge proof of human to stop sybils and gate rewards without collecting personal data."
+          },
+          {
+            "url": "https://docs.world.org/mini-apps/quick-start/installing",
+            "hyperlink": "World MiniKit",
+            "description": "Deploy your app inside World App and tap into its distribution network."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mobile",
+    "title": "Mobile",
+    "summary": "Build native mobile apps powered by Solana.",
+    "groups": [
+      {
+        "id": "mobile-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://solanamobile.com/developers",
+            "hyperlink": "Solana Mobile",
+            "description": "Resources to build native mobile apps powered by Solana."
+          },
+          {
+            "url": "https://github.com/Th3Ya0vi/phantom-embedded-react-native-starter",
+            "hyperlink": "Phantom React Native Starter",
+            "description": "Mobile starter for adding embedded Solana wallet onboarding to React Native."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "payments-commerce",
+    "title": "Payments + Commerce",
+    "summary": "Accept payments and build commerce on Solana.",
+    "groups": [
+      {
+        "id": "payments-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://docs.solanapay.com/",
+            "hyperlink": "Solana Pay",
+            "description": "Build payments apps on Solana using JavaScript/TypeScript."
+          },
+          {
+            "url": "https://docs.phantom.com/cash",
+            "hyperlink": "Phantom CASH",
+            "description": "Stablecoin rails backed by Phantom for payouts, in-app payments, and commerce flows."
+          }
+        ]
+      },
+      {
+        "id": "swig-payments",
+        "title": "Swig Smart Wallets",
+        "links": [
+          {
+            "url": "https://build.onswig.com/",
+            "hyperlink": "Overview",
+            "description": "Programmable wallets with policy controls, gasless payments, and delegated execution."
+          },
+          {
+            "url": "https://build.onswig.com/tutorials/typescript",
+            "hyperlink": "TypeScript SDK Tutorial",
+            "description": "End-to-end tutorial for creating and using Swig smart wallets."
+          },
+          {
+            "url": "https://github.com/anagrambuild/swig-ts",
+            "hyperlink": "TypeScript SDK",
+            "description": "SDK for integrating smart-wallet flows into consumer apps and fintech products."
+          },
+          {
+            "url": "https://dashboard.onswig.com/",
+            "hyperlink": "Developer Portal",
+            "description": "Provision wallets, configure policies, and manage smart-wallet infrastructure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "privacy-confidential",
+    "title": "Privacy + Confidential Compute",
+    "summary": "Build encrypted applications with private state and secure computation.",
+    "groups": [
+      {
+        "id": "privacy-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://docs.arcium.com/",
+            "hyperlink": "Arcium Documentation",
+            "description": "Build confidential apps with encrypted computation, private state, and secure randomness."
+          },
+          {
+            "url": "https://docs.arcium.com/developers",
+            "hyperlink": "Arcium Developer Docs",
+            "description": "Hands-on docs for Arcis framework, access control, and privacy primitives."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasury-security",
+    "title": "Treasury + Security",
+    "summary": "Secure assets, manage treasuries, and run financial operations.",
+    "groups": [
+      {
+        "id": "treasury-links",
+        "title": "",
+        "links": [
+          {
+            "url": "https://squads.xyz/multisig",
+            "hyperlink": "Squads Multisig",
+            "description": "Secure upgrade authorities, treasury assets, and keys with multi-party approvals."
+          },
+          {
+            "url": "https://altitude.xyz",
+            "hyperlink": "Altitude",
+            "description": "Stablecoin treasury ops with cards, yield, and global money movement."
+          }
+        ]
+      },
+      {
+        "id": "app-security-links",
+        "title": "App Security",
+        "links": [
+          {
+            "url": "https://zauth.inc/vector",
+            "hyperlink": "zauth Vector",
+            "description": "AI-powered vulnerability scanner for automated blackbox and whitebox web app penetration testing."
+          }
+        ]
+      }
+    ]
+  }
+]

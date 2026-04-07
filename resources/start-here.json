@@ -1,0 +1,95 @@
+{
+  "id": "start-here",
+  "title": "Start Here",
+  "summary": "The shortest path from zero to your first Solana build.",
+  "groups": [
+    {
+      "id": "core-docs",
+      "title": "Core Docs",
+      "links": [
+        {
+          "url": "https://solana.com/docs",
+          "hyperlink": "Solana Core Docs",
+          "description": "The canonical Solana documentation."
+        },
+        {
+          "url": "https://solana.com/docs/intro/quick-start",
+          "hyperlink": "Introduction to Solana Development",
+          "description": "A great introduction to important Solana development knowledge."
+        },
+        {
+          "url": "https://solana.com/docs#start-learning",
+          "hyperlink": "Important Concepts",
+          "description": "Concepts you should be familiar with as you start your Solana journey."
+        },
+        {
+          "url": "https://solana.com/developers/guides/getstarted/setup-local-development",
+          "hyperlink": "Setup Your Environment",
+          "description": "Highly recommended walkthrough for configuring your local setup."
+        },
+        {
+          "url": "https://solana.com/developers/guides/getstarted/hello-world-in-your-browser",
+          "hyperlink": "Hello World",
+          "description": "Build your first on-chain hello world app using a web IDE."
+        }
+      ]
+    },
+    {
+      "id": "starter-pack",
+      "title": "Starter Pack",
+      "links": [
+        {
+          "url": "https://github.com/solana-labs/solana-web3.js",
+          "hyperlink": "Web3.js Library",
+          "description": "Primary JavaScript client for interacting with the Solana blockchain."
+        },
+        {
+          "url": "https://github.com/solana-developers/create-solana-dapp",
+          "hyperlink": "create-solana-dapp",
+          "description": "Spin up a Solana application scaffold in minutes."
+        },
+        {
+          "url": "https://beta.solpg.io/",
+          "hyperlink": "Solana Playground",
+          "description": "Browser-based IDE for building and testing Solana programs."
+        },
+        {
+          "url": "https://solana.stackexchange.com/",
+          "hyperlink": "Solana Stack Exchange",
+          "description": "Ask questions or find answers from the Solana developer community."
+        },
+        {
+          "url": "https://mcp.solana.com/",
+          "hyperlink": "Solana MCP",
+          "description": "AI-powered development assistant with documentation search and Anchor guidance."
+        }
+      ]
+    },
+    {
+      "id": "wallets-onboarding",
+      "title": "Wallets + Onboarding",
+      "links": [
+        {
+          "url": "https://docs.phantom.com/phantom-connect",
+          "hyperlink": "Phantom Connect",
+          "description": "Embedded wallet with email login and native Phantom support for instant user onboarding."
+        },
+        {
+          "url": "https://drive.google.com/file/d/1_TSqD9wTO-VQMUoUqMQZ8TSoxVx5YuWz/view",
+          "hyperlink": "Phantom Integration Guide",
+          "description": "Step-by-step guide for shipping Phantom Connect in a production app."
+        },
+        {
+          "url": "https://github.com/Th3Ya0vi/phantom-embedded-react-starter",
+          "hyperlink": "React Starter Template",
+          "description": "React starter for embedded wallet onboarding and transaction flows."
+        },
+        {
+          "url": "https://github.com/Th3Ya0vi/phantom-embedded-js",
+          "hyperlink": "JS Template",
+          "description": "Framework-agnostic example for a minimal Phantom Connect integration."
+        }
+      ]
+    }
+  ]
+}

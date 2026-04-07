@@ -1,0 +1,23 @@
+{
+  "id": "infra",
+  "title": "Infra + Tooling",
+  "summary": "Developer tools and infrastructure for building on Solana.",
+  "groups": [
+    {
+      "id": "tooling",
+      "title": "",
+      "links": [
+        {
+          "url": "https://beta.solpg.io/",
+          "hyperlink": "Solana Playground",
+          "description": "Browser-based IDE for writing, testing, and deploying Solana programs."
+        },
+        {
+          "url": "https://github.com/solana-developers/create-solana-dapp",
+          "hyperlink": "npx create-solana-dapp@latest",
+          "description": "CLI scaffold for bootstrapping a new Solana app from starter templates."
+        }
+      ]
+    }
+  ]
+}
