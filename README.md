@@ -7,6 +7,8 @@ Single source of truth for Colosseum hackathon developer resources. This data po
 ```
 hackathon-resources/
   manifest.json         # Top-level manifest: hackathon definitions, sponsor metadata, RPC providers
+  sponsors/             # Sponsor descriptions (one markdown file per sponsor)
+    <sponsor-slug>.md
   resources/            # Curated resource lists (JSON files)
     start-here.json
     learn-solana.json
@@ -52,9 +54,27 @@ Resource links use this shape:
 ## How to Add a New Sponsor
 
 1. Choose a slug following the convention above
-2. Create `skills/<slug>/SKILL.md` with the agent skill definition
-3. Add the slug to the relevant hackathon's `sponsors` array in `manifest.json`
-4. Add a sponsor entry under `sponsors` in `manifest.json`
+2. Create `sponsors/<slug>.md` with the sponsor's description in markdown (paragraphs, inline links, bullet lists)
+3. Create `skills/<slug>/SKILL.md` with the agent skill definition
+4. Add the slug to the relevant hackathon's `sponsors` array in `manifest.json`
+5. Add a sponsor metadata entry under `sponsors` in `manifest.json` (name, logo, links, tags, accentColor)
+
+### Sponsor Markdown Format
+
+Sponsor descriptions live in `sponsors/<slug>.md` as plain markdown. No frontmatter needed. Metadata (name, links, tags, etc.) stays in `manifest.json`.
+
+```markdown
+Your sponsor description here. This is the first paragraph that introduces
+what the sponsor offers to hackathon builders.
+
+Second paragraph with more details. Include [inline links](https://example.com)
+where they're relevant in context.
+
+- [Get Started](https://docs.example.com)
+- [SDK Reference](https://github.com/example/sdk)
+```
+
+Supported markdown: paragraphs, inline links, bold, bullet lists, inline code. The platform renders this with `marked` + `DOMPurify`. The marketing site parses it into structured sections at build time.
 
 ## How to Add Resources
 

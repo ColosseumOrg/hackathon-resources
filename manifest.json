@@ -26,14 +26,13 @@
       ],
       "rpcProviders": [
         "helius",
-        "triton"
+        "triton-one"
       ]
     }
   },
   "sponsors": {
     "phantom": {
       "name": "Phantom",
-      "description": "Phantom Connect is the recommended embedded wallet for all Frontier hackathon projects. Ship wallet functionality in minutes — with seamless email sign-in for web2 users and native support for exis...",
       "logo": "",
       "skillPath": "skills/phantom/SKILL.md",
       "links": [
@@ -71,7 +70,6 @@
     },
     "squads": {
       "name": "Squads Multisig + Altitude",
-      "description": "Multisig secures what you build. Altitude runs the business.\n\nBoth products are built by Squads. Five years of financial infrastructure on Solana, securing over $15B in tokenized value.",
       "logo": "",
       "skillPath": "skills/squads/SKILL.md",
       "links": [
@@ -96,7 +94,6 @@
     },
     "world": {
       "name": "World",
-      "description": "IDKit is how you embed Proof of Human into your product. Proofs are zero-knowledge and unlinkable across apps, so your users can verify their World ID without revealing any information about themse...",
       "logo": "",
       "skillPath": "skills/world/SKILL.md",
       "links": [
@@ -121,7 +118,6 @@
     },
     "arcium": {
       "name": "Arcium",
-      "description": "Arcium brings encrypted computation to blockchains, making it possible to build applications where data remains private by default. This opens up a new design space beyond transparent smart contrac...",
       "logo": "",
       "skillPath": "skills/arcium/SKILL.md",
       "links": [
@@ -149,7 +145,6 @@
     },
     "reflect": {
       "name": "Reflect",
-      "description": "Reflect is credibly-neutral stablecoin software, where the software consists of decentralized financial strategies executed and managed permissionlessly by programs rather than humans. Reflect then...",
       "logo": "",
       "skillPath": "skills/reflect/SKILL.md",
       "links": [
@@ -169,7 +164,6 @@
     },
     "moonpay": {
       "name": "MoonPay",
-      "description": "MoonPay Agents is infrastructure for AI agents to move money. Agents can create wallets, hold assets, and execute on-chain transactions. Agents have access to all MoonPay tools like On/Off-ramps, v...",
       "logo": "",
       "skillPath": "skills/moonpay/SKILL.md",
       "links": [],
@@ -181,7 +175,6 @@
     },
     "metaplex": {
       "name": "Metaplex",
-      "description": "Metaplex is building the agent exchange for Solana. With the Metaplex Agent Kit, 014 registry, and agent token launchpad, Metaplex is providing the infrastructure for agents to be discoverable and ...",
       "logo": "",
       "skillPath": "skills/metaplex/SKILL.md",
       "links": [
@@ -219,7 +212,6 @@
     },
     "swig": {
       "name": "Swig",
-      "description": "Swig is building the future of smart wallets for agents, consumers, and enterprises. Our open-source SDKs and APIs enable deep programmability with a robust onchain policy engine, gasless payments,...",
       "logo": "",
       "skillPath": "skills/swig/SKILL.md",
       "links": [
@@ -283,14 +275,24 @@
   "rpcProviders": {
     "helius": {
       "name": "Helius",
-      "description": "Helius is Solana's leading RPC and data infrastructure provider, offering globally distributed nodes with sub-millisecond response times, staked connections for faster transaction confirmations, and exclusive archival methods like getTransactionsForAddress. Helius also provides LaserStream — the fas",
-      "links": [],
+      "description": "Helius is Solana's leading RPC and data infrastructure provider, offering globally distributed nodes with sub-millisecond response times, staked connections for faster transaction confirmations, and exclusive archival methods like getTransactionsForAddress. Helius also provides LaserStream — the fastest way to stream Solana blocks, transactions, and account data via gRPC — and enhanced WebSockets for real-time on-chain event streaming.",
+      "links": [
+        {
+          "label": "Pricing",
+          "url": "https://www.helius.dev/pricing"
+        }
+      ],
       "offer": "50% off Developer plans for Frontier builders ($49 → $24.50/mo)"
     },
     "triton-one": {
       "name": "Triton One",
-      "description": "Triton One provides high-performance bare-metal RPC servers for Solana applications. Triton specializes in dedicated servers and custom deployments. Triton also offers a global shared RPC pool perfect for web3 front ends. Call Triton when you're ready to scale up. Triton's private devnet and testnet",
-      "links": []
+      "description": "Triton One provides high-performance bare-metal RPC servers for Solana applications. Triton specializes in dedicated servers and custom deployments. Triton also offers a global shared RPC pool perfect for web3 front ends. Call Triton when you're ready to scale up. Triton's private devnet and testnet are always free.",
+      "links": [
+        {
+          "label": "Triton One",
+          "url": "https://triton.one/"
+        }
+      ]
     }
   }
 }
