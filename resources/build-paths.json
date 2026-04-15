@@ -12,6 +12,21 @@
             "url": "https://solana.com/skills",
             "hyperlink": "Solana Agent Skills",
             "description": "Pre-built skills you can drop into AI agents to interact with Solana programs, tokens, and tooling."
+          },
+          {
+            "url": "https://docs.li.fi/mcp-server/overview",
+            "hyperlink": "LI.FI MCP Server",
+            "description": "Connect AI agents to cross-chain swap and bridge functionality via the Model Context Protocol."
+          },
+          {
+            "url": "https://github.com/lifinance/lifi-agent-skills",
+            "hyperlink": "LI.FI Agent Skills",
+            "description": "Agent skills for integrating LI.FI cross-chain operations into AI coding tools."
+          },
+          {
+            "url": "https://core.vanish.trade",
+            "hyperlink": "Vanish Core API",
+            "description": "Execute agent trades privately without exposing strategy on-chain. Adds ~200ms to finality, works with any DEX aggregator."
           }
         ]
       },
@@ -141,6 +156,16 @@
             "url": "https://docs.phantom.com/cash",
             "hyperlink": "Phantom CASH",
             "description": "Purpose-built Solana stablecoin for payments, tipping, and commerce flows."
+          },
+          {
+            "url": "https://docs.li.fi/li.fi-api/solana",
+            "hyperlink": "LI.FI Solana API",
+            "description": "Cross-chain swaps and bridging across 60+ chains through a single API — aggregates all major Solana DEXs and 20+ bridges."
+          },
+          {
+            "url": "https://core.vanish.trade",
+            "hyperlink": "Vanish Private Swaps",
+            "description": "Privacy layer for Solana swaps — breaks the link between wallet and on-chain activity while preserving compliance. Works with any DEX aggregator."
           }
         ]
       }
@@ -412,6 +437,11 @@
             "url": "https://docs.arcium.com/developers",
             "hyperlink": "Arcium Developer Docs",
             "description": "Hands-on docs for Arcis framework, access control, and privacy primitives."
+          },
+          {
+            "url": "https://core.vanish.trade",
+            "hyperlink": "Vanish Core API",
+            "description": "Privacy layer for trading — execute swaps without exposing strategy on-chain. Adds ~200ms to finality, requires no RPC changes."
           }
         ]
       }

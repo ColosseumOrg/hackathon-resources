@@ -10,12 +10,15 @@
         "world",
         "arcium",
         "reflect",
+        "pentagon",
         "moonpay",
         "metaplex",
-        "swig"
+        "swig",
+        "lifi",
+        "vanish",
+        "privy"
       ],
       "comingSoon": [
-        "privy",
         "coinbase"
       ],
       "resources": [
@@ -39,7 +42,8 @@
       ],
       "rpcProviders": [
         "helius",
-        "triton-one"
+        "triton-one",
+        "fluxrpc"
       ]
     }
   },
@@ -176,6 +180,32 @@
       ],
       "accentColor": "#7C3AED"
     },
+    "pentagon": {
+      "name": "Pentagon",
+      "links": [
+        {
+          "label": "Get Started",
+          "url": "https://docs.pentagon.run/quickstart"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://docs.pentagon.run/introduction"
+        },
+        {
+          "label": "FAQ",
+          "url": "https://docs.pentagon.run/reference/faq"
+        },
+        {
+          "label": "Download Pentagon",
+          "url": "https://pentagon.run/download"
+        }
+      ],
+      "tags": [
+        "agents",
+        "productivity"
+      ],
+      "accentColor": "#111827"
+    },
     "metaplex": {
       "name": "Metaplex",
       "links": [
@@ -246,10 +276,68 @@
       ],
       "accentColor": "#00D4AA"
     },
+    "lifi": {
+      "name": "LI.FI",
+      "links": [
+        {
+          "label": "LI.FI Docs",
+          "url": "https://docs.li.fi/"
+        },
+        {
+          "label": "Solana Overview",
+          "url": "https://docs.li.fi/li.fi-api/solana"
+        },
+        {
+          "label": "REST API Reference",
+          "url": "https://docs.li.fi/api-reference/introduction"
+        },
+        {
+          "label": "MCP Server",
+          "url": "https://docs.li.fi/mcp-server/overview"
+        },
+        {
+          "label": "Agent Skills",
+          "url": "https://github.com/lifinance/lifi-agent-skills"
+        }
+      ],
+      "tags": [
+        "defi",
+        "payments",
+        "agents"
+      ],
+      "accentColor": "#00E5FF"
+    },
+    "vanish": {
+      "name": "Vanish",
+      "links": [
+        {
+          "label": "Developer Docs",
+          "url": "https://core.vanish.trade"
+        },
+        {
+          "label": "API Reference",
+          "url": "https://core.vanish.trade/api-reference"
+        }
+      ],
+      "tags": [
+        "privacy",
+        "defi"
+      ],
+      "accentColor": "#111827"
+    },
     "privy": {
       "name": "Privy",
-      "description": "Coming soon",
-      "links": [],
+      "description": "Embedded wallet infrastructure for onboarding users and building full onchain experiences.",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://docs.privy.io"
+        },
+        {
+          "label": "Agent CLI + Sandbox",
+          "url": "https://agents.privy.io"
+        }
+      ],
       "tags": [
         "wallet",
         "identity"
@@ -286,6 +374,17 @@
         {
           "label": "Triton One",
           "url": "https://triton.one/"
+        }
+      ]
+    },
+    "fluxrpc": {
+      "name": "FluxRPC",
+      "description": "FluxRPC is a high-performance Solana RPC provider with Yellowstone gRPC streaming support and Lantern — a local edge-caching layer for Solana account state that delivers sub-millisecond reads at 10,000+ requests per second. Pay only for bandwidth ($0.06/GB), making it one of the most cost-effective RPC options available for high-volume applications.",
+      "offer": "Developer plan at $15/month (limited-time) with access to Yellowstone streams, Lantern local RPC for faster data recall and performance, and low-latency RPC across high-volume calls.",
+      "links": [
+        {
+          "label": "FluxRPC pricing",
+          "url": "https://dashboard.fluxbeam.xyz/pricing"
         }
       ]
     }

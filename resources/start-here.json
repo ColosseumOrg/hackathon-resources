@@ -88,6 +88,16 @@
           "url": "https://github.com/Th3Ya0vi/phantom-embedded-js",
           "hyperlink": "JS Template",
           "description": "Framework-agnostic example for a minimal Phantom Connect integration."
+        },
+        {
+          "url": "https://docs.privy.io",
+          "hyperlink": "Privy",
+          "description": "Embedded wallet infrastructure for onboarding users and building full onchain experiences without managing wallets yourself."
+        },
+        {
+          "url": "https://agents.privy.io",
+          "hyperlink": "Privy Agent CLI + Sandbox",
+          "description": "Agent tooling and sandbox environment for building with Privy wallets."
         }
       ]
     }
