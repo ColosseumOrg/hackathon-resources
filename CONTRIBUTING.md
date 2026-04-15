@@ -66,7 +66,8 @@ To publish a new resource section:
 1. Add or update a JSON file in `resources/`.
 2. Reference the resource key from the active hackathon in `manifest.json`.
 3. Keep every link public and stable.
-4. Confirm the GitHub Pages JSON includes the new section after the publish workflow runs.
+4. Run `npm run build`.
+5. Confirm the GitHub Pages JSON includes the new section after the publish workflow runs.
 
 ## Update the Active Hackathon
 
@@ -86,6 +87,7 @@ Set the top-level `current` field in `manifest.json` to the active hackathon slu
 
 ## PR Checklist
 
+- `npm run build` passes.
 - `manifest.json` references only files that exist.
 - New sponsor skills are installable with `npx skills add ColosseumOrg/hackathon-resources --skill <slug>`.
 - Resource JSON is valid and follows the HubSection shape.

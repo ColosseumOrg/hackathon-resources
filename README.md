@@ -20,7 +20,7 @@ hackathon-resources/
 
 ## Published Data
 
-The active resource payload is published to GitHub Pages:
+The active resource payload is built by `scripts/build-current-json.mjs` and published to GitHub Pages by `.github/workflows/publish-resources.yml`:
 
 ```text
 https://ColosseumOrg.github.io/hackathon-resources/current.json
