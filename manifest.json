@@ -84,7 +84,7 @@
       "accentColor": "#8B5CF6"
     },
     "squads": {
-      "name": "Squads Multisig + Altitude",
+      "name": "Squads",
       "links": [
         {
           "label": "Get Started with Multisig",
@@ -361,7 +361,7 @@
       "description": "Helius is Solana's leading RPC and data infrastructure provider, offering globally distributed nodes with sub-millisecond response times, staked connections for faster transaction confirmations, and exclusive archival methods like getTransactionsForAddress. Helius also provides LaserStream — the fastest way to stream Solana blocks, transactions, and account data via gRPC — and enhanced WebSockets for real-time on-chain event streaming.",
       "links": [
         {
-          "label": "Pricing",
+          "label": "View offer",
           "url": "https://www.helius.dev/pricing"
         }
       ],
@@ -372,7 +372,7 @@
       "description": "Triton One provides high-performance bare-metal RPC servers for Solana applications. Triton specializes in dedicated servers and custom deployments. Triton also offers a global shared RPC pool perfect for web3 front ends. Call Triton when you're ready to scale up. Triton's private devnet and testnet are always free.",
       "links": [
         {
-          "label": "Triton One",
+          "label": "View offer",
           "url": "https://triton.one/"
         }
       ]
@@ -383,7 +383,7 @@
       "offer": "Developer plan at $15/month (limited-time) with access to Yellowstone streams, Lantern local RPC for faster data recall and performance, and low-latency RPC across high-volume calls.",
       "links": [
         {
-          "label": "FluxRPC pricing",
+          "label": "View offer",
           "url": "https://dashboard.fluxbeam.xyz/pricing"
         }
       ]
