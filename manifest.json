@@ -50,7 +50,6 @@
   "sponsors": {
     "phantom": {
       "name": "Phantom",
-      "skillPath": "skills/phantom/SKILL.md",
       "links": [
         {
           "label": "Get Started",
@@ -130,7 +129,8 @@
     },
     "arcium": {
       "name": "Arcium",
-      "skillPath": "skills/arcium/SKILL.md",
+      "skillRepositoryUrl": "https://github.com/arcium-hq/agent-skills",
+      "skillInstallCommand": "npx skills add arcium-hq/agent-skills",
       "links": [
         {
           "label": "Documentation",

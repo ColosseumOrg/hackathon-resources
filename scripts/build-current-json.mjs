@@ -1,4 +1,4 @@
-import { access, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -42,6 +42,44 @@ function assertOptionalString(value, label) {
   return assertString(value, label);
 }
 
+function assertOptionalUrl(value, label) {
+  const urlString = assertOptionalString(value, label);
+  if (urlString === undefined) {
+    return undefined;
+  }
+
+  let url;
+  try {
+    url = new URL(urlString);
+  } catch {
+    fail(`${label} must be a valid URL`);
+  }
+
+  if (url.protocol !== 'https:') {
+    fail(`${label} must be an HTTPS URL`);
+  }
+
+  return urlString;
+}
+
+function githubRepoInstallCommand(repositoryUrl) {
+  if (repositoryUrl === undefined) {
+    return undefined;
+  }
+
+  const url = new URL(repositoryUrl);
+  if (url.hostname !== 'github.com') {
+    fail('skillRepositoryUrl must point to github.com');
+  }
+
+  const [owner, repo] = url.pathname.split('/').filter(Boolean);
+  if (!owner || !repo) {
+    fail('skillRepositoryUrl must point to a GitHub owner/repo');
+  }
+
+  return `npx skills add ${owner}/${repo.replace(/\.git$/, '')}`;
+}
+
 function assertArray(value, label) {
   if (!Array.isArray(value)) {
     fail(`${label} must be an array`);
@@ -82,15 +120,6 @@ async function readJsonFile(relativePath) {
     return JSON.parse(content);
   } catch (error) {
     fail(`${relativePath} is not valid JSON: ${error.message}`);
-  }
-}
-
-async function fileExists(relativePath) {
-  try {
-    await access(path.join(ROOT_DIR, relativePath));
-    return true;
-  } catch {
-    return false;
   }
 }
 
@@ -158,10 +187,14 @@ function normalizeSponsorMetadata(value, slug) {
       sponsor.description,
       `sponsors.${slug}.description`,
     ),
-    skillPath:
-      sponsor.skillPath === undefined
-        ? undefined
-        : assertRelativePath(sponsor.skillPath, `sponsors.${slug}.skillPath`),
+    skillRepositoryUrl: assertOptionalUrl(
+      sponsor.skillRepositoryUrl,
+      `sponsors.${slug}.skillRepositoryUrl`,
+    ),
+    skillInstallCommand: assertOptionalString(
+      sponsor.skillInstallCommand,
+      `sponsors.${slug}.skillInstallCommand`,
+    ),
     links: normalizeLinks(sponsor.links, `sponsors.${slug}.links`),
     tags: assertStringArray(sponsor.tags, `sponsors.${slug}.tags`),
     accentColor: assertOptionalString(
@@ -289,13 +322,14 @@ async function loadSponsor(slug, sponsor) {
     `sponsor slug "${slug}"`,
   )}`;
   const content = (await readTextFile(contentPath)).trim();
-  const skillPath =
-    sponsor.skillPath ??
-    `skills/${assertRelativePath(`${slug}/SKILL.md`, `sponsor slug "${slug}"`)}`;
-  const hasSkill = await fileExists(skillPath);
+  const skillInstallCommand =
+    sponsor.skillInstallCommand ??
+    githubRepoInstallCommand(sponsor.skillRepositoryUrl);
 
-  if (sponsor.skillPath && !hasSkill) {
-    fail(`sponsors.${slug}.skillPath points to a missing file: ${skillPath}`);
+  if (sponsor.skillInstallCommand && !sponsor.skillRepositoryUrl) {
+    fail(
+      `sponsors.${slug}.skillInstallCommand requires skillRepositoryUrl to be set`,
+    );
   }
 
   const output = {
@@ -304,13 +338,18 @@ async function loadSponsor(slug, sponsor) {
     ...(sponsor.description === undefined
       ? {}
       : { description: sponsor.description }),
-    ...(hasSkill ? { skillPath } : {}),
+    ...(sponsor.skillRepositoryUrl === undefined
+      ? {}
+      : { skillRepositoryUrl: sponsor.skillRepositoryUrl }),
+    ...(skillInstallCommand === undefined
+      ? {}
+      : { skillInstallCommand }),
     links: sponsor.links,
     tags: sponsor.tags,
     ...(sponsor.accentColor === undefined
       ? {}
       : { accentColor: sponsor.accentColor }),
-    hasSkill,
+    hasSkill: sponsor.skillRepositoryUrl !== undefined,
     content,
   };
 

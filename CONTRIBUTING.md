@@ -1,6 +1,6 @@
 # Contributing
 
-This repo is the source of truth for Colosseum hackathon resource data and sponsor skills. Keep sponsor docs, resource JSON, manifest metadata, and sponsor `SKILL.md` files here rather than duplicating them in downstream consumers.
+This repo is the source of truth for Colosseum hackathon resource data and links to sponsor-hosted skills. Keep sponsor docs, resource JSON, and manifest metadata here rather than duplicating them in downstream consumers. Sponsor skills should live in the sponsor's own GitHub repo.
 
 ## Add a Sponsor
 
@@ -22,16 +22,15 @@ Second paragraph with [inline links](https://example.com) where useful.
 - [SDK Reference](https://github.com/example/sdk)
 ```
 
-## Add a Sponsor Skill
+## Add a Sponsor-Hosted Skill
 
-1. Create `skills/<slug>/SKILL.md`.
+1. Ask the sponsor to publish their skill in their own public GitHub repository.
 2. Keep the skill focused on agent-actionable guidance, not marketing copy.
-3. Add references, examples, or MCP config only when the `SKILL.md` depends on them.
-4. Add `skillPath` to the sponsor entry in `manifest.json` only after the skill exists.
-5. Confirm it is installable:
+3. Add `skillRepositoryUrl` and `skillInstallCommand` to the sponsor entry in `manifest.json`.
+4. Confirm it is installable:
 
 ```bash
-npx skills add ColosseumOrg/hackathon-resources --skill <slug>
+npx skills add <owner>/<repo>
 ```
 
 ## Add Curated Resources
@@ -83,13 +82,13 @@ Set the top-level `current` field in `manifest.json` to the active hackathon slu
 
 - To remove a sponsor, add `"deprecated": true` to the manifest entry first.
 - Do not rename slugs in place. Add a new entry and deprecate the old slug.
-- Keep old skill folders when existing install commands still need to resolve.
+- Keep old install metadata only while existing install commands still need to resolve.
 
 ## PR Checklist
 
 - `npm run build` passes.
 - `manifest.json` references only files that exist.
-- New sponsor skills are installable with `npx skills add ColosseumOrg/hackathon-resources --skill <slug>`.
+- New sponsor skills are installable from the sponsor-owned GitHub repo.
 - Resource JSON is valid and follows the HubSection shape.
 - GitHub Pages output includes the expected `current.json` changes.
 - Downstream advisor copy in `ColosseumOrg/colosseum-resources` only changes when recommendation behavior or install-command text changes.
