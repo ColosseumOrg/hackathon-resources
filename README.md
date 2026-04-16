@@ -1,4 +1,4 @@
-# Hackathon Resources
+# Colosseum Hackathon Resources
 
 Source of truth for Colosseum hackathon developer resources. This repo owns sponsor markdown, curated resource JSON, RPC provider metadata, and links to sponsor-hosted skills.
 
