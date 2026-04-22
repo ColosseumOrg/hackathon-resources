@@ -16,7 +16,8 @@
         "swig",
         "lifi",
         "vanish",
-        "privy"
+        "privy",
+        "condor"
       ],
       "comingSoon": [
         "coinbase"
@@ -353,6 +354,38 @@
         "payments"
       ],
       "accentColor": "#0052FF"
+    },
+    "condor": {
+      "name": "Condor",
+      "description": "Open-source harness for building LLM-powered trading agents.",
+      "links": [
+        {
+          "label": "Intro Blog Post",
+          "url": "https://hummingbot.org/blog/introducing-condor-the-open-source-harness-for-trading-agents/"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://condor.hummingbot.org/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/hummingbot/condor"
+        },
+        {
+          "label": "Condor Agents Hackathon",
+          "url": "https://www.botcamp.xyz/hackathons/condor-agents-hackathon"
+        },
+        {
+          "label": "Discord",
+          "url": "https://discord.gg/hummingbot"
+        }
+      ],
+      "tags": [
+        "agents",
+        "defi",
+        "trading"
+      ],
+      "accentColor": "#0EA5E9"
     }
   },
   "rpcProviders": {
