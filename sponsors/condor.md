@@ -1,10 +1,10 @@
-Condor is an open-source harness from Hummingbot Foundation for building trading agents that connect to your LLM and execute algorithmic strategies across Solana DEXs, centralized exchanges, and perp DEXs. If you're building agentic trading products, Condor gives you a free, hackable runtime designed for strategy execution rather than generic chat workflows.
+Condor is a new agentic harness from Hummingbot Foundation, similar in design to OpenClaw. It connects to your LLM to help you perform trades and create trading agents that execute algorithmic trading strategies on Solana DEXs, centralized exchanges, and perp DEXs.
 
 - [Intro Blog Post](https://hummingbot.org/blog/introducing-condor-the-open-source-harness-for-trading-agents/)
 - [Documentation](https://condor.hummingbot.org/)
 - [GitHub](https://github.com/hummingbot/condor)
 - [Discord](https://discord.gg/hummingbot)
 
-Starting May 19, the Condor Agents Hackathon runs for one month with $15K+ in prizes for the best trading agents built on Condor. Strong fits include Solana execution agents, automated market-making strategies, cross-venue arbitrage, and copilots that turn strategy prompts into live trading systems.
+Condor is open source and free to use, and is built and maintained by Hummingbot Foundation. Starting May 19, Hummingbot is hosting a one-month hackathon with $15K+ in prizes for the best trading agents built in Condor.
 
 - [Condor Agents Hackathon](https://www.botcamp.xyz/hackathons/condor-agents-hackathon)

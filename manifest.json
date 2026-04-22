@@ -357,7 +357,7 @@
     },
     "condor": {
       "name": "Condor",
-      "description": "Open-source harness for building LLM-powered trading agents.",
+      "description": "Open-source agentic harness for performing trades and building trading agents.",
       "links": [
         {
           "label": "Intro Blog Post",
