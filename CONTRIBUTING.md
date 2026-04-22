@@ -1,6 +1,6 @@
 # Contributing
 
-This repo is the source of truth for Colosseum hackathon resource data and links to sponsor-hosted skills. Keep sponsor docs, resource JSON, and manifest metadata here rather than duplicating them in downstream consumers. Sponsor skills should live in the sponsor's own GitHub repo.
+This repo is the source of truth for Colosseum hackathon resource data and links to sponsor-hosted skills.
 
 ## Add a Sponsor
 
