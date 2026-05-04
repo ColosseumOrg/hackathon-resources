@@ -98,6 +98,16 @@
           "url": "https://agents.privy.io",
           "hyperlink": "Privy Agent CLI + Sandbox",
           "description": "Agent tooling and sandbox environment for building with Privy wallets."
+        },
+        {
+          "url": "https://docs.cdp.coinbase.com/onramp/introduction/welcome",
+          "hyperlink": "Coinbase Onramp & Offramp",
+          "description": "Fiat-to-crypto funding and crypto-to-fiat cash out flows for wallets, DeFi onboarding, and app payouts."
+        },
+        {
+          "url": "https://docs.cdp.coinbase.com/server-wallets/comparing-our-wallets",
+          "hyperlink": "Coinbase Wallet Product Guide",
+          "description": "Choose between embedded wallets for users, server wallets for backend automation, and agentic wallets for AI agents."
         }
       ]
     }

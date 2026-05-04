@@ -27,6 +27,26 @@
             "url": "https://core.vanish.trade",
             "hyperlink": "Vanish Core API",
             "description": "Execute agent trades privately without exposing strategy on-chain. Adds ~200ms to finality, works with any DEX aggregator."
+          },
+          {
+            "url": "https://docs.cdp.coinbase.com/x402/welcome",
+            "hyperlink": "Coinbase x402",
+            "description": "Open HTTP payment protocol for paid APIs, content, and agent-to-service requests using instant stablecoin payments."
+          },
+          {
+            "url": "https://docs.cdp.coinbase.com/x402/mcp-server",
+            "hyperlink": "x402 MCP Server",
+            "description": "Example MCP server that lets agents detect paid endpoints, sign x402 payments, and return paid API data automatically."
+          },
+          {
+            "url": "https://agentic.market/",
+            "hyperlink": "Agentic Market",
+            "description": "Directory of x402-enabled services that agents can discover and call with pay-per-request USDC pricing."
+          },
+          {
+            "url": "https://github.com/coinbase/agentic-wallet-skills",
+            "hyperlink": "Coinbase Agentic Wallet Skills",
+            "description": "Prebuilt agent skills for authenticating wallets, funding, sending USDC, trading, finding x402 services, and paying for them."
           }
         ]
       },

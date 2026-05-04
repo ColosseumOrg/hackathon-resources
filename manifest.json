@@ -12,6 +12,7 @@
         "reflect",
         "pentagon",
         "moonpay",
+        "coinbase",
         "metaplex",
         "swig",
         "lifi",
@@ -19,9 +20,7 @@
         "privy",
         "condor"
       ],
-      "comingSoon": [
-        "coinbase"
-      ],
+      "comingSoon": [],
       "resources": [
         "start-here",
         "learn-solana",
@@ -347,11 +346,39 @@
     },
     "coinbase": {
       "name": "Coinbase",
-      "description": "Coming soon",
-      "links": [],
+      "description": "Coinbase Developer Platform resources for x402 pay-per-request APIs, agent wallets, onramps/offramps, and wallet infrastructure.",
+      "skillRepositoryUrl": "https://github.com/coinbase/agentic-wallet-skills",
+      "skillInstallCommand": "npx skills add coinbase/agentic-wallet-skills",
+      "links": [
+        {
+          "label": "x402 Docs",
+          "url": "https://docs.cdp.coinbase.com/x402/welcome"
+        },
+        {
+          "label": "x402 MCP Server",
+          "url": "https://docs.cdp.coinbase.com/x402/mcp-server"
+        },
+        {
+          "label": "Onramp & Offramp",
+          "url": "https://docs.cdp.coinbase.com/onramp/introduction/welcome"
+        },
+        {
+          "label": "Wallet Product Guide",
+          "url": "https://docs.cdp.coinbase.com/server-wallets/comparing-our-wallets"
+        },
+        {
+          "label": "Agentic Market",
+          "url": "https://agentic.market/"
+        },
+        {
+          "label": "Agentic Wallet Skills",
+          "url": "https://github.com/coinbase/agentic-wallet-skills"
+        }
+      ],
       "tags": [
         "wallet",
-        "payments"
+        "payments",
+        "agents"
       ],
       "accentColor": "#0052FF"
     },
