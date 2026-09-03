@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "current": "frontier",
+  "current": "crypto-worlds-fair",
   "hackathons": {
     "frontier": {
       "name": "Frontier",
@@ -21,6 +21,41 @@
         "condor"
       ],
       "comingSoon": [],
+      "resources": [
+        "start-here",
+        "learn-solana",
+        "examples-reference",
+        "infra-tooling",
+        "build-paths"
+      ],
+      "resourceGroups": [
+        {
+          "id": "foundations",
+          "title": "Foundations",
+          "keys": ["start-here", "learn-solana", "examples-reference", "infra-tooling"]
+        },
+        {
+          "id": "build-paths",
+          "title": "Build by Path",
+          "keys": ["build-paths"]
+        }
+      ],
+      "rpcProviders": [
+        "helius",
+        "triton-one",
+        "fluxrpc"
+      ]
+    },
+    "crypto-worlds-fair": {
+      "name": "Crypto World's Fair",
+      "sponsors": [
+        "phantom",
+        "squads",
+        "reflect"
+      ],
+      "comingSoon": [
+        "raydium"
+      ],
       "resources": [
         "start-here",
         "learn-solana",
@@ -413,6 +448,14 @@
         "trading"
       ],
       "accentColor": "#0EA5E9"
+    },
+    "raydium": {
+      "name": "Raydium",
+      "description": "Developer resources coming soon.",
+      "links": [],
+      "tags": [
+        "defi"
+      ]
     }
   },
   "rpcProviders": {
@@ -425,7 +468,7 @@
           "url": "https://www.helius.dev/pricing"
         }
       ],
-      "offer": "50% off Developer plans for Frontier builders ($49 → $24.50/mo)"
+      "offer": "50% off Developer plans for Colosseum hackathon builders ($49 → $24.50/mo)"
     },
     "triton-one": {
       "name": "Triton One",
