@@ -79,6 +79,51 @@
         "helius",
         "triton-one",
         "fluxrpc"
+      ],
+      "tracks": [
+        {
+          "id": "solana",
+          "name": "Solana",
+          "sponsors": [
+            "phantom",
+            "squads",
+            "reflect"
+          ],
+          "comingSoon": [
+            "raydium"
+          ],
+          "resources": [
+            "start-here",
+            "learn-solana",
+            "examples-reference",
+            "infra-tooling",
+            "build-paths"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": ["start-here", "learn-solana", "examples-reference", "infra-tooling"]
+            },
+            {
+              "id": "build-paths",
+              "title": "Build by Path",
+              "keys": ["build-paths"]
+            }
+          ],
+          "rpcProviders": [
+            "helius",
+            "triton-one",
+            "fluxrpc"
+          ]
+        },
+        { "id": "ethereum", "name": "Ethereum", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "hyperliquid", "name": "Hyperliquid", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "base", "name": "Base", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "tempo", "name": "Tempo", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "arbitrum", "name": "Arbitrum", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "zcash", "name": "Zcash", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
+        { "id": "robinhood", "name": "Robinhood Chain", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] }
       ]
     }
   },
