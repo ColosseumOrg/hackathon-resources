@@ -47,6 +47,16 @@
             "url": "https://github.com/coinbase/agentic-wallet-skills",
             "hyperlink": "Coinbase Agentic Wallet Skills",
             "description": "Prebuilt agent skills for authenticating wallets, funding, sending USDC, trading, finding x402 services, and paying for them."
+          },
+          {
+            "url": "https://github.com/solana-foundation/pay",
+            "hyperlink": "PAY.SH",
+            "description": "The missing payment layer for HTTP — x402 & MPP payments with user-authorized stablecoin signing."
+          },
+          {
+            "url": "https://solana.com/payment-channels",
+            "hyperlink": "Payment Channels",
+            "description": "Deposit a ceiling once, spend against it off-chain, and settle the actual amount on-chain only at the end."
           }
         ]
       },
@@ -462,6 +472,11 @@
             "url": "https://core.vanish.trade",
             "hyperlink": "Vanish Core API",
             "description": "Privacy layer for trading — execute swaps without exposing strategy on-chain. Adds ~200ms to finality, requires no RPC changes."
+          },
+          {
+            "url": "https://solana.com/docs/tokens/extensions/confidential-transfer",
+            "hyperlink": "Confidential Balances",
+            "description": "Transfer tokens between token accounts without revealing the transfer amount."
           }
         ]
       }

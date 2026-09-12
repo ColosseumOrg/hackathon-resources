@@ -31,6 +31,21 @@
           "url": "https://solanacookbook.com/",
           "hyperlink": "Solana Cookbook",
           "description": "Popular resource for guides and reference code across Solana development topics."
+        },
+        {
+          "url": "https://solana.com/docs/tokens/extensions",
+          "hyperlink": "Token Extensions",
+          "description": "Documentation and Examples on Token Extensions."
+        },
+        {
+          "url": "https://solana.com/news/subscriptions-and-allowances",
+          "hyperlink": "Subscriptions and Allowances",
+          "description": "Recurring billing, delegated spending, and subscription plans natively onchain, with a single shared program that's audited, open source, and ready to integrate."
+        },
+        {
+          "url": "https://solana.com/docs/payments/accept-payments/indexing",
+          "hyperlink": "Indexing",
+          "description": "Core tools and patterns for real-time transaction streaming, historical data access, and instruction-level parsing."
         }
       ]
     },
@@ -57,6 +72,11 @@
           "url": "https://www.rareskills.io/solana-tutorial",
           "hyperlink": "RareSkills: ETH to Solana",
           "description": "Tailored path for Ethereum developers transitioning to Solana."
+        },
+        {
+          "url": "https://learn.blueshift.gg/en/courses",
+          "hyperlink": "Blueshift Solana Courses",
+          "description": "Solana Courses covering Anchor, Rust and TypeScript."
         }
       ]
     },
@@ -70,9 +90,9 @@
           "description": "Weekly Solana developer content spanning tools, guides, and news."
         },
         {
-          "url": "https://www.youtube.com/watch?v=amAq-WHAFs8",
+          "url": "https://www.youtube.com/watch?v=2pcm7ICRJKU",
           "hyperlink": "Solana Bootcamp",
-          "description": "Comprehensive video crash course — ideal for learning from scratch or refreshing."
+          "description": "Complete bootcamp that covers everything from Rust and Anchor to PDAs and full-stack Web3 apps."
         },
         {
           "url": "https://www.youtube.com/watch?v=pRYs49MqapI&list=PLilwLeBwGuK51Ji870apdb88dnBr1Xqhm",

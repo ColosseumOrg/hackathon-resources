@@ -21,6 +21,11 @@
           "url": "https://github.com/solana-developers/solana-actions/tree/main/examples",
           "hyperlink": "Solana Actions Examples",
           "description": "Action implementations across frameworks like Axum, Cloudflare Workers, and Next.js."
+        },
+        {
+          "url": "https://solana.com/docs/tokenization/token-acl",
+          "hyperlink": "Permissioned Tokens with Token ACL",
+          "description": "Compliant, permissioned tokens without sacrificing user experience."
         }
       ]
     }
