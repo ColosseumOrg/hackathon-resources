@@ -1,0 +1,68 @@
+[
+  {
+    "id": "zcash-nodes-and-light-clients",
+    "title": "Nodes and light-client services",
+    "summary": "Supported consensus, indexing, protocol, and local-test resources for a shielded wallet backend.",
+    "groups": [
+      {
+        "id": "zcash-nodes-and-light-clients-links",
+        "title": "Nodes and light-client services",
+        "links": [
+          {
+            "hyperlink": "Install Zebra",
+            "url": "https://zebra.zfnd.org/user/install.html",
+            "description": "Install and operate the current Zcash consensus node from binaries, containers, or source."
+          },
+          {
+            "hyperlink": "Connect lightwalletd to Zebra",
+            "url": "https://zebra.zfnd.org/user/lightwalletd.html",
+            "description": "Configure the supported production topology with a separate lightwalletd service in front of Zebra."
+          },
+          {
+            "hyperlink": "lightwalletd",
+            "url": "https://github.com/zcash/lightwalletd",
+            "description": "Serve compact blocks and transactions to shielded light clients from a private Zebra RPC connection."
+          },
+          {
+            "hyperlink": "Light Wallet Protocol definitions",
+            "url": "https://github.com/zcash/lightwallet-protocol",
+            "description": "Use the canonical protobuf definitions shared by lightwalletd, Zaino, zcash_client_backend, and Zingolib."
+          },
+          {
+            "hyperlink": "Zebra regtest",
+            "url": "https://zebra.zfnd.org/user/regtest.html",
+            "description": "Run deterministic local chains with configurable upgrade heights and block-generation controls."
+          },
+          {
+            "hyperlink": "Zaino",
+            "url": "https://github.com/zingolabs/zaino",
+            "description": "Evaluate a maintained Rust indexer and light-client service backed by Zebra when lightwalletd is not the right fit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zcash-legacy-migration",
+    "title": "Legacy migration",
+    "summary": "Use these only for existing deployments and wallets that still contain zcashd-era dependencies or data.",
+    "groups": [
+      {
+        "id": "zcash-legacy-migration-links",
+        "title": "Legacy migration",
+        "links": [
+          {
+            "hyperlink": "Zebra zcashd compatibility migration",
+            "url": "https://zebra.zfnd.org/user/zcashd-compat-migration.html",
+            "description": "Bridge legacy wallet RPC dependencies temporarily while Zebra performs consensus validation."
+          },
+          {
+            "hyperlink": "Import a zcashd wallet into Zallet",
+            "url": "https://zcash.github.io/zallet/cli/migrate-zcashd-wallet.html",
+            "description": "Migrate wallet.dat material into beta Zallet with the required key, database, and backup precautions."
+          }
+        ]
+      }
+    ]
+  }
+]

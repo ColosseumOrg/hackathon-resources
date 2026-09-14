@@ -1,0 +1,40 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Choose the right public chain, connect safely, and learn the execution differences that affect an Arbitrum application.",
+    "groups": [
+      {
+        "id": "core-resources",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Arbitrum public chains",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/public-chains",
+            "description": "Compare Arbitrum One, Nova, and Sepolia, including their Rollup or AnyTrust data-availability assumptions."
+          },
+          {
+            "hyperlink": "RPC endpoints and providers",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/reference/node-providers",
+            "description": "Find canonical chain IDs, public RPC endpoints, explorer URLs, and the production limitations of public endpoints."
+          },
+          {
+            "hyperlink": "Solidity quickstart",
+            "url": "https://docs.arbitrum.io/build-decentralized-apps/quickstart-solidity-remix",
+            "description": "Deploy and call a minimal Solidity contract on Arbitrum Sepolia before moving into a full project scaffold."
+          },
+          {
+            "hyperlink": "Solidity support on Arbitrum",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/arbitrum-vs-ethereum/solidity-support",
+            "description": "Review Arbitrum-specific block, randomness, address-aliasing, and message-sender behavior before porting Ethereum code."
+          },
+          {
+            "hyperlink": "Stylus Rust quickstart",
+            "url": "https://docs.arbitrum.io/stylus/quickstart",
+            "description": "Install the Rust toolchain, create a Stylus contract, check its WASM, deploy it, activate it, and export its ABI."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Choose HyperCore for exchange data and signed actions, or HyperEVM for Solidity contracts, then use the SDK for your language.",
+    "groups": [
+      {
+        "id": "core-resources",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Hyperliquid API docs",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api",
+            "description": "Start here for HyperCore REST and WebSocket endpoints, network URLs, and the maintained SDK list."
+          },
+          {
+            "hyperlink": "Official Python SDK and examples",
+            "url": "https://github.com/hyperliquid-dex/hyperliquid-python-sdk",
+            "description": "Use Hyperliquid's reference Python implementation for queries, orders, API wallets, multisig, and signing behavior."
+          },
+          {
+            "hyperlink": "NKTK TypeScript SDK",
+            "url": "https://github.com/nktkas/hyperliquid",
+            "description": "Use the community TypeScript client for typed HTTP, WebSocket, and exchange actions across Node, Deno, Bun, and React Native."
+          },
+          {
+            "hyperlink": "Infinite Field Rust SDK",
+            "url": "https://github.com/infinitefield/hypersdk",
+            "description": "Use this community Rust client for typed HyperCore actions, streams, precision handling, and selected HyperEVM integrations."
+          },
+          {
+            "hyperlink": "HyperEVM network details",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm",
+            "description": "Configure chain 999 for mainnet or 998 for testnet and understand HyperEVM's gas, block, and RPC differences."
+          },
+          {
+            "hyperlink": "Interacting with HyperCore from HyperEVM",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/interacting-with-hypercore",
+            "description": "Read HyperCore through L1Read precompiles and submit supported actions through the CoreWriter system contract."
+          }
+        ]
+      }
+    ]
+  }
+]

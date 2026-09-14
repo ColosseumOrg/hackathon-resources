@@ -79,7 +79,7 @@ in place. An id that is not in the roster is silently unused; a roster id that i
 | id            | name             |
 |---------------|------------------|
 | `solana`      | Solana           |
-| `ethereum`    | Ethereum         |
+| `ethereum`    | Ethereum L1      |
 | `hyperliquid` | Hyperliquid      |
 | `base`        | Base             |
 | `tempo`       | Tempo            |
@@ -88,9 +88,8 @@ in place. An id that is not in the roster is silently unused; a roster id that i
 | `robinhood`   | Robinhood Chain  |
 
 The first track (`tracks[0]`) is the default ecosystem. The hackathon's top-level `sponsors`,
-`comingSoon`, `resources`, `resourceGroups`, and `rpcProviders` must mirror it, and the build fails
-if `sponsors` or `rpcProviders` differ. Keep the two in sync by hand rather than referencing one
-from the other.
+`comingSoon`, `resources`, `resourceGroups`, and `rpcProviders` must mirror it. The build fails if
+any field differs. Keep the two in sync by hand rather than referencing one from the other.
 
 To add a track:
 
@@ -100,9 +99,12 @@ To add a track:
 3. Reference sponsor slugs from `manifest.sponsors` and RPC slugs from `manifest.rpcProviders`.
    Chain-specific RPC entries are new `manifest.rpcProviders` entries, one per provider-and-offer
    (for example `alchemy` and `quicknode-base`), each with the provider's display `name`.
-4. Per-chain curated resources go in `resources/<chain>/<key>.json` and are referenced as
-   `"<chain>/<key>"`. Leave `resources` empty unless there is curated content.
-5. Run `npm run build` and check `tracks` in `dist/crypto-worlds-fair.json`.
+4. Campaign-specific curated resources go in `resources/<hackathon>/<track>/<key>.json` and are
+   referenced as `"<hackathon>/<track>/<key>"`. Use isolated keys when changing a shared file
+   would alter another campaign. Leave `resources` empty unless there is curated content.
+5. A `resourceGroups` entry may include `description` when the category needs a short orientation
+   before its sections.
+6. Run `npm test` and check `tracks` in the generated hackathon payload.
 
 ```json
 {
@@ -140,7 +142,7 @@ Set the top-level `current` field in `manifest.json` to the active hackathon slu
 
 ## PR Checklist
 
-- `npm run build` passes.
+- `npm test` passes.
 - `manifest.json` references only files that exist.
 - Every `tracks[].id` exists in the civitas roster.
 - `tracks[0]` mirrors the top-level bundle.

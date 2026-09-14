@@ -1,0 +1,71 @@
+[
+  {
+    "id": "wallets-onboarding",
+    "title": "Wallets and onboarding",
+    "summary": "Use the currently recommended Coinbase Wallet package directly or through Wagmi, while the product naming changes.",
+    "groups": [
+      {
+        "id": "coinbase-wallet",
+        "title": "Coinbase Wallet",
+        "links": [
+          {
+            "hyperlink": "Coinbase Wallet SDK overview",
+            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/overview",
+            "description": "Add Coinbase Wallet sign-in or USDC payments with the currently recommended @base-org/account package."
+          },
+          {
+            "hyperlink": "Coinbase Wallet with Wagmi",
+            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/framework-integrations/wagmi/setup",
+            "description": "Add the Base Account connector to an existing Wagmi React application and audit the resolved SDK version."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contracts-data",
+    "title": "Contracts, testing, and data",
+    "summary": "Use standard EVM contracts, Base-aware local tooling for native precompiles, and the current RPC reference.",
+    "groups": [
+      {
+        "id": "contract-tooling",
+        "title": "Contract tooling",
+        "links": [
+          {
+            "hyperlink": "Smart Contracts",
+            "url": "https://docs.base.org/specifications/reference/smart-contracts",
+            "description": "Set up, test, deploy, and inspect a Solidity contract on Base Sepolia."
+          },
+          {
+            "hyperlink": "base-anvil CLI",
+            "url": "https://docs.base.org/sdks/base-anvil",
+            "description": "Install and pin Base's Foundry fork when your contracts call Base-native precompiles."
+          },
+          {
+            "hyperlink": "Base RPC overview",
+            "url": "https://docs.base.org/base-chain/api-reference/rpc-overview",
+            "description": "Select JSON-RPC or Flashblocks methods and understand Base's pre-confirmed pending state."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "examples",
+    "title": "Examples",
+    "summary": "Use Base's active demo repository for two focused protocol and agent examples, not as a general application starter.",
+    "groups": [
+      {
+        "id": "official-demos",
+        "title": "Official demos",
+        "links": [
+          {
+            "hyperlink": "Base demos",
+            "url": "https://github.com/base/demos",
+            "description": "Inspect runnable examples for 200 ms transfer streaming and a Base trading agent."
+          }
+        ]
+      }
+    ]
+  }
+]

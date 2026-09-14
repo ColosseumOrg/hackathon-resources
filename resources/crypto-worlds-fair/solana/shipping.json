@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ship-app",
+    "title": "Ship the application",
+    "summary": "Connect wallets through the current frontend path, understand the RPC contract, and add distribution, payments, or mobile support only when the product needs it.",
+    "groups": [
+      {
+        "id": "product-integration",
+        "title": "Product integration",
+        "links": [
+          {
+            "hyperlink": "Solana frontend guides",
+            "url": "https://solana.com/docs/frontend",
+            "description": "Connect wallets with Wallet Standard and Kit plugins, with a documented bridge for legacy web3.js dependencies."
+          },
+          {
+            "hyperlink": "Solana RPC methods",
+            "url": "https://solana.com/docs/rpc",
+            "description": "Use the authoritative request, response, commitment, and subscription reference for application data access."
+          },
+          {
+            "hyperlink": "Solana Actions and Blinks",
+            "url": "https://solana.com/docs/tools/actions",
+            "description": "Expose shareable transactions when distribution fits the product. The current @solana/actions line still depends on web3.js v1, so isolate it from a Kit-first client."
+          },
+          {
+            "hyperlink": "Solana payments",
+            "url": "https://solana.com/docs/payments",
+            "description": "Choose among payment links, direct transfers, and agentic x402 flows using the current first-party payment map."
+          },
+          {
+            "hyperlink": "Solana Mobile developer docs",
+            "url": "https://docs.solanamobile.com/",
+            "description": "Add Mobile Wallet Adapter and mobile dApp support after confirming Android and native-platform constraints."
+          }
+        ]
+      }
+    ]
+  }
+]

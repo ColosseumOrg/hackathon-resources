@@ -1,0 +1,25 @@
+[
+  {
+    "id": "limits-and-history",
+    "title": "Limits and historical data",
+    "summary": "Plan around weighted public limits first, then add indexed historical data only when the product needs it.",
+    "groups": [
+      {
+        "id": "production-data",
+        "title": "Production data",
+        "links": [
+          {
+            "hyperlink": "Rate limits and user limits",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
+            "description": "Budget REST weights, WebSocket connections, EVM RPC calls, action quotas, and open-order limits."
+          },
+          {
+            "hyperlink": "Hydromancer Reservoir",
+            "url": "https://docs.hydromancer.xyz/reservoir",
+            "description": "Query daily-updated fills, candles, positions, balances, and order-book history from requester-pays S3 without an API key."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "secure-contract-workflow",
+    "title": "Secure the contract workflow",
+    "summary": "Read the language-level failure modes, reproduce mainnet state, automate static checks, and practice exploits before deployment.",
+    "groups": [
+      {
+        "id": "security-basics",
+        "title": "Security basics",
+        "links": [
+          {
+            "hyperlink": "Solidity security considerations",
+            "url": "https://docs.soliditylang.org/en/latest/security-considerations.html",
+            "description": "Review reentrancy, authorization, randomness, loops, Ether transfer, proxies, compiler bugs, and other contract-level hazards."
+          },
+          {
+            "hyperlink": "Foundry fork testing",
+            "url": "https://www.getfoundry.sh/guides/fork-testing",
+            "description": "Test integrations against pinned Ethereum mainnet state with account impersonation, time changes, token balances, and reproducible fork configuration."
+          }
+        ]
+      },
+      {
+        "id": "analysis-and-practice",
+        "title": "Analysis and practice",
+        "links": [
+          {
+            "hyperlink": "Slither",
+            "url": "https://github.com/crytic/slither#readme",
+            "description": "Run static detectors and review printers over a Hardhat or Foundry project and export findings for CI or SARIF tooling."
+          },
+          {
+            "hyperlink": "Ethernaut",
+            "url": "https://ethernaut.openzeppelin.com/",
+            "description": "Practice finding and exploiting Solidity mistakes in a maintained EVM wargame before handling real assets."
+          }
+        ]
+      }
+    ]
+  }
+]

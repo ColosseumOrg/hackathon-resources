@@ -57,22 +57,55 @@
         "raydium"
       ],
       "resources": [
-        "start-here",
-        "learn-solana",
-        "examples-reference",
-        "infra-tooling",
-        "build-paths"
+        "crypto-worlds-fair/solana/foundations",
+        "crypto-worlds-fair/solana/programs",
+        "crypto-worlds-fair/solana/testing-security",
+        "crypto-worlds-fair/solana/shipping",
+        "crypto-worlds-fair/solana/solana-library",
+        "crypto-worlds-fair/solana/build-paths"
       ],
       "resourceGroups": [
         {
           "id": "foundations",
           "title": "Foundations",
-          "keys": ["start-here", "learn-solana", "examples-reference", "infra-tooling"]
+          "keys": [
+            "crypto-worlds-fair/solana/foundations"
+          ]
+        },
+        {
+          "id": "programs",
+          "title": "Programs and clients",
+          "keys": [
+            "crypto-worlds-fair/solana/programs"
+          ]
+        },
+        {
+          "id": "testing-security",
+          "title": "Testing and security",
+          "keys": [
+            "crypto-worlds-fair/solana/testing-security"
+          ]
+        },
+        {
+          "id": "shipping",
+          "title": "Frontend, data, and distribution",
+          "keys": [
+            "crypto-worlds-fair/solana/shipping"
+          ]
+        },
+        {
+          "id": "solana-library",
+          "title": "More Solana resources",
+          "keys": [
+            "crypto-worlds-fair/solana/solana-library"
+          ]
         },
         {
           "id": "build-paths",
           "title": "Build by Path",
-          "keys": ["build-paths"]
+          "keys": [
+            "crypto-worlds-fair/solana/build-paths"
+          ]
         }
       ],
       "rpcProviders": [
@@ -93,22 +126,55 @@
             "raydium"
           ],
           "resources": [
-            "start-here",
-            "learn-solana",
-            "examples-reference",
-            "infra-tooling",
-            "build-paths"
+            "crypto-worlds-fair/solana/foundations",
+            "crypto-worlds-fair/solana/programs",
+            "crypto-worlds-fair/solana/testing-security",
+            "crypto-worlds-fair/solana/shipping",
+            "crypto-worlds-fair/solana/solana-library",
+            "crypto-worlds-fair/solana/build-paths"
           ],
           "resourceGroups": [
             {
               "id": "foundations",
               "title": "Foundations",
-              "keys": ["start-here", "learn-solana", "examples-reference", "infra-tooling"]
+              "keys": [
+                "crypto-worlds-fair/solana/foundations"
+              ]
+            },
+            {
+              "id": "programs",
+              "title": "Programs and clients",
+              "keys": [
+                "crypto-worlds-fair/solana/programs"
+              ]
+            },
+            {
+              "id": "testing-security",
+              "title": "Testing and security",
+              "keys": [
+                "crypto-worlds-fair/solana/testing-security"
+              ]
+            },
+            {
+              "id": "shipping",
+              "title": "Frontend, data, and distribution",
+              "keys": [
+                "crypto-worlds-fair/solana/shipping"
+              ]
+            },
+            {
+              "id": "solana-library",
+              "title": "More Solana resources",
+              "keys": [
+                "crypto-worlds-fair/solana/solana-library"
+              ]
             },
             {
               "id": "build-paths",
               "title": "Build by Path",
-              "keys": ["build-paths"]
+              "keys": [
+                "crypto-worlds-fair/solana/build-paths"
+              ]
             }
           ],
           "rpcProviders": [
@@ -117,13 +183,302 @@
             "fluxrpc"
           ]
         },
-        { "id": "ethereum", "name": "Ethereum", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "hyperliquid", "name": "Hyperliquid", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "base", "name": "Base", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "tempo", "name": "Tempo", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "arbitrum", "name": "Arbitrum", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "zcash", "name": "Zcash", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] },
-        { "id": "robinhood", "name": "Robinhood Chain", "sponsors": [], "comingSoon": [], "resources": [], "rpcProviders": [] }
+        {
+          "id": "ethereum",
+          "name": "Ethereum L1",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/ethereum/foundations",
+            "crypto-worlds-fair/ethereum/application-stack",
+            "crypto-worlds-fair/ethereum/data-and-delivery",
+            "crypto-worlds-fair/ethereum/testing-and-security"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/ethereum/foundations"
+              ]
+            },
+            {
+              "id": "application-stack",
+              "title": "Build and integrate",
+              "keys": [
+                "crypto-worlds-fair/ethereum/application-stack"
+              ]
+            },
+            {
+              "id": "data-and-delivery",
+              "title": "Data and delivery",
+              "keys": [
+                "crypto-worlds-fair/ethereum/data-and-delivery"
+              ]
+            },
+            {
+              "id": "testing-and-security",
+              "title": "Testing and security",
+              "keys": [
+                "crypto-worlds-fair/ethereum/testing-and-security"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "hyperliquid",
+          "name": "Hyperliquid",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/hyperliquid/foundations",
+            "crypto-worlds-fair/hyperliquid/hypercore",
+            "crypto-worlds-fair/hyperliquid/hyperevm",
+            "crypto-worlds-fair/hyperliquid/operations"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/hyperliquid/foundations"
+              ]
+            },
+            {
+              "id": "hypercore",
+              "title": "Build on HyperCore",
+              "keys": [
+                "crypto-worlds-fair/hyperliquid/hypercore"
+              ]
+            },
+            {
+              "id": "hyperevm",
+              "title": "Build on HyperEVM",
+              "keys": [
+                "crypto-worlds-fair/hyperliquid/hyperevm"
+              ]
+            },
+            {
+              "id": "operations",
+              "title": "Operate and analyze",
+              "keys": [
+                "crypto-worlds-fair/hyperliquid/operations"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/base/foundations",
+            "crypto-worlds-fair/base/application-stack",
+            "crypto-worlds-fair/base/distribution",
+            "crypto-worlds-fair/base/payments"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/base/foundations"
+              ]
+            },
+            {
+              "id": "application-stack",
+              "title": "Application stack",
+              "keys": [
+                "crypto-worlds-fair/base/application-stack"
+              ]
+            },
+            {
+              "id": "distribution",
+              "title": "Optional distribution",
+              "keys": [
+                "crypto-worlds-fair/base/distribution"
+              ]
+            },
+            {
+              "id": "payments",
+              "title": "Payments",
+              "keys": [
+                "crypto-worlds-fair/base/payments"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "tempo",
+          "name": "Tempo",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/tempo/foundations",
+            "crypto-worlds-fair/tempo/payments",
+            "crypto-worlds-fair/tempo/stablecoins",
+            "crypto-worlds-fair/tempo/data-automation"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/tempo/foundations"
+              ]
+            },
+            {
+              "id": "payments",
+              "title": "Payment applications",
+              "keys": [
+                "crypto-worlds-fair/tempo/payments"
+              ]
+            },
+            {
+              "id": "stablecoins",
+              "title": "Stablecoins and exchange",
+              "keys": [
+                "crypto-worlds-fair/tempo/stablecoins"
+              ]
+            },
+            {
+              "id": "data-automation",
+              "title": "Data and machine payments",
+              "keys": [
+                "crypto-worlds-fair/tempo/data-automation"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "arbitrum",
+          "name": "Arbitrum",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/arbitrum/foundations",
+            "crypto-worlds-fair/arbitrum/building",
+            "crypto-worlds-fair/arbitrum/interoperability",
+            "crypto-worlds-fair/arbitrum/shipping"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/arbitrum/foundations"
+              ]
+            },
+            {
+              "id": "building",
+              "title": "Build contracts",
+              "keys": [
+                "crypto-worlds-fair/arbitrum/building"
+              ]
+            },
+            {
+              "id": "interoperability",
+              "title": "Bridge and message",
+              "keys": [
+                "crypto-worlds-fair/arbitrum/interoperability"
+              ]
+            },
+            {
+              "id": "shipping",
+              "title": "Test and ship",
+              "keys": [
+                "crypto-worlds-fair/arbitrum/shipping"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "zcash",
+          "name": "Zcash",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/zcash/zcash-foundations",
+            "crypto-worlds-fair/zcash/zcash-wallet-development",
+            "crypto-worlds-fair/zcash/zcash-infrastructure"
+          ],
+          "resourceGroups": [
+            {
+              "id": "zcash-foundations",
+              "title": "Zcash foundations",
+              "description": "Start with the live addressing, payment, and Rust wallet primitives before choosing a platform implementation.",
+              "keys": [
+                "crypto-worlds-fair/zcash/zcash-foundations"
+              ]
+            },
+            {
+              "id": "zcash-wallet-development",
+              "title": "Shielded wallet development",
+              "description": "Choose a maintained native or Rust wallet stack, then apply explicit security and production-readiness constraints.",
+              "keys": [
+                "crypto-worlds-fair/zcash/zcash-wallet-development"
+              ]
+            },
+            {
+              "id": "zcash-infrastructure",
+              "title": "Nodes, light-client services, and migration",
+              "description": "Run the current Zebra-backed service topology and keep legacy zcashd material confined to migration workflows.",
+              "keys": [
+                "crypto-worlds-fair/zcash/zcash-infrastructure"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        },
+        {
+          "id": "robinhood",
+          "name": "Robinhood Chain",
+          "sponsors": [],
+          "comingSoon": [],
+          "resources": [
+            "crypto-worlds-fair/robinhood/foundations",
+            "crypto-worlds-fair/robinhood/asset-integrations",
+            "crypto-worlds-fair/robinhood/protocol-integrations",
+            "crypto-worlds-fair/robinhood/advanced"
+          ],
+          "resourceGroups": [
+            {
+              "id": "foundations",
+              "title": "Foundations",
+              "keys": [
+                "crypto-worlds-fair/robinhood/foundations"
+              ]
+            },
+            {
+              "id": "asset-integrations",
+              "title": "Stock Tokens and market data",
+              "keys": [
+                "crypto-worlds-fair/robinhood/asset-integrations"
+              ]
+            },
+            {
+              "id": "protocol-integrations",
+              "title": "Bridging, messaging, and smart accounts",
+              "keys": [
+                "crypto-worlds-fair/robinhood/protocol-integrations"
+              ]
+            },
+            {
+              "id": "advanced",
+              "title": "Advanced operations and examples",
+              "keys": [
+                "crypto-worlds-fair/robinhood/advanced"
+              ]
+            }
+          ],
+          "rpcProviders": []
+        }
       ]
     }
   },

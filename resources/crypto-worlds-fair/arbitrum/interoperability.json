@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bridging-messaging",
+    "title": "Bridging and messaging",
+    "summary": "Model deposits, withdrawals, and cross-chain calls as asynchronous flows with explicit fees, status, proofs, and asset identity.",
+    "groups": [
+      {
+        "id": "cross-chain-core",
+        "title": "Cross-chain core",
+        "links": [
+          {
+            "hyperlink": "Bridging overview",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/bridging/overview",
+            "description": "Understand canonical bridge paths, token movement, retryables, deposits, withdrawals, and asset-identity concerns."
+          },
+          {
+            "hyperlink": "Cross-chain messaging",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/bridging/cross-chain-messaging",
+            "description": "Implement retryable tickets and outbox messages with the required fees, status handling, proofs, and address aliasing."
+          },
+          {
+            "hyperlink": "Arbitrum SDK v4 and guides",
+            "url": "https://github.com/OffchainLabs/arbitrum-sdk",
+            "description": "Use the official TypeScript SDK and its docs directory for bridging, deposits, withdrawals, retryables, and message status."
+          }
+        ]
+      }
+    ]
+  }
+]

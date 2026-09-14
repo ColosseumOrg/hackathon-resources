@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cross-chain-and-accounts",
+    "title": "Cross-chain and account integrations",
+    "summary": "Use the chain-specific route first, then apply standard Arbitrum or ERC-4337 tooling with the documented Robinhood configuration.",
+    "groups": [
+      {
+        "id": "integration-guides",
+        "title": "Integration guides",
+        "links": [
+          {
+            "hyperlink": "Bridge assets",
+            "url": "https://docs.robinhood.com/chain/bridging/",
+            "description": "Compare the canonical Ethereum bridge with third-party routes; canonical withdrawals take about seven days and token availability varies by route."
+          },
+          {
+            "hyperlink": "Account abstraction",
+            "url": "https://docs.robinhood.com/chain/account-abstraction/",
+            "description": "Integrate ERC-4337 or EIP-7702 with documented provider examples; hosted bundlers and paymasters can require accounts, API keys, quotas, or payment."
+          },
+          {
+            "hyperlink": "Cross-chain messaging",
+            "url": "https://docs.robinhood.com/chain/cross-chain-messaging/",
+            "description": "Register the custom network with the Arbitrum SDK and handle retryable tickets, address aliasing, and the seven-day L2-to-L1 challenge period."
+          }
+        ]
+      }
+    ]
+  }
+]

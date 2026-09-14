@@ -1,0 +1,25 @@
+[
+  {
+    "id": "indexing",
+    "title": "Index contract events",
+    "summary": "Move historical event data into a queryable application database or publish a public subgraph.",
+    "groups": [
+      {
+        "id": "event-indexers",
+        "title": "Event indexers",
+        "links": [
+          {
+            "hyperlink": "Ponder get started",
+            "url": "https://ponder.sh/docs/get-started",
+            "description": "Write a TypeScript event indexer that stores Ethereum data in Postgres and exposes GraphQL, SQL over HTTP, or direct SQL."
+          },
+          {
+            "hyperlink": "The Graph subgraph quick start",
+            "url": "https://thegraph.com/docs/en/subgraphs/quick-start/",
+            "description": "Generate a subgraph from a deployed contract, test it in Studio, and publish it to The Graph Network when public decentralized indexing matters."
+          }
+        ]
+      }
+    ]
+  }
+]

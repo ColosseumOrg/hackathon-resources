@@ -132,6 +132,26 @@ function sameStringArray(left, right) {
   );
 }
 
+function sameResourceGroups(left, right) {
+  if (left === undefined || right === undefined) {
+    return left === right;
+  }
+
+  return (
+    left.length === right.length &&
+    left.every((group, index) => {
+      const other = right[index];
+
+      return (
+        group.id === other.id &&
+        group.title === other.title &&
+        group.description === other.description &&
+        sameStringArray(group.keys, other.keys)
+      );
+    })
+  );
+}
+
 async function readTextFile(relativePath) {
   return readFile(path.join(ROOT_DIR, relativePath), 'utf8');
 }
@@ -263,6 +283,14 @@ function normalizeResourceGroups(value, label) {
     return {
       id: assertString(group.id, `${groupLabel}.id`),
       title: assertString(group.title, `${groupLabel}.title`),
+      ...(group.description === undefined
+        ? {}
+        : {
+            description: assertString(
+              group.description,
+              `${groupLabel}.description`,
+            ),
+          }),
       keys: assertStringArray(group.keys, `${groupLabel}.keys`),
     };
   });
@@ -337,20 +365,23 @@ function normalizeHackathon(value, slug) {
   };
 
   // The top-level bundle is the default track's bundle. It is written out
-  // explicitly (not inferred) so consumers that ignore `tracks` keep working,
-  // and we fail the build if the two drift apart by accident.
+  // explicitly (not inferred) so consumers that ignore `tracks` keep working.
+  // Compare every source field so the two published bundles cannot drift.
   if (normalized.tracks) {
     const defaultTrack = normalized.tracks[0];
 
-    if (!sameStringArray(defaultTrack.sponsors, normalized.sponsors)) {
+    if (
+      !sameStringArray(defaultTrack.sponsors, normalized.sponsors) ||
+      !sameStringArray(defaultTrack.comingSoon, normalized.comingSoon) ||
+      !sameStringArray(defaultTrack.resources, normalized.resources) ||
+      !sameResourceGroups(
+        defaultTrack.resourceGroups,
+        normalized.resourceGroups,
+      ) ||
+      !sameStringArray(defaultTrack.rpcProviders, normalized.rpcProviders)
+    ) {
       fail(
-        `${label}.tracks[0] ("${defaultTrack.id}") is the default track, so its sponsors must equal ${label}.sponsors`,
-      );
-    }
-
-    if (!sameStringArray(defaultTrack.rpcProviders, normalized.rpcProviders)) {
-      fail(
-        `${label}.tracks[0] ("${defaultTrack.id}") is the default track, so its rpcProviders must equal ${label}.rpcProviders`,
+        `${label}.tracks[0] ("${defaultTrack.id}") is the default track, so its resource bundle must equal the top-level bundle`,
       );
     }
   }
@@ -536,6 +567,9 @@ async function buildResourceBundle(scope, label, manifest, loaders) {
     bundle.resourceGroups = scope.resourceGroups.map((group) => ({
       id: group.id,
       title: group.title,
+      ...(group.description === undefined
+        ? {}
+        : { description: group.description }),
       sections: group.keys.flatMap((resourceKey) => {
         const sections = sectionsByResourceKey.get(resourceKey);
         if (!sections) {

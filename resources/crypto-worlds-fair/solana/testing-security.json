@@ -1,0 +1,35 @@
+[
+  {
+    "id": "test-layers",
+    "title": "Test at the right layer",
+    "summary": "Run fast in-process tests first, add validator-compatible integration tests where behavior depends on RPC or live state, and practice known program vulnerabilities explicitly.",
+    "groups": [
+      {
+        "id": "test-tools",
+        "title": "Test and review tools",
+        "links": [
+          {
+            "hyperlink": "LiteSVM",
+            "url": "https://solana.com/docs/tools/litesvm",
+            "description": "Run fast in-process transaction and program tests from Rust, TypeScript, or Python."
+          },
+          {
+            "hyperlink": "Mollusk",
+            "url": "https://solana.com/docs/programs/testing/mollusk",
+            "description": "Use a minified SVM for precise Rust instruction-level tests with explicit accounts and checks."
+          },
+          {
+            "hyperlink": "Surfpool",
+            "url": "https://solana.com/docs/tools/surfpool",
+            "description": "Run RPC-level and integration workflows with a test-validator-compatible local network and just-in-time account loading."
+          },
+          {
+            "hyperlink": "Blueshift program security",
+            "url": "https://learn.blueshift.gg/en/courses/program-security/introduction",
+            "description": "Practice signer, ownership, account-initialization, PDA, and CPI failure modes before review."
+          }
+        ]
+      }
+    ]
+  }
+]

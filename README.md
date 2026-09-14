@@ -44,6 +44,10 @@ resources page) read only `tracks`, so the default ecosystem must be listed ther
 published `manifest.json` lists each hackathon's `tracks` as `{ id, name }` so the axis can be
 discovered without fetching the full payload.
 
+Curated resource keys can be isolated to one campaign and track, for example
+`crypto-worlds-fair/solana/foundations`. This keeps updates from changing another campaign that
+uses the older shared keys.
+
 ## Sponsor-Hosted Skills
 
 Sponsor skills should live in the sponsor's own GitHub repo so the sponsor can update them independently. Add the sponsor's skill repo and install command to `manifest.json`:

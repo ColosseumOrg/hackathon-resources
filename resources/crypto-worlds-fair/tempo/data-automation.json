@@ -1,0 +1,36 @@
+[
+  {
+    "id": "backend-services",
+    "title": "Backend and automated services",
+    "summary": "Use hosted data or machine-payment interfaces only after the onchain flow is understood; both surfaces are still evolving.",
+    "groups": [
+      {
+        "id": "api-and-indexing",
+        "title": "API and indexing",
+        "links": [
+          {
+            "hyperlink": "Tempo API",
+            "url": "https://tempo.xyz/developers/docs/api",
+            "description": "REST and RPC entry point for blocks, balances, tokens, transfers, transactions, webhooks, sponsorship, routes, and exchange data."
+          },
+          {
+            "hyperlink": "Indexer API",
+            "url": "https://tempo.xyz/developers/docs/api/indexer-api",
+            "description": "Custom read-only SQL over hot PostgreSQL and archival ClickHouse data. Prefer stable REST endpoints for common reads and pin queried schemas."
+          }
+        ]
+      },
+      {
+        "id": "machine-payment-protocol",
+        "title": "Machine payments",
+        "links": [
+          {
+            "hyperlink": "Machine Payments Protocol",
+            "url": "https://tempo.xyz/developers/docs/guide/machine-payments",
+            "description": "HTTP 402 payment challenges for API and agent services, with one-time charges and session-style payment flows. Advanced and still fast-moving."
+          }
+        ]
+      }
+    ]
+  }
+]
