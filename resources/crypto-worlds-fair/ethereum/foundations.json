@@ -1,0 +1,63 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Learn Ethereum's execution model, finish one guided build, then choose one current contract toolchain.",
+    "groups": [
+      {
+        "id": "start-here-core",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Ethereum developer documentation",
+            "url": "https://ethereum.org/developers/docs/",
+            "description": "Use the canonical map of accounts, transactions, the EVM, smart contracts, clients, and application frameworks."
+          },
+          {
+            "hyperlink": "SpeedRunEthereum",
+            "url": "https://speedrunethereum.com/",
+            "description": "Learn by shipping guided contracts and interfaces, starting with tokenization and progressing to DeFi, oracles, and security challenges."
+          },
+          {
+            "hyperlink": "Scaffold-ETH 2 installation",
+            "url": "https://docs.scaffoldeth.io/quick-start/installation",
+            "description": "Generate a full-stack Ethereum app with wallet UI, contract hooks, a local chain, and a choice of Hardhat or Foundry."
+          },
+          {
+            "hyperlink": "Foundry getting started",
+            "url": "https://www.getfoundry.sh/introduction/getting-started",
+            "description": "Build, test, debug, deploy, verify, query, and fork contracts with Forge, Cast, Anvil, and Chisel."
+          },
+          {
+            "hyperlink": "Hardhat 3 getting started",
+            "url": "https://hardhat.org/docs/getting-started",
+            "description": "Choose the TypeScript-oriented contract workflow with Solidity and TypeScript tests, viem integration, plugins, and Ignition deployments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ethereum-l1-context",
+    "title": "Ethereum L1 context",
+    "summary": "Understand the mainnet fee model and use the right public testnet before deploying value-bearing code.",
+    "groups": [
+      {
+        "id": "l1-execution-and-networks",
+        "title": "Execution and networks",
+        "links": [
+          {
+            "hyperlink": "Ethereum gas and fees",
+            "url": "https://ethereum.org/developers/docs/gas/",
+            "description": "Budget L1 transactions by understanding gas used, base and priority fees, refunds, failed execution, and block demand."
+          },
+          {
+            "hyperlink": "Ethereum networks and testnets",
+            "url": "https://ethereum.org/developers/docs/networks/",
+            "description": "Use Sepolia for application testing, reserve Hoodi for validator and protocol work, and avoid deprecated testnets."
+          }
+        ]
+      }
+    ]
+  }
+]

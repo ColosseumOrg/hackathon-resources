@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-current-json.mjs"
+    "build": "node scripts/build-current-json.mjs",
+    "test": "npm run build && node --test"
   },
   "engines": {
     "node": ">=20"

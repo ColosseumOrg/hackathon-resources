@@ -1,0 +1,53 @@
+[
+  {
+    "id": "zcash-native-wallet-sdks",
+    "title": "Native mobile SDKs",
+    "summary": "Current official SDK paths for Android and Apple platform wallets.",
+    "groups": [
+      {
+        "id": "zcash-native-wallet-sdks-links",
+        "title": "Native mobile SDKs",
+        "links": [
+          {
+            "hyperlink": "Zcash Android Wallet SDK",
+            "url": "https://github.com/zcash/zcash-android-wallet-sdk",
+            "description": "Build an Android shielded wallet with compact-block synchronization, local trial decryption, accounts, shielding, and transaction submission."
+          },
+          {
+            "hyperlink": "Zcash Swift Wallet SDK",
+            "url": "https://github.com/zcash/zcash-swift-wallet-sdk",
+            "description": "Build an iOS or macOS shielded wallet with the current ZcashLightClientKit package and binary framework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zcash-rust-and-security",
+    "title": "Rust alternatives and security",
+    "summary": "Optional implementation and review resources for teams that need a fuller wallet core or lower-level transaction tooling.",
+    "groups": [
+      {
+        "id": "zcash-rust-and-security-links",
+        "title": "Rust alternatives and security",
+        "links": [
+          {
+            "hyperlink": "Zingolib",
+            "url": "https://github.com/zingolabs/zingolib",
+            "description": "Use a maintained alternative Rust wallet core that is pinned by current Zingo mobile and desktop releases."
+          },
+          {
+            "hyperlink": "Zcash devtool wallet walkthrough",
+            "url": "https://github.com/zcash/zcash-devtool/blob/main/doc/walkthrough.md",
+            "description": "Prototype Unified Address, scanning, transaction, and PCZT flows in an explicitly non-production reference wallet."
+          },
+          {
+            "hyperlink": "Zcash wallet threat model",
+            "url": "https://github.com/zodl-inc/zodl-project/blob/main/wallet_threat_model.md",
+            "description": "Review wallet and lightwallet-server threats as a baseline before performing an Ironwood-era security assessment."
+          }
+        ]
+      }
+    ]
+  }
+]

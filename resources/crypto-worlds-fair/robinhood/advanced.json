@@ -1,0 +1,25 @@
+[
+  {
+    "id": "operations-and-examples",
+    "title": "Operations and reference code",
+    "summary": "Use these after the basic deployment path when you need infrastructure ownership or an end-to-end implementation to inspect.",
+    "groups": [
+      {
+        "id": "advanced-references",
+        "title": "Advanced references",
+        "links": [
+          {
+            "hyperlink": "Run a Robinhood Chain full node",
+            "url": "https://docs.robinhood.com/chain/run-a-full-node/",
+            "description": "Start from Robinhood's node entry point, then follow current Arbitrum Nitro requirements and use the Robinhood chain configuration; expect substantial memory, storage, and parent-chain RPC needs."
+          },
+          {
+            "hyperlink": "Robinhood Chain dapp reference",
+            "url": "https://github.com/hummusonrails/robinhood-chain-dapp-example",
+            "description": "Inspect an Arbitrum Foundation-featured Foundry, Next.js, viem, and wagmi Stock Token sample with local, testnet, mainnet, and mainnet-fork paths; it is reference code, not evidence of a deployed production app."
+          }
+        ]
+      }
+    ]
+  }
+]

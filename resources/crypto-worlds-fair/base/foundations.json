@@ -1,0 +1,40 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Configure Base, fund a test wallet, send one transaction, and then choose only the SDKs your product needs.",
+    "groups": [
+      {
+        "id": "core-resources",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Base",
+            "url": "https://docs.base.org/get-started/base",
+            "description": "Orient your team to Base's current chain model and first-party product primitives."
+          },
+          {
+            "hyperlink": "Connect to Base",
+            "url": "https://docs.base.org/get-started/connect-to-base",
+            "description": "Configure Base mainnet or Sepolia with the correct chain ID, RPC endpoint, and explorer."
+          },
+          {
+            "hyperlink": "Get Funds",
+            "url": "https://docs.base.org/get-started/get-funds",
+            "description": "Acquire or bridge mainnet funds and get Base Sepolia ETH or USDC for testing."
+          },
+          {
+            "hyperlink": "Make a Transaction",
+            "url": "https://docs.base.org/get-started/make-a-transaction",
+            "description": "Send a first typed Base transaction with Viem before adding a larger application stack."
+          },
+          {
+            "hyperlink": "SDKs and APIs",
+            "url": "https://docs.base.org/get-started/sdks-and-apis",
+            "description": "Choose the maintained first-party entry point for RPC, verification, local tooling, or migrated products."
+          }
+        ]
+      }
+    ]
+  }
+]

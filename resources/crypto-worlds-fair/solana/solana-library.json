@@ -1,0 +1,165 @@
+[
+  {
+    "id": "library-start-here",
+    "title": "Start Here",
+    "summary": "The shortest path from zero to your first Solana build.",
+    "groups": [
+      {
+        "id": "core-docs",
+        "title": "Core Docs",
+        "links": [
+          {
+            "hyperlink": "Setup Your Environment",
+            "url": "https://solana.com/docs/intro/installation",
+            "description": "Use the maintained installation guide and confirm its displayed CLI and Anchor versions at install time. The toolchain changes quickly."
+          }
+        ]
+      },
+      {
+        "id": "starter-pack",
+        "title": "Starter Pack",
+        "links": [
+          {
+            "hyperlink": "Solana Playground",
+            "url": "https://beta.solpg.io/",
+            "description": "The browser IDE is the environment used by Solana's current official quick start. Official docs limit browser-wallet use to development and testing, so teams should move durable work and secrets into a local repository."
+          },
+          {
+            "hyperlink": "Solana Stack Exchange",
+            "url": "https://solana.stackexchange.com/",
+            "description": "The question index showed new and recently updated Solana questions at audit time. Answers vary in age and may target older SDK versions, so verify code against current official docs."
+          },
+          {
+            "hyperlink": "Solana MCP",
+            "url": "https://mcp.solana.com/",
+            "description": "Solana's official MCP supplies current documentation retrieval plus Rust checks and autofixes for Anchor and Pinocchio. Treat generated fixes as reviewable suggestions; it does not replace tests or security review."
+          }
+        ]
+      },
+      {
+        "id": "wallets-onboarding",
+        "title": "Wallets + Onboarding",
+        "links": [
+          {
+            "hyperlink": "Phantom Connect",
+            "url": "https://docs.phantom.com/phantom-connect",
+            "description": "The maintained docs cover embedded and injected Phantom connections. App registration, SDK limits, and vendor custody/authentication choices must be evaluated before selecting it over Wallet Standard."
+          },
+          {
+            "hyperlink": "React Starter Template",
+            "url": "https://github.com/Th3Ya0vi/phantom-embedded-react-starter",
+            "description": "The 2026-04-27 template combines Phantom SDK 2.0.2 and Kit 5.4 with legacy web3.js packages. It is useful compatibility evidence, not a clean new-app baseline, and it declares no repository license."
+          },
+          {
+            "hyperlink": "JS Template",
+            "url": "https://github.com/Th3Ya0vi/phantom-embedded-js",
+            "description": "The template was updated 2026-04-14 and uses @phantom/browser-sdk 2.0.1 with web3.js v1. It is unofficial and declares no repository license, so inspect rather than copy or redistribute it."
+          },
+          {
+            "hyperlink": "Privy",
+            "url": "https://docs.privy.io/basics/react/quickstart",
+            "description": "Follow the React quickstart for Solana support. Its examples use web3.js-compatible types, so Kit applications should isolate that boundary."
+          },
+          {
+            "hyperlink": "Privy Agent CLI + Sandbox",
+            "url": "https://agents.privy.io",
+            "description": "Privy's live agent skill and sandbox document Solana wallet creation, signing, and transaction submission. It is a vendor account path and sandbox sessions are not a substitute for production key-management design."
+          },
+          {
+            "hyperlink": "Coinbase Onramp & Offramp",
+            "url": "https://docs.cdp.coinbase.com/onramp/introduction/welcome",
+            "description": "Coinbase documents Solana among supported onramp destinations. Full access, asset coverage, limits, and regional availability are account- and jurisdiction-dependent, so this is an optional fiat integration."
+          },
+          {
+            "hyperlink": "Coinbase Wallet Product Guide",
+            "url": "https://docs.cdp.coinbase.com/wallets/non-custodial-wallets/overview",
+            "description": "Compare non-custodial wallet options, then confirm the chosen product supports Solana instead of assuming support across the wallet family."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "learn",
+    "title": "Learn Solana",
+    "summary": "Guides, courses, and video content for every skill level.",
+    "groups": [
+      {
+        "id": "guides",
+        "title": "Guides",
+        "links": [
+          {
+            "hyperlink": "Build a CRUD dApp",
+            "url": "https://solana.com/developers/cookbook/development/crud-dapp",
+            "description": "Use this scaffolded Anchor recipe as an example after choosing the current client stack."
+          },
+          {
+            "hyperlink": "Solana Cookbook",
+            "url": "https://solana.com/developers/cookbook",
+            "description": "Browse maintained official recipes, including current development and Surfpool material."
+          }
+        ]
+      },
+      {
+        "id": "courses",
+        "title": "Courses",
+        "links": [
+          {
+            "hyperlink": "RiseIn",
+            "url": "https://www.risein.com/courses/build-on-solana",
+            "description": "The course page is live and presents a practical free learning path. It does not expose a reliable pinned toolchain on the landing page, so learners must reconcile exercises with current Kit and Anchor documentation."
+          },
+          {
+            "hyperlink": "RareSkills: ETH to Solana",
+            "url": "https://www.rareskills.io/solana-tutorial",
+            "description": "The tutorial is unusually useful for translating EVM concepts, but its setup explicitly targets Anchor 0.29 and Solana 1.16.25 and later examples use web3.js. Keep as optional conceptual material, not copy-paste setup."
+          }
+        ]
+      },
+      {
+        "id": "videos",
+        "title": "Videos",
+        "links": [
+          {
+            "hyperlink": "SolAndy",
+            "url": "https://www.youtube.com/solandy",
+            "description": "The channel published new Solana material in 2026 and remains an active teaching source. Videos are supplementary and each upload's code/version context must be checked independently."
+          },
+          {
+            "hyperlink": "Solana Developer Bootcamp 2026",
+            "url": "https://www.youtube.com/watch?v=2pcm7ICRJKU",
+            "description": "This official 2026 bootcamp, published 2026-04-07, covers 12 projects and production-oriented lessons. Verify package versions, CLI commands, and generated scaffolds against current docs before copying them."
+          },
+          {
+            "hyperlink": "Solana Bytes",
+            "url": "https://www.youtube.com/watch?v=pRYs49MqapI&list=PLilwLeBwGuK51Ji870apdb88dnBr1Xqhm",
+            "description": "The official 2022-09-01 video explains the Solana programming model. It remains conceptually useful but is not current SDK or setup documentation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "examples",
+    "title": "Examples + Reference",
+    "summary": "Open-source implementations to learn from and build on.",
+    "groups": [
+      {
+        "id": "open-source-refs",
+        "title": "",
+        "links": [
+          {
+            "hyperlink": "Solana Open-Source Software",
+            "url": "https://github.com/StockpileLabs/awesome-solana-oss",
+            "description": "The curated repository was updated in August 2026 and remains useful for discovery. It is a list, not proof that every linked project is maintained or adopted; each dependency still requires its own audit."
+          },
+          {
+            "hyperlink": "Solana Actions Examples",
+            "url": "https://github.com/solana-developers/solana-actions/tree/main/examples",
+            "description": "The official examples still demonstrate Actions/Blinks, but the repository's last substantive code activity is older and its packages use the legacy web3.js client path. Pair it with the current Actions docs and pin dependencies."
+          }
+        ]
+      }
+    ]
+  }
+]

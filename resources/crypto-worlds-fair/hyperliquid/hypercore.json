@@ -1,0 +1,63 @@
+[
+  {
+    "id": "data-and-actions",
+    "title": "Data and actions",
+    "summary": "Use the read-only information API, signed exchange actions, and reconnect-safe streams as separate parts of the application.",
+    "groups": [
+      {
+        "id": "api-reference",
+        "title": "API reference",
+        "links": [
+          {
+            "hyperlink": "Info endpoint",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint",
+            "description": "Query market metadata, books, fills, orders, and user state without signing."
+          },
+          {
+            "hyperlink": "Exchange endpoint",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
+            "description": "Reference signed orders, cancels, transfers, API-wallet approvals, builder actions, and response shapes."
+          },
+          {
+            "hyperlink": "WebSocket API",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket",
+            "description": "Stream market and user updates on mainnet or testnet with explicit reconnect and heartbeat handling."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "signing-and-precision",
+    "title": "Signing and precision",
+    "summary": "These references cover the mistakes that most often cause rejected actions or incorrect account queries.",
+    "groups": [
+      {
+        "id": "action-safety",
+        "title": "Action safety",
+        "links": [
+          {
+            "hyperlink": "Signing guide",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/signing",
+            "description": "Match the two signing schemes, MessagePack field order, normalized numbers, and lowercase addresses exactly."
+          },
+          {
+            "hyperlink": "Nonces and API wallets",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/nonces-and-api-wallets",
+            "description": "Design unique per-signer nonces and separate agent wallets across concurrent processes and subaccounts."
+          },
+          {
+            "hyperlink": "Tick and lot size",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/tick-and-lot-size",
+            "description": "Round prices and sizes to the protocol's significant-figure and asset-decimal rules before signing."
+          },
+          {
+            "hyperlink": "Asset IDs",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids",
+            "description": "Resolve different encodings for native perps, HIP-3 perps, spot pairs, tokens, and testnet assets."
+          }
+        ]
+      }
+    ]
+  }
+]

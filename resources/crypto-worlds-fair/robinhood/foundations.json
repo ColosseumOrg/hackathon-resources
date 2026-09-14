@@ -1,0 +1,68 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Configure the live network, learn the Arbitrum-specific execution rules, deploy on testnet, and check service health before debugging application code.",
+    "groups": [
+      {
+        "id": "core-resources",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Robinhood Chain developer documentation",
+            "url": "https://docs.robinhood.com/chain/",
+            "description": "Official entry point for the permissionless EVM Layer 2, with routes to network, contract, asset, bridge, oracle, and operations documentation."
+          },
+          {
+            "hyperlink": "Connect to Robinhood Chain",
+            "url": "https://docs.robinhood.com/chain/connecting/",
+            "description": "Copy the official mainnet and testnet chain IDs, public RPCs, explorers, sequencer feeds, and wallet configuration; public endpoints are rate-limited and not for production."
+          },
+          {
+            "hyperlink": "Deploy smart contracts",
+            "url": "https://docs.robinhood.com/chain/deploy-smart-contracts/",
+            "description": "Deploy and verify Solidity contracts with Foundry or Hardhat, using testnet first and Blockscout for source verification."
+          },
+          {
+            "hyperlink": "Robinhood Chain testnet faucet",
+            "url": "https://faucet.testnet.chain.robinhood.com/",
+            "description": "Request 0.01 testnet ETH and five of each listed Stock Token once every 24 hours. Faucet eligibility and actual claim execution remain untested."
+          },
+          {
+            "hyperlink": "Differences from Ethereum",
+            "url": "https://docs.robinhood.com/chain/differences-from-ethereum/",
+            "description": "Required reading for Nitro block semantics, fee accounting, address aliasing, finality, transaction ordering and screening, and the 96 KB contract-size limit."
+          },
+          {
+            "hyperlink": "Robinhood Chain status",
+            "url": "https://status.robinhoodchain.offchain.io/",
+            "description": "Check mainnet and testnet service health and upgrade notices before treating an RPC, feed, or sequencer issue as an application bug."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "verify-network",
+    "title": "Verify network activity",
+    "summary": "Use the explorers linked by the official network guide to inspect transactions, contracts, logs, and verification state.",
+    "groups": [
+      {
+        "id": "network-explorers",
+        "title": "Network explorers",
+        "links": [
+          {
+            "hyperlink": "Robinhood Chain mainnet explorer",
+            "url": "https://robinhoodchain.blockscout.com/",
+            "description": "Inspect and verify mainnet contracts, transactions, addresses, blocks, and logs on the official Blockscout instance."
+          },
+          {
+            "hyperlink": "Robinhood Chain testnet explorer",
+            "url": "https://explorer.testnet.chain.robinhood.com/",
+            "description": "Inspect testnet activity and verified contracts; the homepage exposed stale placeholder-looking summary data during review, while its API and the testnet RPC returned current blocks."
+          }
+        ]
+      }
+    ]
+  }
+]

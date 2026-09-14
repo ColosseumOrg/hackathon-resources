@@ -1,0 +1,51 @@
+[
+  {
+    "id": "payment-flows",
+    "title": "Build and control payments",
+    "summary": "Implement transfers and confirmation first; add sponsorship, virtual addresses, or receive controls only when the product needs them.",
+    "groups": [
+      {
+        "id": "core-payment-flows",
+        "title": "Core payment flows",
+        "links": [
+          {
+            "hyperlink": "Send a payment",
+            "url": "https://tempo.xyz/developers/docs/guide/payments/send-a-payment",
+            "description": "Build TIP-20 transfers with memos and current Viem/Wagmi primitives. Verify the emitted recipient because a blocked transfer can succeed at the transaction level."
+          },
+          {
+            "hyperlink": "Accept a payment",
+            "url": "https://tempo.xyz/developers/docs/guide/payments/accept-a-payment",
+            "description": "Confirm incoming payments through balances or Transfer events using TypeScript, Rust, Python, or Go examples."
+          },
+          {
+            "hyperlink": "Tempo transactions",
+            "url": "https://tempo.xyz/developers/docs/guide/tempo-transaction",
+            "description": "Advanced transaction type for batching, fee sponsorship, fee-token selection, access keys, concurrent nonce lanes, and validity windows."
+          }
+        ]
+      },
+      {
+        "id": "advanced-payment-controls",
+        "title": "Advanced payment controls",
+        "links": [
+          {
+            "hyperlink": "Sponsor user fees",
+            "url": "https://tempo.xyz/developers/docs/guide/payments/sponsor-user-fees",
+            "description": "Integrate fee-payer flows and operational limits. The public sponsor is testnet-only; production use requires an approved hosted or self-managed payer."
+          },
+          {
+            "hyperlink": "Virtual addresses",
+            "url": "https://tempo.xyz/developers/docs/guide/payments/virtual-addresses",
+            "description": "Create distinct customer deposit addresses that forward TIP-20 funds to a master address. Advanced: balances stay at zero and address mining adds latency."
+          },
+          {
+            "hyperlink": "Receive policies",
+            "url": "https://tempo.xyz/developers/docs/guide/payments/configure-receive-policies",
+            "description": "Configure account-level inbound token controls and recovery. Advanced: blocked transfers can emit receipts instead of reverting, so index guard events."
+          }
+        ]
+      }
+    ]
+  }
+]

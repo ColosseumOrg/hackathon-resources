@@ -1,0 +1,35 @@
+[
+  {
+    "id": "build-programs",
+    "title": "Build programs and typed clients",
+    "summary": "Use Anchor for the default high-level program path; choose Pinocchio or generated clients only for a concrete low-level or maintenance need.",
+    "groups": [
+      {
+        "id": "frameworks",
+        "title": "Frameworks and generation",
+        "links": [
+          {
+            "hyperlink": "Anchor docs",
+            "url": "https://www.anchor-lang.com/docs",
+            "description": "Build programs with account constraints, IDLs, clients, and an established test workflow. Anchor 1.x renamed its TypeScript client to @anchor-lang/core, which still depends on web3.js v1, so match the docs and package major."
+          },
+          {
+            "hyperlink": "Official Rust SDKs and Pinocchio",
+            "url": "https://solana.com/docs/clients/official/rust",
+            "description": "Compare the standard program SDK with Pinocchio's lower-level, zero-dependency path before accepting its added validation burden."
+          },
+          {
+            "hyperlink": "Codama",
+            "url": "https://github.com/codama-idl/codama",
+            "description": "Generate Kit-compatible TypeScript clients and documentation from Codama or converted Anchor IDLs."
+          },
+          {
+            "hyperlink": "Solana program examples",
+            "url": "https://github.com/solana-foundation/program-examples",
+            "description": "Compare maintained native, Anchor, and Pinocchio samples without mistaking examples for deployed-app architecture."
+          }
+        ]
+      }
+    ]
+  }
+]

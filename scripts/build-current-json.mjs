@@ -6,6 +6,11 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(SCRIPT_DIR, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 
+// Track ids are consumed by the civitas frontend, which validates them against
+// this pattern and caps the list at MAX_TRACKS entries.
+const SLUG_PATTERN = /^[a-z0-9][a-z0-9-]*$/;
+const MAX_TRACKS = 20;
+
 function fail(message) {
   throw new Error(message);
 }
@@ -40,6 +45,17 @@ function assertOptionalString(value, label) {
   }
 
   return assertString(value, label);
+}
+
+function assertSlug(value, label) {
+  const slug = assertString(value, label);
+  if (!SLUG_PATTERN.test(slug)) {
+    fail(
+      `${label} must be a lowercase slug matching ${SLUG_PATTERN} (got "${slug}")`,
+    );
+  }
+
+  return slug;
 }
 
 function assertOptionalUrl(value, label) {
@@ -107,6 +123,33 @@ function assertRelativePath(value, label) {
   }
 
   return relativePath;
+}
+
+function sameStringArray(left, right) {
+  return (
+    left.length === right.length &&
+    left.every((entry, index) => entry === right[index])
+  );
+}
+
+function sameResourceGroups(left, right) {
+  if (left === undefined || right === undefined) {
+    return left === right;
+  }
+
+  return (
+    left.length === right.length &&
+    left.every((group, index) => {
+      const other = right[index];
+
+      return (
+        group.id === other.id &&
+        group.title === other.title &&
+        group.description === other.description &&
+        sameStringArray(group.keys, other.keys)
+      );
+    })
+  );
 }
 
 async function readTextFile(relativePath) {
@@ -228,50 +271,122 @@ function normalizeRpcProvider(value, slug) {
   };
 }
 
-function normalizeHackathon(value, slug) {
-  const hackathon = assertObject(value, `hackathons.${slug}`);
+function normalizeResourceGroups(value, label) {
+  if (value === undefined) {
+    return undefined;
+  }
 
-  return {
-    name: assertString(hackathon.name, `hackathons.${slug}.name`),
-    sponsors: assertStringArray(
-      hackathon.sponsors,
-      `hackathons.${slug}.sponsors`,
-    ),
-    comingSoon:
-      hackathon.comingSoon === undefined
-        ? []
-        : assertStringArray(
-            hackathon.comingSoon,
-            `hackathons.${slug}.comingSoon`,
-          ),
-    resources: assertStringArray(
-      hackathon.resources,
-      `hackathons.${slug}.resources`,
-    ),
-    resourceGroups:
-      hackathon.resourceGroups === undefined
-        ? undefined
-        : assertArray(
-            hackathon.resourceGroups,
-            `hackathons.${slug}.resourceGroups`,
-          ).map((groupValue, index) => {
-            const groupLabel = `hackathons.${slug}.resourceGroups[${index}]`;
-            const group = assertObject(groupValue, groupLabel);
+  return assertArray(value, label).map((groupValue, index) => {
+    const groupLabel = `${label}[${index}]`;
+    const group = assertObject(groupValue, groupLabel);
 
-            return {
-              id: assertString(group.id, `${groupLabel}.id`),
-              title: assertString(group.title, `${groupLabel}.title`),
-              keys: assertStringArray(group.keys, `${groupLabel}.keys`),
-            };
+    return {
+      id: assertString(group.id, `${groupLabel}.id`),
+      title: assertString(group.title, `${groupLabel}.title`),
+      ...(group.description === undefined
+        ? {}
+        : {
+            description: assertString(
+              group.description,
+              `${groupLabel}.description`,
+            ),
           }),
-    rpcProviders:
-      hackathon.rpcProviders === undefined
+      keys: assertStringArray(group.keys, `${groupLabel}.keys`),
+    };
+  });
+}
+
+// A "scope" is anything that carries a resource bundle: a hackathon entry or
+// one of its tracks. `label` prefixes error messages, e.g.
+// `hackathons.crypto-worlds-fair` or `hackathons.crypto-worlds-fair.tracks.ethereum`.
+function normalizeResourceScope(scope, label, { rpcProvidersRequired }) {
+  return {
+    sponsors: assertStringArray(scope.sponsors, `${label}.sponsors`),
+    comingSoon:
+      scope.comingSoon === undefined
         ? []
-        : assertStringArray(
-            hackathon.rpcProviders,
-            `hackathons.${slug}.rpcProviders`,
-          ),
+        : assertStringArray(scope.comingSoon, `${label}.comingSoon`),
+    resources: assertStringArray(scope.resources, `${label}.resources`),
+    resourceGroups: normalizeResourceGroups(
+      scope.resourceGroups,
+      `${label}.resourceGroups`,
+    ),
+    rpcProviders:
+      scope.rpcProviders === undefined && !rpcProvidersRequired
+        ? []
+        : assertStringArray(scope.rpcProviders, `${label}.rpcProviders`),
   };
+}
+
+function normalizeTracks(value, label) {
+  if (value === undefined) {
+    return undefined;
+  }
+
+  const entries = assertArray(value, label);
+  if (entries.length === 0) {
+    fail(`${label} must include at least one track when present`);
+  }
+
+  if (entries.length > MAX_TRACKS) {
+    fail(`${label} must include at most ${MAX_TRACKS} tracks`);
+  }
+
+  const seenIds = new Set();
+
+  return entries.map((entry, index) => {
+    const indexLabel = `${label}[${index}]`;
+    const track = assertObject(entry, indexLabel);
+    const id = assertSlug(track.id, `${indexLabel}.id`);
+
+    if (seenIds.has(id)) {
+      fail(`${label} contains duplicate track id: ${id}`);
+    }
+    seenIds.add(id);
+
+    return {
+      id,
+      name: assertString(track.name, `${indexLabel}.name`),
+      ...normalizeResourceScope(track, `${label}.${id}`, {
+        rpcProvidersRequired: true,
+      }),
+    };
+  });
+}
+
+function normalizeHackathon(value, slug) {
+  const label = `hackathons.${slug}`;
+  const hackathon = assertObject(value, label);
+
+  const normalized = {
+    name: assertString(hackathon.name, `${label}.name`),
+    ...normalizeResourceScope(hackathon, label, { rpcProvidersRequired: false }),
+    tracks: normalizeTracks(hackathon.tracks, `${label}.tracks`),
+  };
+
+  // The top-level bundle is the default track's bundle. It is written out
+  // explicitly (not inferred) so consumers that ignore `tracks` keep working.
+  // Compare every source field so the two published bundles cannot drift.
+  if (normalized.tracks) {
+    const defaultTrack = normalized.tracks[0];
+
+    if (
+      !sameStringArray(defaultTrack.sponsors, normalized.sponsors) ||
+      !sameStringArray(defaultTrack.comingSoon, normalized.comingSoon) ||
+      !sameStringArray(defaultTrack.resources, normalized.resources) ||
+      !sameResourceGroups(
+        defaultTrack.resourceGroups,
+        normalized.resourceGroups,
+      ) ||
+      !sameStringArray(defaultTrack.rpcProviders, normalized.rpcProviders)
+    ) {
+      fail(
+        `${label}.tracks[0] ("${defaultTrack.id}") is the default track, so its resource bundle must equal the top-level bundle`,
+      );
+    }
+  }
+
+  return normalized;
 }
 
 function normalizeManifest(value) {
@@ -363,34 +478,66 @@ async function loadResourceSections(resourceKey) {
   return normalizeResourceSections(value, resourceKey);
 }
 
-async function buildHackathonPayload(slug, hackathon, manifest) {
+// Memoises sponsor markdown and resource JSON reads across the top-level bundle
+// and every track of one hackathon, so a sponsor listed on eight tracks is read
+// once. Repeated occurrences serialise to identical JSON.
+function createBundleLoaders(manifest) {
+  const sponsorsBySlug = new Map();
+  const sectionsByResourceKey = new Map();
+
+  return {
+    loadSponsor(slug) {
+      if (!sponsorsBySlug.has(slug)) {
+        sponsorsBySlug.set(slug, loadSponsor(slug, manifest.sponsors[slug]));
+      }
+
+      return sponsorsBySlug.get(slug);
+    },
+    loadResourceSections(resourceKey) {
+      if (!sectionsByResourceKey.has(resourceKey)) {
+        sectionsByResourceKey.set(resourceKey, loadResourceSections(resourceKey));
+      }
+
+      return sectionsByResourceKey.get(resourceKey);
+    },
+  };
+}
+
+// Turns a normalised scope (hackathon or track) into the published bundle:
+// { sponsors, comingSoon, resources, rpcProviders, resourceGroups? }.
+async function buildResourceBundle(scope, label, manifest, loaders) {
   const resources = [];
   const sectionsByResourceKey = new Map();
 
-  for (const resourceKey of hackathon.resources) {
-    const sections = await loadResourceSections(resourceKey);
+  for (const resourceKey of scope.resources) {
+    let sections;
+    try {
+      sections = await loaders.loadResourceSections(resourceKey);
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        fail(`${label}.resources references missing resource: ${resourceKey}`);
+      }
+
+      throw error;
+    }
+
     sectionsByResourceKey.set(resourceKey, sections);
     resources.push(...sections);
   }
 
   const sponsors = [];
-  for (const sponsorSlug of hackathon.sponsors) {
-    const sponsor = manifest.sponsors[sponsorSlug];
-    if (!sponsor) {
-      fail(
-        `hackathons.${slug}.sponsors references missing sponsor: ${sponsorSlug}`,
-      );
+  for (const sponsorSlug of scope.sponsors) {
+    if (!manifest.sponsors[sponsorSlug]) {
+      fail(`${label}.sponsors references missing sponsor: ${sponsorSlug}`);
     }
 
-    sponsors.push(await loadSponsor(sponsorSlug, sponsor));
+    sponsors.push(await loaders.loadSponsor(sponsorSlug));
   }
 
-  const comingSoon = hackathon.comingSoon.map((sponsorSlug) => {
+  const comingSoon = scope.comingSoon.map((sponsorSlug) => {
     const sponsor = manifest.sponsors[sponsorSlug];
     if (!sponsor) {
-      fail(
-        `hackathons.${slug}.comingSoon references missing sponsor: ${sponsorSlug}`,
-      );
+      fail(`${label}.comingSoon references missing sponsor: ${sponsorSlug}`);
     }
 
     return {
@@ -400,43 +547,72 @@ async function buildHackathonPayload(slug, hackathon, manifest) {
     };
   });
 
-  const rpcProviders = hackathon.rpcProviders.map((providerSlug) => {
+  const rpcProviders = scope.rpcProviders.map((providerSlug) => {
     const provider = manifest.rpcProviders[providerSlug];
     if (!provider) {
-      fail(
-        `hackathons.${slug}.rpcProviders references missing provider: ${providerSlug}`,
-      );
+      fail(`${label}.rpcProviders references missing provider: ${providerSlug}`);
     }
 
     return provider;
   });
 
-  const payload = {
-    hackathon: {
-      name: hackathon.name,
-      slug,
-    },
+  const bundle = {
     sponsors,
     comingSoon,
     resources,
     rpcProviders,
   };
 
-  if (hackathon.resourceGroups) {
-    payload.resourceGroups = hackathon.resourceGroups.map((group) => ({
+  if (scope.resourceGroups) {
+    bundle.resourceGroups = scope.resourceGroups.map((group) => ({
       id: group.id,
       title: group.title,
+      ...(group.description === undefined
+        ? {}
+        : { description: group.description }),
       sections: group.keys.flatMap((resourceKey) => {
         const sections = sectionsByResourceKey.get(resourceKey);
         if (!sections) {
           fail(
-            `hackathons.${slug}.resourceGroups.${group.id} references missing resource: ${resourceKey}`,
+            `${label}.resourceGroups.${group.id} references missing resource: ${resourceKey}`,
           );
         }
 
         return sections;
       }),
     }));
+  }
+
+  return bundle;
+}
+
+async function buildHackathonPayload(slug, hackathon, manifest) {
+  const label = `hackathons.${slug}`;
+  const loaders = createBundleLoaders(manifest);
+
+  const payload = {
+    hackathon: {
+      name: hackathon.name,
+      slug,
+    },
+    ...(await buildResourceBundle(hackathon, label, manifest, loaders)),
+  };
+
+  if (hackathon.tracks) {
+    payload.tracks = [];
+
+    for (const track of hackathon.tracks) {
+      payload.tracks.push({
+        id: track.id,
+        name: track.name,
+        ...(await buildResourceBundle(
+          track,
+          `${label}.tracks.${track.id}`,
+          manifest,
+          loaders,
+        )),
+      });
+    }
   }
 
   return payload;
@@ -460,7 +636,17 @@ async function main() {
     hackathons: Object.fromEntries(
       Object.entries(manifest.hackathons).map(([slug, hackathon]) => [
         slug,
-        { name: hackathon.name },
+        {
+          name: hackathon.name,
+          ...(hackathon.tracks
+            ? {
+                tracks: hackathon.tracks.map((track) => ({
+                  id: track.id,
+                  name: track.name,
+                })),
+              }
+            : {}),
+        },
       ]),
     ),
   };
@@ -476,7 +662,7 @@ async function main() {
     }
 
     console.log(
-      `Built ${slug}.json (${payload.sponsors.length} sponsors, ${payload.resources.length} resource sections)`,
+      `Built ${slug}.json (${payload.sponsors.length} sponsors, ${payload.resources.length} resource sections, ${payload.tracks?.length ?? 0} tracks)`,
     );
   }
 

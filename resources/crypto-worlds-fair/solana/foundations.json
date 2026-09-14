@@ -1,0 +1,40 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Learn the execution model, make one transaction, then choose the current TypeScript client and a maintained scaffold or course.",
+    "groups": [
+      {
+        "id": "core",
+        "title": "Core resources",
+        "links": [
+          {
+            "hyperlink": "Solana core docs",
+            "url": "https://solana.com/docs",
+            "description": "Use the first-party map for accounts, transactions, programs, RPC, validators, payments, and tools."
+          },
+          {
+            "hyperlink": "Browser quick start",
+            "url": "https://solana.com/docs/intro/quick-start",
+            "description": "Complete a first transaction and program exercise in Solana Playground. Its burner wallet and browser environment are for development and testing only."
+          },
+          {
+            "hyperlink": "Official JavaScript and TypeScript SDKs",
+            "url": "https://solana.com/docs/clients/official/javascript",
+            "description": "Start new TypeScript applications with @solana/kit and identify where legacy web3.js compatibility is still required."
+          },
+          {
+            "hyperlink": "Blueshift: using Solana",
+            "url": "https://learn.blueshift.gg/en/courses/understanding-solana/using-solana",
+            "description": "Follow an active structured course. Some exercises still use legacy-compatible packages, so compare setup and client choices with current docs."
+          },
+          {
+            "hyperlink": "create-solana-dapp",
+            "url": "https://github.com/solana-foundation/create-solana-dapp",
+            "description": "Generate an app from a maintained Solana Foundation template, then inspect the selected template's client dependencies."
+          }
+        ]
+      }
+    ]
+  }
+]

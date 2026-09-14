@@ -1,0 +1,35 @@
+[
+  {
+    "id": "checkout-agentic",
+    "title": "Checkout and paid APIs",
+    "summary": "Choose Base Pay for interactive USDC checkout or x402 v2 for metered HTTP APIs, then verify settlement server-side.",
+    "groups": [
+      {
+        "id": "payment-flows",
+        "title": "Payment flows",
+        "links": [
+          {
+            "hyperlink": "Accept Payments on Base",
+            "url": "https://docs.base.org/get-started/accept-payments",
+            "description": "Choose among immediate payment, authorization, verification, refund, payout, recurring, and x402 flows."
+          },
+          {
+            "hyperlink": "Base Pay: Accept Payments",
+            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/guides/accept-payments",
+            "description": "Add one-tap USDC checkout and verify the payment ID, sender, amount, and recipient on your backend."
+          },
+          {
+            "hyperlink": "x402 seller quickstart",
+            "url": "https://docs.x402.org/getting-started/quickstart-for-sellers",
+            "description": "Protect server routes with x402 v2 and prove the flow on Base Sepolia before choosing production settlement."
+          },
+          {
+            "hyperlink": "x402 network and token support",
+            "url": "https://docs.x402.org/core-concepts/network-and-token-support",
+            "description": "Configure Base CAIP-2 IDs, USDC, transfer methods, and a production-capable facilitator path."
+          }
+        ]
+      }
+    ]
+  }
+]

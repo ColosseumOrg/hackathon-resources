@@ -1,0 +1,51 @@
+[
+  {
+    "id": "start-here",
+    "title": "Start here",
+    "summary": "Choose the correct network, learn Tempo's EVM differences, and start from the maintained client or contract stack.",
+    "groups": [
+      {
+        "id": "network-basics",
+        "title": "Network and funds",
+        "links": [
+          {
+            "hyperlink": "Connection details",
+            "url": "https://tempo.xyz/developers/docs/quickstart/connection-details",
+            "description": "Canonical mainnet and Moderato testnet chain IDs, RPC and WebSocket endpoints, and explorers. Confirm this page before copying network constants."
+          },
+          {
+            "hyperlink": "Getting funds",
+            "url": "https://tempo.xyz/developers/docs/guide/getting-funds",
+            "description": "Routes to production assets on mainnet and faucet assets on Moderato. Keep test faucet flows out of production UX."
+          }
+        ]
+      },
+      {
+        "id": "application-stack",
+        "title": "Application and contract stack",
+        "links": [
+          {
+            "hyperlink": "TypeScript SDK",
+            "url": "https://tempo.xyz/developers/docs/sdk/typescript",
+            "description": "Official Viem-first setup for standard EVM actions plus Tempo transactions, batching, fee tokens, sponsorship, and testnet funding."
+          },
+          {
+            "hyperlink": "Accounts SDK",
+            "url": "https://accounts.tempo.xyz/docs",
+            "description": "Account onboarding and signing adapters for Tempo Wallet, passkeys, Turnkey, Privy, private keys, and custom integrations."
+          },
+          {
+            "hyperlink": "EVM compatibility and differences",
+            "url": "https://tempo.xyz/developers/docs/quickstart/evm-compatibility",
+            "description": "Read before porting an EVM app: no native gas token, unusual balance opcodes, selectable fee tokens, higher state-creation gas, and deterministic finality."
+          },
+          {
+            "hyperlink": "Foundry on Tempo",
+            "url": "https://tempo.xyz/developers/docs/sdk/foundry",
+            "description": "Current upstream Foundry workflow for Tempo projects, testing, deployment, verification, sponsorship, fee tokens, and nonce features."
+          }
+        ]
+      }
+    ]
+  }
+]

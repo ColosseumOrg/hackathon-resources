@@ -1,0 +1,43 @@
+[
+  {
+    "id": "fees-testing",
+    "title": "Fees and local testing",
+    "summary": "Estimate both execution and data-posting costs, then test at the fidelity required by the application's cross-layer behavior.",
+    "groups": [
+      {
+        "id": "fees-local",
+        "title": "Fees and local infrastructure",
+        "links": [
+          {
+            "hyperlink": "How to estimate gas",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/how-to-estimate-gas",
+            "description": "Separate L2 execution from the changing parent-chain data component and inspect detailed estimates through NodeInterface."
+          },
+          {
+            "hyperlink": "Local full-chain simulation",
+            "url": "https://docs.arbitrum.io/run-arbitrum-node/run-local-full-chain-simulation",
+            "description": "Run local Geth and Nitro infrastructure with optional bridge, L3, explorer, and Stylus support for cross-layer tests."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced-chains",
+    "title": "Advanced chain operations",
+    "summary": "Treat a custom Arbitrum chain as a separate infrastructure program after the application path is proven.",
+    "groups": [
+      {
+        "id": "chain-operations",
+        "title": "Chain operations",
+        "links": [
+          {
+            "hyperlink": "Production Arbitrum chain overview",
+            "url": "https://docs.arbitrum.io/launch-arbitrum-chain/quickstart/sdk-introduction",
+            "description": "Optionally scope a custom Rollup or AnyTrust chain, gas token, rollup deployment, bridge deployment, and node operations."
+          }
+        ]
+      }
+    ]
+  }
+]

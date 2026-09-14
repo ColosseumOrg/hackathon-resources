@@ -1,0 +1,30 @@
+[
+  {
+    "id": "farcaster-mini-apps",
+    "title": "Farcaster Mini Apps",
+    "summary": "Add this surface only when Farcaster distribution is part of the product, using the current Mini App names and packages.",
+    "groups": [
+      {
+        "id": "mini-app-integration",
+        "title": "Mini App integration",
+        "links": [
+          {
+            "hyperlink": "Farcaster Mini Apps getting started",
+            "url": "https://miniapps.farcaster.xyz/docs/getting-started",
+            "description": "Scaffold a Mini App, install the current SDK, and clear the host splash screen correctly."
+          },
+          {
+            "hyperlink": "Ethereum wallets in Farcaster Mini Apps",
+            "url": "https://miniapps.farcaster.xyz/docs/guides/wallets",
+            "description": "Use the host EIP-1193 provider directly or through the current Mini App Wagmi connector on Base."
+          },
+          {
+            "hyperlink": "Publish a Farcaster Mini App",
+            "url": "https://miniapps.farcaster.xyz/docs/guides/publishing",
+            "description": "Publish the domain manifest and use the current miniapp property instead of legacy Frame naming."
+          }
+        ]
+      }
+    ]
+  }
+]

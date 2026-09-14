@@ -1,0 +1,59 @@
+[
+  {
+    "id": "contracts-and-clients",
+    "title": "Contracts and clients",
+    "summary": "Compose audited contract components and connect them to a typed TypeScript application.",
+    "groups": [
+      {
+        "id": "contract-components",
+        "title": "Contract components",
+        "links": [
+          {
+            "hyperlink": "OpenZeppelin Contracts 5.x",
+            "url": "https://docs.openzeppelin.com/contracts/5.x",
+            "description": "Install audited implementations for tokens, access control, signatures, governance, utilities, and upgrade patterns instead of copying snippets."
+          }
+        ]
+      },
+      {
+        "id": "typescript-clients",
+        "title": "TypeScript clients",
+        "links": [
+          {
+            "hyperlink": "viem getting started",
+            "url": "https://viem.sh/docs/getting-started",
+            "description": "Create typed public and wallet clients for Ethereum RPC reads, writes, signatures, logs, and contract calls."
+          },
+          {
+            "hyperlink": "wagmi React getting started",
+            "url": "https://wagmi.sh/react/getting-started",
+            "description": "Add wallet connections and reactive Ethereum state to React through viem-backed hooks and TanStack Query."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "smart-accounts",
+    "title": "Smart accounts",
+    "summary": "Add programmable account behavior only when the product needs batching, recovery, delegated permissions, or sponsored fees.",
+    "groups": [
+      {
+        "id": "account-abstraction",
+        "title": "Account abstraction",
+        "links": [
+          {
+            "hyperlink": "ERC-4337 documentation",
+            "url": "https://docs.erc4337.io/",
+            "description": "Understand UserOperations, EntryPoint, bundlers, paymasters, smart accounts, and the extra infrastructure behind account abstraction."
+          },
+          {
+            "hyperlink": "Safe Protocol Kit",
+            "url": "https://docs.safe.global/sdk/protocol-kit",
+            "description": "Create, configure, sign, and execute transactions from Safe smart accounts with a maintained TypeScript SDK."
+          }
+        ]
+      }
+    ]
+  }
+]

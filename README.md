@@ -29,7 +29,24 @@ Hackathon-specific payloads are published by slug:
 
 ```text
 https://ColosseumOrg.github.io/hackathon-resources/frontier.json
+https://ColosseumOrg.github.io/hackathon-resources/crypto-worlds-fair.json
 ```
+
+### Ecosystem tracks
+
+A multi-chain hackathon can declare `tracks` in `manifest.json`. Each track carries its own
+`sponsors`, `comingSoon`, `resources`, optional `resourceGroups`, and `rpcProviders`, and the
+published payload gains an optional `tracks` array of `{ id, name, ...bundle }` objects with the
+same element shapes as the top-level fields. The top-level bundle is unchanged and always mirrors
+the first track (`tracks[0]`), which is the default ecosystem, so `current.json` consumers that do
+not know about tracks keep working. Consumers that do know about tracks (the Crypto World's Fair
+resources page) read only `tracks`, so the default ecosystem must be listed there too. The
+published `manifest.json` lists each hackathon's `tracks` as `{ id, name }` so the axis can be
+discovered without fetching the full payload.
+
+Curated resource keys can be isolated to one campaign and track, for example
+`crypto-worlds-fair/solana/foundations`. This keeps updates from changing another campaign that
+uses the older shared keys.
 
 ## Sponsor-Hosted Skills
 
