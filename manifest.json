@@ -118,9 +118,10 @@
         }
       ],
       "rpcProviders": [
-        "helius",
-        "triton-one",
-        "fluxrpc"
+        "cwf-helius",
+        "rpc-fast",
+        "cwf-fluxrpc",
+        "cwf-triton-one"
       ],
       "tracks": [
         {
@@ -196,9 +197,10 @@
             }
           ],
           "rpcProviders": [
-            "helius",
-            "triton-one",
-            "fluxrpc"
+            "cwf-helius",
+            "rpc-fast",
+            "cwf-fluxrpc",
+            "cwf-triton-one"
           ]
         },
         {
@@ -1003,6 +1005,54 @@
         {
           "label": "View offer",
           "url": "https://dashboard.fluxbeam.xyz/pricing"
+        }
+      ]
+    },
+    "cwf-helius": {
+      "name": "Helius",
+      "description": "Solana RPC and data APIs with WebSocket support. The free plan includes 1 million credits per month and 10 RPC requests per second for prototyping. Paid plans add capacity and streaming options.",
+      "links": [
+        {
+          "label": "Plans and free tier",
+          "url": "https://www.helius.dev/docs/billing/plans"
+        }
+      ]
+    },
+    "rpc-fast": {
+      "name": "RPC Fast",
+      "description": "Solana RPC with a free Start plan: 1.5 million compute units per month, 15 requests per second, 50 GB of bandwidth, and one WebSocket connection. No credit card required. Heavy RPC methods such as getProgramAccounts and Yellowstone gRPC require a paid plan.",
+      "links": [
+        {
+          "label": "Plans and free tier",
+          "url": "https://rpcfast.com/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://docs.rpcfast.com/rpc-fast-saas-solana/getting-started"
+        }
+      ]
+    },
+    "cwf-fluxrpc": {
+      "name": "FluxRPC",
+      "description": "Solana RPC with bandwidth-based plans and WebSocket subscriptions. The free tier includes 10 GB per month and 15 requests per second, with no credit card required. Paid plans offer additional capacity and Yellowstone gRPC options.",
+      "links": [
+        {
+          "label": "Free tier",
+          "url": "https://fluxrpc.com/free"
+        },
+        {
+          "label": "Compare plans",
+          "url": "https://fluxrpc.com/pricing"
+        }
+      ]
+    },
+    "cwf-triton-one": {
+      "name": "Triton One",
+      "description": "Shared and dedicated Solana RPC infrastructure with JSON-RPC, WebSockets, and Yellowstone gRPC streaming. A paid option for teams that need custom deployments or higher throughput. Pay-as-you-go pricing requires a $125 prepaid minimum.",
+      "links": [
+        {
+          "label": "View pricing",
+          "url": "https://triton.one/pricing"
         }
       ]
     }
