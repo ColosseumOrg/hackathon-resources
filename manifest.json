@@ -51,7 +51,9 @@
       "sponsors": [
         "phantom",
         "squads",
-        "reflect"
+        "reflect",
+        "meteora",
+        "stablecorp"
       ],
       "comingSoon": [
         "raydium"
@@ -120,7 +122,9 @@
           "sponsors": [
             "phantom",
             "squads",
-            "reflect"
+            "reflect",
+            "meteora",
+            "stablecorp"
           ],
           "comingSoon": [
             "raydium"
@@ -856,6 +860,87 @@
       "tags": [
         "defi"
       ]
+    },
+    "meteora": {
+      "name": "Meteora",
+      "description": "Permissionless token launch infrastructure: define how a token launches, trades, and graduates into Meteora liquidity through a configurable on-chain bonding curve.",
+      "skillRepositoryUrl": "https://github.com/MeteoraAg/meteora-invent",
+      "links": [
+        {
+          "label": "Get Started with Meteora DBC",
+          "url": "https://docs.meteora.ag/developer-guides/dbc"
+        },
+        {
+          "label": "Invent CLI",
+          "url": "https://github.com/MeteoraAg/meteora-invent"
+        },
+        {
+          "label": "Next.js Scaffold Template (Fun Launch)",
+          "url": "https://github.com/MeteoraAg/meteora-invent/tree/main/scaffolds/fun-launch"
+        },
+        {
+          "label": "TypeScript SDK",
+          "url": "https://github.com/MeteoraAg/dynamic-bonding-curve-sdk"
+        },
+        {
+          "label": "NPM Package",
+          "url": "https://www.npmjs.com/package/@meteora-ag/dynamic-bonding-curve-sdk"
+        },
+        {
+          "label": "Agent Skill",
+          "url": "https://docs.meteora.ag/agents/skill"
+        },
+        {
+          "label": "Docs",
+          "url": "https://docs.meteora.ag/"
+        }
+      ],
+      "tags": [
+        "defi",
+        "tokens",
+        "launchpad"
+      ],
+      "accentColor": "#F54B00"
+    },
+    "stablecorp": {
+      "name": "Stablecorp",
+      "description": "Form a Delaware C-Corp or Wyoming LLC, open a US business bank account with native USDC treasury, and invoice globally in stablecoins and fiat.",
+      "links": [
+        {
+          "label": "Get Started",
+          "url": "https://mystablecorp.xyz"
+        },
+        {
+          "label": "Form a US company from anywhere",
+          "url": "https://mystablecorp.xyz/guides/how-to-form-us-company-from-abroad"
+        },
+        {
+          "label": "US LLC vs Delaware C-Corp decision guide",
+          "url": "https://mystablecorp.xyz/guides/llc-vs-c-corp-non-resident"
+        },
+        {
+          "label": "83(b) election guide",
+          "url": "https://mystablecorp.xyz/guides/83b-election-guide"
+        },
+        {
+          "label": "Cap table basics",
+          "url": "https://mystablecorp.xyz/guides/cap-table-basics"
+        },
+        {
+          "label": "Open a US business bank account remotely",
+          "url": "https://mystablecorp.xyz/guides/us-business-bank-account-non-resident"
+        },
+        {
+          "label": "Delaware C-Corp for Solana founders",
+          "url": "https://mystablecorp.xyz/guides/delaware-c-corp-formation-guide"
+        }
+      ],
+      "tags": [
+        "incorporation",
+        "banking",
+        "compliance"
+      ],
+      "accentColor": "#2B3BEE"
     }
   },
   "rpcProviders": {
