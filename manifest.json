@@ -944,15 +944,15 @@
         },
         {
           "label": "Invent CLI",
-          "url": "https://github.com/MeteoraAg/meteora-invent"
+          "url": "https://docs.meteora.ag/invent/actions"
         },
         {
           "label": "Next.js Scaffold Template (Fun Launch)",
-          "url": "https://github.com/MeteoraAg/meteora-invent/tree/main/scaffolds/fun-launch"
+          "url": "https://docs.meteora.ag/invent/scaffold/fun-launch"
         },
         {
           "label": "TypeScript SDK",
-          "url": "https://github.com/MeteoraAg/dynamic-bonding-curve-sdk"
+          "url": "https://docs.meteora.ag/developer-guides/dbc/typescript-sdk/getting-started"
         },
         {
           "label": "NPM Package",
@@ -964,7 +964,7 @@
         },
         {
           "label": "Docs",
-          "url": "https://docs.meteora.ag/"
+          "url": "https://docs.meteora.ag/get-started"
         }
       ],
       "tags": [
