@@ -14,14 +14,14 @@
             "description": "Query market metadata, books, fills, orders, and user state without signing."
           },
           {
-            "hyperlink": "Exchange endpoint",
-            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
-            "description": "Reference signed orders, cancels, transfers, API-wallet approvals, builder actions, and response shapes."
-          },
-          {
             "hyperlink": "WebSocket API",
             "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket",
             "description": "Stream market and user updates on mainnet or testnet with explicit reconnect and heartbeat handling."
+          },
+          {
+            "hyperlink": "Exchange endpoint",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/exchange-endpoint",
+            "description": "Reference signed orders, cancels, transfers, API-wallet approvals, builder actions, and response shapes."
           }
         ]
       }
@@ -47,14 +47,14 @@
             "description": "Design unique per-signer nonces and separate agent wallets across concurrent processes and subaccounts."
           },
           {
-            "hyperlink": "Tick and lot size",
-            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/tick-and-lot-size",
-            "description": "Round prices and sizes to the protocol's significant-figure and asset-decimal rules before signing."
-          },
-          {
             "hyperlink": "Asset IDs",
             "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/asset-ids",
             "description": "Resolve different encodings for native perps, HIP-3 perps, spot pairs, tokens, and testnet assets."
+          },
+          {
+            "hyperlink": "Tick and lot size",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/tick-and-lot-size",
+            "description": "Round prices and sizes to the protocol's significant-figure and asset-decimal rules before signing."
           }
         ]
       }

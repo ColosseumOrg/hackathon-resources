@@ -52,19 +52,19 @@
         "phantom",
         "squads",
         "reflect",
-        "meteora",
-        "stablecorp"
+        "meteora"
       ],
       "comingSoon": [
         "raydium"
       ],
       "resources": [
         "crypto-worlds-fair/solana/foundations",
+        "crypto-worlds-fair/solana/solana-library",
         "crypto-worlds-fair/solana/programs",
         "crypto-worlds-fair/solana/testing-security",
         "crypto-worlds-fair/solana/shipping",
-        "crypto-worlds-fair/solana/solana-library",
-        "crypto-worlds-fair/solana/build-paths"
+        "crypto-worlds-fair/solana/build-paths",
+        "crypto-worlds-fair/shared/company-formation"
       ],
       "resourceGroups": [
         {
@@ -72,6 +72,13 @@
           "title": "Foundations",
           "keys": [
             "crypto-worlds-fair/solana/foundations"
+          ]
+        },
+        {
+          "id": "solana-library",
+          "title": "More Solana resources",
+          "keys": [
+            "crypto-worlds-fair/solana/solana-library"
           ]
         },
         {
@@ -96,17 +103,17 @@
           ]
         },
         {
-          "id": "solana-library",
-          "title": "More Solana resources",
-          "keys": [
-            "crypto-worlds-fair/solana/solana-library"
-          ]
-        },
-        {
           "id": "build-paths",
           "title": "Build by Path",
           "keys": [
             "crypto-worlds-fair/solana/build-paths"
+          ]
+        },
+        {
+          "id": "company-formation",
+          "title": "Company formation and banking",
+          "keys": [
+            "crypto-worlds-fair/shared/company-formation"
           ]
         }
       ],
@@ -123,19 +130,19 @@
             "phantom",
             "squads",
             "reflect",
-            "meteora",
-            "stablecorp"
+            "meteora"
           ],
           "comingSoon": [
             "raydium"
           ],
           "resources": [
             "crypto-worlds-fair/solana/foundations",
+            "crypto-worlds-fair/solana/solana-library",
             "crypto-worlds-fair/solana/programs",
             "crypto-worlds-fair/solana/testing-security",
             "crypto-worlds-fair/solana/shipping",
-            "crypto-worlds-fair/solana/solana-library",
-            "crypto-worlds-fair/solana/build-paths"
+            "crypto-worlds-fair/solana/build-paths",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -143,6 +150,13 @@
               "title": "Foundations",
               "keys": [
                 "crypto-worlds-fair/solana/foundations"
+              ]
+            },
+            {
+              "id": "solana-library",
+              "title": "More Solana resources",
+              "keys": [
+                "crypto-worlds-fair/solana/solana-library"
               ]
             },
             {
@@ -167,17 +181,17 @@
               ]
             },
             {
-              "id": "solana-library",
-              "title": "More Solana resources",
-              "keys": [
-                "crypto-worlds-fair/solana/solana-library"
-              ]
-            },
-            {
               "id": "build-paths",
               "title": "Build by Path",
               "keys": [
                 "crypto-worlds-fair/solana/build-paths"
+              ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
               ]
             }
           ],
@@ -195,8 +209,9 @@
           "resources": [
             "crypto-worlds-fair/ethereum/foundations",
             "crypto-worlds-fair/ethereum/application-stack",
+            "crypto-worlds-fair/ethereum/testing-and-security",
             "crypto-worlds-fair/ethereum/data-and-delivery",
-            "crypto-worlds-fair/ethereum/testing-and-security"
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -214,6 +229,13 @@
               ]
             },
             {
+              "id": "testing-and-security",
+              "title": "Testing and security",
+              "keys": [
+                "crypto-worlds-fair/ethereum/testing-and-security"
+              ]
+            },
+            {
               "id": "data-and-delivery",
               "title": "Data and delivery",
               "keys": [
@@ -221,10 +243,10 @@
               ]
             },
             {
-              "id": "testing-and-security",
-              "title": "Testing and security",
+              "id": "company-formation",
+              "title": "Company formation and banking",
               "keys": [
-                "crypto-worlds-fair/ethereum/testing-and-security"
+                "crypto-worlds-fair/shared/company-formation"
               ]
             }
           ],
@@ -239,7 +261,8 @@
             "crypto-worlds-fair/hyperliquid/foundations",
             "crypto-worlds-fair/hyperliquid/hypercore",
             "crypto-worlds-fair/hyperliquid/hyperevm",
-            "crypto-worlds-fair/hyperliquid/operations"
+            "crypto-worlds-fair/hyperliquid/operations",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -269,6 +292,13 @@
               "keys": [
                 "crypto-worlds-fair/hyperliquid/operations"
               ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
+              ]
             }
           ],
           "rpcProviders": []
@@ -281,8 +311,9 @@
           "resources": [
             "crypto-worlds-fair/base/foundations",
             "crypto-worlds-fair/base/application-stack",
+            "crypto-worlds-fair/base/payments",
             "crypto-worlds-fair/base/distribution",
-            "crypto-worlds-fair/base/payments"
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -300,6 +331,13 @@
               ]
             },
             {
+              "id": "payments",
+              "title": "Payments",
+              "keys": [
+                "crypto-worlds-fair/base/payments"
+              ]
+            },
+            {
               "id": "distribution",
               "title": "Optional distribution",
               "keys": [
@@ -307,10 +345,10 @@
               ]
             },
             {
-              "id": "payments",
-              "title": "Payments",
+              "id": "company-formation",
+              "title": "Company formation and banking",
               "keys": [
-                "crypto-worlds-fair/base/payments"
+                "crypto-worlds-fair/shared/company-formation"
               ]
             }
           ],
@@ -325,7 +363,8 @@
             "crypto-worlds-fair/tempo/foundations",
             "crypto-worlds-fair/tempo/payments",
             "crypto-worlds-fair/tempo/stablecoins",
-            "crypto-worlds-fair/tempo/data-automation"
+            "crypto-worlds-fair/tempo/data-automation",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -355,6 +394,13 @@
               "keys": [
                 "crypto-worlds-fair/tempo/data-automation"
               ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
+              ]
             }
           ],
           "rpcProviders": []
@@ -368,7 +414,8 @@
             "crypto-worlds-fair/arbitrum/foundations",
             "crypto-worlds-fair/arbitrum/building",
             "crypto-worlds-fair/arbitrum/interoperability",
-            "crypto-worlds-fair/arbitrum/shipping"
+            "crypto-worlds-fair/arbitrum/shipping",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -398,6 +445,13 @@
               "keys": [
                 "crypto-worlds-fair/arbitrum/shipping"
               ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
+              ]
             }
           ],
           "rpcProviders": []
@@ -410,7 +464,8 @@
           "resources": [
             "crypto-worlds-fair/zcash/zcash-foundations",
             "crypto-worlds-fair/zcash/zcash-wallet-development",
-            "crypto-worlds-fair/zcash/zcash-infrastructure"
+            "crypto-worlds-fair/zcash/zcash-infrastructure",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -436,6 +491,13 @@
               "keys": [
                 "crypto-worlds-fair/zcash/zcash-infrastructure"
               ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
+              ]
             }
           ],
           "rpcProviders": []
@@ -449,7 +511,8 @@
             "crypto-worlds-fair/robinhood/foundations",
             "crypto-worlds-fair/robinhood/asset-integrations",
             "crypto-worlds-fair/robinhood/protocol-integrations",
-            "crypto-worlds-fair/robinhood/advanced"
+            "crypto-worlds-fair/robinhood/advanced",
+            "crypto-worlds-fair/shared/company-formation"
           ],
           "resourceGroups": [
             {
@@ -478,6 +541,13 @@
               "title": "Advanced operations and examples",
               "keys": [
                 "crypto-worlds-fair/robinhood/advanced"
+              ]
+            },
+            {
+              "id": "company-formation",
+              "title": "Company formation and banking",
+              "keys": [
+                "crypto-worlds-fair/shared/company-formation"
               ]
             }
           ],
@@ -901,59 +971,19 @@
         "launchpad"
       ],
       "accentColor": "#F54B00"
-    },
-    "stablecorp": {
-      "name": "Stablecorp",
-      "description": "Form a Delaware C-Corp or Wyoming LLC, open a US business bank account with native USDC treasury, and invoice globally in stablecoins and fiat.",
-      "links": [
-        {
-          "label": "Get Started",
-          "url": "https://mystablecorp.xyz"
-        },
-        {
-          "label": "Form a US company from anywhere",
-          "url": "https://mystablecorp.xyz/guides/how-to-form-us-company-from-abroad"
-        },
-        {
-          "label": "US LLC vs Delaware C-Corp decision guide",
-          "url": "https://mystablecorp.xyz/guides/llc-vs-c-corp-non-resident"
-        },
-        {
-          "label": "83(b) election guide",
-          "url": "https://mystablecorp.xyz/guides/83b-election-guide"
-        },
-        {
-          "label": "Cap table basics",
-          "url": "https://mystablecorp.xyz/guides/cap-table-basics"
-        },
-        {
-          "label": "Open a US business bank account remotely",
-          "url": "https://mystablecorp.xyz/guides/us-business-bank-account-non-resident"
-        },
-        {
-          "label": "Delaware C-Corp for Solana founders",
-          "url": "https://mystablecorp.xyz/guides/delaware-c-corp-formation-guide"
-        }
-      ],
-      "tags": [
-        "incorporation",
-        "banking",
-        "compliance"
-      ],
-      "accentColor": "#2B3BEE"
     }
   },
   "rpcProviders": {
     "helius": {
       "name": "Helius",
-      "description": "Helius is Solana's leading RPC and data infrastructure provider, offering globally distributed nodes with sub-millisecond response times, staked connections for faster transaction confirmations, and exclusive archival methods like getTransactionsForAddress. Helius also provides LaserStream — the fastest way to stream Solana blocks, transactions, and account data via gRPC — and enhanced WebSockets for real-time on-chain event streaming.",
+      "description": "Helius is Solana's leading RPC and data infrastructure provider, offering globally distributed nodes with sub-millisecond response times, staked connections for faster transaction confirmations, and exclusive archival methods like getTransactionsForAddress. Helius also provides LaserStream \u2014 the fastest way to stream Solana blocks, transactions, and account data via gRPC \u2014 and enhanced WebSockets for real-time on-chain event streaming.",
       "links": [
         {
           "label": "View offer",
           "url": "https://www.helius.dev/pricing"
         }
       ],
-      "offer": "50% off Developer plans for Colosseum hackathon builders ($49 → $24.50/mo)"
+      "offer": "50% off Developer plans for Colosseum hackathon builders ($49 \u2192 $24.50/mo)"
     },
     "triton-one": {
       "name": "Triton One",
@@ -967,7 +997,7 @@
     },
     "fluxrpc": {
       "name": "FluxRPC",
-      "description": "FluxRPC is a high-performance Solana RPC provider with Yellowstone gRPC streaming support and Lantern — a local edge-caching layer for Solana account state that delivers sub-millisecond reads at 10,000+ requests per second. Pay only for bandwidth ($0.06/GB), making it one of the most cost-effective RPC options available for high-volume applications.",
+      "description": "FluxRPC is a high-performance Solana RPC provider with Yellowstone gRPC streaming support and Lantern \u2014 a local edge-caching layer for Solana account state that delivers sub-millisecond reads at 10,000+ requests per second. Pay only for bandwidth ($0.06/GB), making it one of the most cost-effective RPC options available for high-volume applications.",
       "offer": "Developer plan at $15/month (limited-time) with access to Yellowstone streams, Lantern local RPC for faster data recall and performance, and low-latency RPC across high-volume calls.",
       "links": [
         {

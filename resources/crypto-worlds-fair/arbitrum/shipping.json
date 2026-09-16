@@ -9,14 +9,14 @@
         "title": "Fees and local infrastructure",
         "links": [
           {
-            "hyperlink": "How to estimate gas",
-            "url": "https://docs.arbitrum.io/arbitrum-essentials/how-to-estimate-gas",
-            "description": "Separate L2 execution from the changing parent-chain data component and inspect detailed estimates through NodeInterface."
-          },
-          {
             "hyperlink": "Local full-chain simulation",
             "url": "https://docs.arbitrum.io/run-arbitrum-node/run-local-full-chain-simulation",
             "description": "Run local Geth and Nitro infrastructure with optional bridge, L3, explorer, and Stylus support for cross-layer tests."
+          },
+          {
+            "hyperlink": "How to estimate gas",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/how-to-estimate-gas",
+            "description": "Separate L2 execution from the changing parent-chain data component and inspect detailed estimates through NodeInterface."
           }
         ]
       }

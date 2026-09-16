@@ -1,120 +1,5 @@
 [
   {
-    "id": "agents-tokenization",
-    "title": "Agents + Tokenization",
-    "summary": "Build AI agents with onchain identity and economic functionality.",
-    "groups": [
-      {
-        "id": "general-agent-tooling",
-        "title": "General Agent Tooling",
-        "links": [
-          {
-            "hyperlink": "Solana Agent Skills",
-            "url": "https://solana.com/skills",
-            "description": "The official skills index includes Foundation-maintained skills and labels community contributions separately. It reinforces the current Kit and LiteSVM/Mollusk/Surfpool testing path; community skills are not Solana endorsements."
-          },
-          {
-            "hyperlink": "LI.FI MCP Server",
-            "url": "https://docs.li.fi/mcp-server/overview",
-            "description": "The live MCP docs cover route discovery and unsigned transaction construction across Solana and other chains. The public service is rate-limited and does not remove wallet signing or transaction validation responsibilities."
-          },
-          {
-            "hyperlink": "LI.FI Agent Skills",
-            "url": "https://github.com/lifinance/lifi-agent-skills",
-            "description": "The repository was updated 2026-06-10 and explicitly covers Solana among many chains. Keep only for cross-chain agent routing; it returns workflows/transactions that still require wallet policy and validation."
-          },
-          {
-            "hyperlink": "Vanish Core API",
-            "url": "https://core.vanish.trade/start/introduction",
-            "description": "This Solana transaction API requires onboarding and an API key. Its latency, routing, compliance, and security claims are vendor claims, not independent benchmarks."
-          },
-          {
-            "hyperlink": "Coinbase x402",
-            "url": "https://docs.cdp.coinbase.com/x402/welcome",
-            "description": "The current x402 overview explicitly documents Solana alongside Base. Keep as protocol/vendor context, then use Solana's own x402 guide for chain-specific implementation."
-          },
-          {
-            "hyperlink": "x402 MCP Server",
-            "url": "https://solana.com/docs/payments/agentic-payments/intro-to-x402",
-            "description": "Use Solana's chain-specific x402 guide for agent payments. The Coinbase buyer MCP path that this replaces is EVM-oriented."
-          },
-          {
-            "hyperlink": "PAY.SH",
-            "url": "https://github.com/solana-foundation/pay",
-            "description": "Use the Solana Foundation CLI to access x402 or MPP services while a local wallet authorizes each payment. Review each request and keep wallet policy explicit."
-          },
-          {
-            "hyperlink": "Agentic Market",
-            "url": "https://agentic.market/",
-            "description": "The live catalog exposes paid, x402-discoverable services and includes Solana among its network labels. Keep only as an optional discovery directory: listings, capability claims, and prices are provider-supplied and can change independently of the catalog."
-          },
-          {
-            "hyperlink": "Coinbase Agentic Wallet Skills",
-            "url": "https://github.com/coinbase/agentic-wallet-skills",
-            "description": "Use the SOL and USDC balance and transfer workflows on Solana. Trading and onchain query coverage is narrower or EVM-specific."
-          }
-        ]
-      },
-      {
-        "id": "metaplex",
-        "title": "Metaplex",
-        "links": [
-          {
-            "hyperlink": "Metaplex Agent Kit Docs",
-            "url": "https://www.metaplex.com/docs/agents",
-            "description": "Use Metaplex's Umi-based Agent Kit for agent and NFT workflows. This is a specialized integration, not core Kit guidance."
-          },
-          {
-            "hyperlink": "Register an Agent",
-            "url": "https://www.metaplex.com/docs/agents/register-agent",
-            "description": "Register an agent through Metaplex's onchain registry. This product workflow is optional, not a requirement for general Solana agents."
-          },
-          {
-            "hyperlink": "Run an Agent",
-            "url": "https://www.metaplex.com/docs/agents/run-an-agent",
-            "description": "Connect a runtime and fund its Metaplex registry wallet. Treat this as a specialized Metaplex integration."
-          },
-          {
-            "hyperlink": "Launch a Token",
-            "url": "https://www.metaplex.com/docs/agents/create-agent-token",
-            "description": "The current Metaplex guide provides a concrete agent-token workflow. Token issuance introduces authority, metadata, market, and financial risks and should never be presented as a routine prerequisite."
-          },
-          {
-            "hyperlink": "Metaplex Skill",
-            "url": "https://www.metaplex.com/docs/agents/skill",
-            "description": "Metaplex maintains the agent skill documentation for its own SDK and registry flows. It is a product-specific automation surface; users should review transactions and versions rather than grant unattended authority by default."
-          },
-          {
-            "hyperlink": "Agent Registry",
-            "url": "https://www.metaplex.com/agents",
-            "description": "Browse Metaplex registry entries, but do not treat provider-supplied agent and token metadata as independent security endorsements."
-          },
-          {
-            "hyperlink": "Metaplex Developer Portal",
-            "url": "https://www.metaplex.com/docs",
-            "description": "Use Metaplex's current portal for tokenization and digital asset APIs."
-          }
-        ]
-      },
-      {
-        "id": "swig-agents",
-        "title": "Swig",
-        "links": [
-          {
-            "hyperlink": "Swig Smart Wallets",
-            "url": "https://build.onswig.com/",
-            "description": "The maintained Swig documentation covers its Solana smart-wallet protocol, permissions, SDKs, and integrations. It is a specialized account-control choice, not a default wallet prerequisite."
-          },
-          {
-            "hyperlink": "TypeScript SDK Tutorial",
-            "url": "https://build.onswig.com/tutorials/typescript",
-            "description": "The tutorial provides an executable Swig TypeScript workflow. The current swig-ts repository separates Kit and classic web3.js packages, so builders must select the matching client rather than mix examples blindly."
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "tokens-permissions",
     "title": "Tokens and permissions",
     "summary": "Choose Token-2022 extensions at initialization and treat permissioned-token controls as security- and compliance-sensitive program logic.",
@@ -132,6 +17,83 @@
             "hyperlink": "Permissioned tokens with Token ACL",
             "url": "https://solana.com/docs/tokenization/token-acl",
             "description": "Implement sRFC37 permissioned transfers with the Token ACL program and pluggable gates. Its ABL gate is a reference implementation; production use requires security audits, key management, regulatory review, and legal consultation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "payments-commerce",
+    "title": "Payments + Commerce",
+    "summary": "Accept payments and build commerce on Solana.",
+    "groups": [
+      {
+        "id": "payments-architecture",
+        "title": "Solana payment architecture",
+        "links": [
+          {
+            "hyperlink": "Payment Channels",
+            "url": "https://solana.com/payment-channels",
+            "description": "Implement repeated payments with off-chain signed updates and onchain open and settle transactions. Treat current benchmark and partner claims as launch data, not guarantees."
+          },
+          {
+            "hyperlink": "Subscriptions and Allowances",
+            "url": "https://solana.com/docs/payments/subscriptions/overview",
+            "description": "Use Solana's shared subscriptions program for fixed or recurring delegation with documented program IDs and audit history. Pullers can transfer within an active authorization, so users and applications must enforce caps, expiry, revocation, and token-account delegation."
+          },
+          {
+            "hyperlink": "Index Solana payments",
+            "url": "https://solana.com/docs/payments/accept-payments/indexing",
+            "description": "Design production payment ingestion with persistent streaming, historical access, and instruction parsing when RPC polling is not enough. The guide uses provider-backed gRPC and raw decoding, so plan the supporting infrastructure."
+          }
+        ]
+      },
+      {
+        "id": "swig-payments",
+        "title": "Swig Smart Wallets",
+        "links": [
+          {
+            "hyperlink": "TypeScript SDK",
+            "url": "https://github.com/anagrambuild/swig-ts",
+            "description": "The Swig repository was updated 2026-08-18 and contains separate Kit and classic web3.js packages and examples. It is an active protocol SDK, not a general Solana TypeScript client."
+          },
+          {
+            "hyperlink": "Developer Portal",
+            "url": "https://dashboard.onswig.com/",
+            "description": "The live portal is an authenticated Swig developer surface. Its public shell verifies the destination, but provisioning and post-login behavior could not be inspected without an account; list it only beside the public Swig docs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "defi-stablecoins",
+    "title": "DeFi + Stablecoins",
+    "summary": "Build with interest-bearing dollars and stablecoin primitives.",
+    "groups": [
+      {
+        "id": "defi-links",
+        "title": "",
+        "links": [
+          {
+            "hyperlink": "Reflect",
+            "url": "https://docs.reflect.money/introduction",
+            "description": "Integrate Reflect's Solana protocol and SDK only when its asset and smart contract risks fit the product."
+          },
+          {
+            "hyperlink": "@reflectmoney/stable.ts",
+            "url": "https://npmjs.com/package/@reflectmoney/stable.ts",
+            "description": "@reflectmoney/stable.ts 5.3.2 has Kit examples and migration guidance for Reflect-specific integrations. Pin the selected version."
+          },
+          {
+            "hyperlink": "Phantom CASH",
+            "url": "https://docs.phantom.com/cash",
+            "description": "Phantom's current docs describe CASH and its developer workflow. Development access and minting constraints make it a vendor-specific payment path rather than a default stablecoin primitive."
+          },
+          {
+            "hyperlink": "LI.FI Solana API",
+            "url": "https://docs.li.fi/introduction/lifi-architecture/solana-overview",
+            "description": "Use LI.FI for cross-chain Solana routing, with the documented single-step route limitation. It is an optional bridge layer, not core Solana infrastructure."
           }
         ]
       }
@@ -166,33 +128,18 @@
     ]
   },
   {
-    "id": "defi-stablecoins",
-    "title": "DeFi + Stablecoins",
-    "summary": "Build with interest-bearing dollars and stablecoin primitives.",
+    "id": "mobile",
+    "title": "Mobile",
+    "summary": "Build native mobile apps powered by Solana.",
     "groups": [
       {
-        "id": "defi-links",
+        "id": "mobile-links",
         "title": "",
         "links": [
           {
-            "hyperlink": "Reflect",
-            "url": "https://docs.reflect.money/introduction",
-            "description": "Integrate Reflect's Solana protocol and SDK only when its asset and smart contract risks fit the product."
-          },
-          {
-            "hyperlink": "@reflectmoney/stable.ts",
-            "url": "https://npmjs.com/package/@reflectmoney/stable.ts",
-            "description": "@reflectmoney/stable.ts 5.3.2 has Kit examples and migration guidance for Reflect-specific integrations. Pin the selected version."
-          },
-          {
-            "hyperlink": "Phantom CASH",
-            "url": "https://docs.phantom.com/cash",
-            "description": "Phantom's current docs describe CASH and its developer workflow. Development access and minting constraints make it a vendor-specific payment path rather than a default stablecoin primitive."
-          },
-          {
-            "hyperlink": "LI.FI Solana API",
-            "url": "https://docs.li.fi/introduction/lifi-architecture/solana-overview",
-            "description": "Use LI.FI for cross-chain Solana routing, with the documented single-step route limitation. It is an optional bridge layer, not core Solana infrastructure."
+            "hyperlink": "Phantom React Native Starter",
+            "url": "https://github.com/Th3Ya0vi/phantom-embedded-react-native-starter",
+            "description": "The 2026-04-27 snapshot uses Phantom React Native SDK 2.0.2, Expo 54, React Native 0.81.5, and web3.js v1; it requires a custom development build rather than Expo Go. No repository license is declared."
           }
         ]
       }
@@ -274,85 +221,115 @@
     ]
   },
   {
-    "id": "governance-daos",
-    "title": "Governance / DAOs",
-    "summary": "Build governance and DAO tooling on Solana.",
+    "id": "agents-tokenization",
+    "title": "Agents + Tokenization",
+    "summary": "Build AI agents with onchain identity and economic functionality.",
     "groups": [
       {
-        "id": "daos-links",
-        "title": "",
+        "id": "general-agent-tooling",
+        "title": "General Agent Tooling",
         "links": [
           {
-            "hyperlink": "Realms",
-            "url": "https://realms.today",
-            "description": "The live Solana governance application remains available. It is useful as a product/protocol destination, while implementers should follow its linked SDK/program sources for versioned developer work."
+            "hyperlink": "Solana Agent Skills",
+            "url": "https://solana.com/skills",
+            "description": "The official skills index includes Foundation-maintained skills and labels community contributions separately. It reinforces the current Kit and LiteSVM/Mollusk/Surfpool testing path; community skills are not Solana endorsements."
           },
           {
-            "hyperlink": "MetaDAO",
-            "url": "https://docs.metadao.fi/",
-            "description": "MetaDAO maintains product and protocol documentation for its Solana governance and market mechanisms. Keep as a specialized integration/reference, not a general governance default."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "mobile",
-    "title": "Mobile",
-    "summary": "Build native mobile apps powered by Solana.",
-    "groups": [
-      {
-        "id": "mobile-links",
-        "title": "",
-        "links": [
-          {
-            "hyperlink": "Phantom React Native Starter",
-            "url": "https://github.com/Th3Ya0vi/phantom-embedded-react-native-starter",
-            "description": "The 2026-04-27 snapshot uses Phantom React Native SDK 2.0.2, Expo 54, React Native 0.81.5, and web3.js v1; it requires a custom development build rather than Expo Go. No repository license is declared."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "payments-commerce",
-    "title": "Payments + Commerce",
-    "summary": "Accept payments and build commerce on Solana.",
-    "groups": [
-      {
-        "id": "payments-architecture",
-        "title": "Solana payment architecture",
-        "links": [
-          {
-            "hyperlink": "Payment Channels",
-            "url": "https://solana.com/payment-channels",
-            "description": "Implement repeated payments with off-chain signed updates and onchain open and settle transactions. Treat current benchmark and partner claims as launch data, not guarantees."
+            "hyperlink": "Coinbase Agentic Wallet Skills",
+            "url": "https://github.com/coinbase/agentic-wallet-skills",
+            "description": "Use the SOL and USDC balance and transfer workflows on Solana. Trading and onchain query coverage is narrower or EVM-specific."
           },
           {
-            "hyperlink": "Subscriptions and Allowances",
-            "url": "https://solana.com/docs/payments/subscriptions/overview",
-            "description": "Use Solana's shared subscriptions program for fixed or recurring delegation with documented program IDs and audit history. Pullers can transfer within an active authorization, so users and applications must enforce caps, expiry, revocation, and token-account delegation."
+            "hyperlink": "Coinbase x402",
+            "url": "https://docs.cdp.coinbase.com/x402/welcome",
+            "description": "The current x402 overview explicitly documents Solana alongside Base. Keep as protocol/vendor context, then use Solana's own x402 guide for chain-specific implementation."
           },
           {
-            "hyperlink": "Index Solana payments",
-            "url": "https://solana.com/docs/payments/accept-payments/indexing",
-            "description": "Design production payment ingestion with persistent streaming, historical access, and instruction parsing when RPC polling is not enough. The guide uses provider-backed gRPC and raw decoding, so plan the supporting infrastructure."
+            "hyperlink": "x402 MCP Server",
+            "url": "https://solana.com/docs/payments/agentic-payments/intro-to-x402",
+            "description": "Use Solana's chain-specific x402 guide for agent payments. The Coinbase buyer MCP path that this replaces is EVM-oriented."
+          },
+          {
+            "hyperlink": "PAY.SH",
+            "url": "https://github.com/solana-foundation/pay",
+            "description": "Use the Solana Foundation CLI to access x402 or MPP services while a local wallet authorizes each payment. Review each request and keep wallet policy explicit."
+          },
+          {
+            "hyperlink": "LI.FI Agent Skills",
+            "url": "https://github.com/lifinance/lifi-agent-skills",
+            "description": "The repository was updated 2026-06-10 and explicitly covers Solana among many chains. Keep only for cross-chain agent routing; it returns workflows/transactions that still require wallet policy and validation."
+          },
+          {
+            "hyperlink": "LI.FI MCP Server",
+            "url": "https://docs.li.fi/mcp-server/overview",
+            "description": "The live MCP docs cover route discovery and unsigned transaction construction across Solana and other chains. The public service is rate-limited and does not remove wallet signing or transaction validation responsibilities."
+          },
+          {
+            "hyperlink": "Vanish Core API",
+            "url": "https://core.vanish.trade/start/introduction",
+            "description": "This Solana transaction API requires onboarding and an API key. Its latency, routing, compliance, and security claims are vendor claims, not independent benchmarks."
+          },
+          {
+            "hyperlink": "Agentic Market",
+            "url": "https://agentic.market/",
+            "description": "The live catalog exposes paid, x402-discoverable services and includes Solana among its network labels. Keep only as an optional discovery directory: listings, capability claims, and prices are provider-supplied and can change independently of the catalog."
           }
         ]
       },
       {
-        "id": "swig-payments",
-        "title": "Swig Smart Wallets",
+        "id": "metaplex",
+        "title": "Metaplex",
         "links": [
           {
-            "hyperlink": "TypeScript SDK",
-            "url": "https://github.com/anagrambuild/swig-ts",
-            "description": "The Swig repository was updated 2026-08-18 and contains separate Kit and classic web3.js packages and examples. It is an active protocol SDK, not a general Solana TypeScript client."
+            "hyperlink": "Metaplex Agent Kit Docs",
+            "url": "https://www.metaplex.com/docs/agents",
+            "description": "Use Metaplex's Umi-based Agent Kit for agent and NFT workflows. This is a specialized integration, not core Kit guidance."
           },
           {
-            "hyperlink": "Developer Portal",
-            "url": "https://dashboard.onswig.com/",
-            "description": "The live portal is an authenticated Swig developer surface. Its public shell verifies the destination, but provisioning and post-login behavior could not be inspected without an account; list it only beside the public Swig docs."
+            "hyperlink": "Register an Agent",
+            "url": "https://www.metaplex.com/docs/agents/register-agent",
+            "description": "Register an agent through Metaplex's onchain registry. This product workflow is optional, not a requirement for general Solana agents."
+          },
+          {
+            "hyperlink": "Run an Agent",
+            "url": "https://www.metaplex.com/docs/agents/run-an-agent",
+            "description": "Connect a runtime and fund its Metaplex registry wallet. Treat this as a specialized Metaplex integration."
+          },
+          {
+            "hyperlink": "Launch a Token",
+            "url": "https://www.metaplex.com/docs/agents/create-agent-token",
+            "description": "The current Metaplex guide provides a concrete agent-token workflow. Token issuance introduces authority, metadata, market, and financial risks and should never be presented as a routine prerequisite."
+          },
+          {
+            "hyperlink": "Metaplex Skill",
+            "url": "https://www.metaplex.com/docs/agents/skill",
+            "description": "Metaplex maintains the agent skill documentation for its own SDK and registry flows. It is a product-specific automation surface; users should review transactions and versions rather than grant unattended authority by default."
+          },
+          {
+            "hyperlink": "Agent Registry",
+            "url": "https://www.metaplex.com/agents",
+            "description": "Browse Metaplex registry entries, but do not treat provider-supplied agent and token metadata as independent security endorsements."
+          },
+          {
+            "hyperlink": "Metaplex Developer Portal",
+            "url": "https://www.metaplex.com/docs",
+            "description": "Use Metaplex's current portal for tokenization and digital asset APIs."
+          }
+        ]
+      },
+      {
+        "id": "swig-agents",
+        "title": "Swig",
+        "links": [
+          {
+            "hyperlink": "Swig Smart Wallets",
+            "url": "https://build.onswig.com/",
+            "description": "The maintained Swig documentation covers its Solana smart-wallet protocol, permissions, SDKs, and integrations. It is a specialized account-control choice, not a default wallet prerequisite."
+          },
+          {
+            "hyperlink": "TypeScript SDK Tutorial",
+            "url": "https://build.onswig.com/tutorials/typescript",
+            "description": "The tutorial provides an executable Swig TypeScript workflow. The current swig-ts repository separates Kit and classic web3.js packages, so builders must select the matching client rather than mix examples blindly."
           }
         ]
       }
@@ -381,6 +358,29 @@
             "hyperlink": "Confidential Balances",
             "url": "https://solana.com/docs/tokens/extensions/confidential-transfer",
             "description": "Hide transfer amounts and confidential balances with Token-2022 confidential transfers. Addresses, mints, and owners remain public; both accounts need the extension, stock solana-test-validator lacks the proof program, transfers may require several transactions, and Rust and JavaScript clients differ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "governance-daos",
+    "title": "Governance / DAOs",
+    "summary": "Build governance and DAO tooling on Solana.",
+    "groups": [
+      {
+        "id": "daos-links",
+        "title": "",
+        "links": [
+          {
+            "hyperlink": "Realms",
+            "url": "https://realms.today",
+            "description": "The live Solana governance application remains available. It is useful as a product/protocol destination, while implementers should follow its linked SDK/program sources for versioned developer work."
+          },
+          {
+            "hyperlink": "MetaDAO",
+            "url": "https://docs.metadao.fi/",
+            "description": "MetaDAO maintains product and protocol documentation for its Solana governance and market mechanisms. Keep as a specialized integration/reference, not a general governance default."
           }
         ]
       }

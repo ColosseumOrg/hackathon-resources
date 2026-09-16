@@ -1,0 +1,42 @@
+{
+  "id": "company-formation",
+  "title": "Company formation and banking",
+  "summary": "Company setup, banking, and compliance resources for founders building in any ecosystem.",
+  "groups": [
+    {
+      "id": "stablecorp",
+      "title": "Stablecorp",
+      "links": [
+        {
+          "url": "https://mystablecorp.xyz",
+          "hyperlink": "Stablecorp: company formation and banking",
+          "description": "Form a Delaware C-Corp or Wyoming LLC, open a US business bank account with USDC treasury, and invoice in stablecoins and fiat. Corporate documents include bylaws, RSPAs, 83(b) filing, cap table, and indemnification agreements, with US and cross-border compliance support including India. Colosseum builder perks: 30% off incorporation, priority EIN processing, priority banking KYB, and a free 30-minute entity setup call."
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/how-to-form-us-company-from-abroad",
+          "hyperlink": "Form a US company from anywhere"
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/llc-vs-c-corp-non-resident",
+          "hyperlink": "US LLC vs Delaware C-Corp decision guide"
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/83b-election-guide",
+          "hyperlink": "83(b) election guide"
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/cap-table-basics",
+          "hyperlink": "Cap table basics"
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/us-business-bank-account-non-resident",
+          "hyperlink": "Open a US business bank account remotely"
+        },
+        {
+          "url": "https://mystablecorp.xyz/guides/delaware-c-corp-formation-guide",
+          "hyperlink": "Delaware C-Corp for Solana founders"
+        }
+      ]
+    }
+  ]
+}

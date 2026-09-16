@@ -14,14 +14,14 @@
             "description": "Understand canonical bridge paths, token movement, retryables, deposits, withdrawals, and asset-identity concerns."
           },
           {
-            "hyperlink": "Cross-chain messaging",
-            "url": "https://docs.arbitrum.io/arbitrum-essentials/bridging/cross-chain-messaging",
-            "description": "Implement retryable tickets and outbox messages with the required fees, status handling, proofs, and address aliasing."
-          },
-          {
             "hyperlink": "Arbitrum SDK v4 and guides",
             "url": "https://github.com/OffchainLabs/arbitrum-sdk",
             "description": "Use the official TypeScript SDK and its docs directory for bridging, deposits, withdrawals, retryables, and message status."
+          },
+          {
+            "hyperlink": "Cross-chain messaging",
+            "url": "https://docs.arbitrum.io/arbitrum-essentials/bridging/cross-chain-messaging",
+            "description": "Implement retryable tickets and outbox messages with the required fees, status handling, proofs, and address aliasing."
           }
         ]
       }

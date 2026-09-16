@@ -100,8 +100,10 @@ To add a track:
    Chain-specific RPC entries are new `manifest.rpcProviders` entries, one per provider-and-offer
    (for example `alchemy` and `quicknode-base`), each with the provider's display `name`.
 4. Campaign-specific curated resources go in `resources/<hackathon>/<track>/<key>.json` and are
-   referenced as `"<hackathon>/<track>/<key>"`. Use isolated keys when changing a shared file
-   would alter another campaign. Leave `resources` empty unless there is curated content.
+   referenced as `"<hackathon>/<track>/<key>"`. Chain-independent founder resources may use
+   `"<hackathon>/shared/<key>"` and be referenced by every applicable track. Use campaign-scoped
+   keys so these changes do not alter another campaign. Leave `resources` empty unless there
+   is curated content.
 5. A `resourceGroups` entry may include `description` when the category needs a short orientation
    before its sections.
 6. Run `npm test` and check `tracks` in the generated hackathon payload.

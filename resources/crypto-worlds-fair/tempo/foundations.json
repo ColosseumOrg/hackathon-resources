@@ -25,6 +25,11 @@
         "title": "Application and contract stack",
         "links": [
           {
+            "hyperlink": "EVM compatibility and differences",
+            "url": "https://tempo.xyz/developers/docs/quickstart/evm-compatibility",
+            "description": "Read before porting an EVM app: no native gas token, unusual balance opcodes, selectable fee tokens, higher state-creation gas, and deterministic finality."
+          },
+          {
             "hyperlink": "TypeScript SDK",
             "url": "https://tempo.xyz/developers/docs/sdk/typescript",
             "description": "Official Viem-first setup for standard EVM actions plus Tempo transactions, batching, fee tokens, sponsorship, and testnet funding."
@@ -33,11 +38,6 @@
             "hyperlink": "Accounts SDK",
             "url": "https://accounts.tempo.xyz/docs",
             "description": "Account onboarding and signing adapters for Tempo Wallet, passkeys, Turnkey, Privy, private keys, and custom integrations."
-          },
-          {
-            "hyperlink": "EVM compatibility and differences",
-            "url": "https://tempo.xyz/developers/docs/quickstart/evm-compatibility",
-            "description": "Read before porting an EVM app: no native gas token, unusual balance opcodes, selectable fee tokens, higher state-creation gas, and deterministic finality."
           },
           {
             "hyperlink": "Foundry on Tempo",

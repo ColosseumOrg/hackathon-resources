@@ -42,6 +42,11 @@
             "description": "Use the canonical Rust SDK, cargo-stylus tooling, TestVM support, macros, and maintained examples."
           },
           {
+            "hyperlink": "OpenZeppelin Contracts for Stylus",
+            "url": "https://github.com/OpenZeppelin/rust-contracts-stylus",
+            "description": "Optionally reuse audited Rust components after verifying its pinned Stylus SDK and nightly Rust requirements against the project."
+          },
+          {
             "hyperlink": "Testing contracts with Stylus",
             "url": "https://docs.arbitrum.io/stylus/fundamentals/testing-contracts",
             "description": "Write fast TestVM unit tests with controlled storage, calls, sender, value, time, and chain context."
@@ -50,11 +55,6 @@
             "hyperlink": "Stylus security best practices",
             "url": "https://docs.arbitrum.io/stylus/best-practices/security",
             "description": "Apply deterministic-build, authorization, arithmetic, external-call, reentrancy, and denial-of-service safeguards."
-          },
-          {
-            "hyperlink": "OpenZeppelin Contracts for Stylus",
-            "url": "https://github.com/OpenZeppelin/rust-contracts-stylus",
-            "description": "Optionally reuse audited Rust components after verifying its pinned Stylus SDK and nightly Rust requirements against the project."
           }
         ]
       }

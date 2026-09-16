@@ -14,9 +14,9 @@
             "description": "Install and operate the current Zcash consensus node from binaries, containers, or source."
           },
           {
-            "hyperlink": "Connect lightwalletd to Zebra",
-            "url": "https://zebra.zfnd.org/user/lightwalletd.html",
-            "description": "Configure the supported production topology with a separate lightwalletd service in front of Zebra."
+            "hyperlink": "Zebra regtest",
+            "url": "https://zebra.zfnd.org/user/regtest.html",
+            "description": "Run deterministic local chains with configurable upgrade heights and block-generation controls."
           },
           {
             "hyperlink": "lightwalletd",
@@ -24,14 +24,14 @@
             "description": "Serve compact blocks and transactions to shielded light clients from a private Zebra RPC connection."
           },
           {
+            "hyperlink": "Connect lightwalletd to Zebra",
+            "url": "https://zebra.zfnd.org/user/lightwalletd.html",
+            "description": "Configure the supported production topology with a separate lightwalletd service in front of Zebra."
+          },
+          {
             "hyperlink": "Light Wallet Protocol definitions",
             "url": "https://github.com/zcash/lightwallet-protocol",
             "description": "Use the canonical protobuf definitions shared by lightwalletd, Zaino, zcash_client_backend, and Zingolib."
-          },
-          {
-            "hyperlink": "Zebra regtest",
-            "url": "https://zebra.zfnd.org/user/regtest.html",
-            "description": "Run deterministic local chains with configurable upgrade heights and block-generation controls."
           },
           {
             "hyperlink": "Zaino",

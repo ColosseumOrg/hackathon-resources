@@ -19,6 +19,11 @@
             "description": "Complete a first transaction and program exercise in Solana Playground. Its burner wallet and browser environment are for development and testing only."
           },
           {
+            "hyperlink": "create-solana-dapp",
+            "url": "https://github.com/solana-foundation/create-solana-dapp",
+            "description": "Generate an app from a maintained Solana Foundation template, then inspect the selected template's client dependencies."
+          },
+          {
             "hyperlink": "Official JavaScript and TypeScript SDKs",
             "url": "https://solana.com/docs/clients/official/javascript",
             "description": "Start new TypeScript applications with @solana/kit and identify where legacy web3.js compatibility is still required."
@@ -27,11 +32,6 @@
             "hyperlink": "Blueshift: using Solana",
             "url": "https://learn.blueshift.gg/en/courses/understanding-solana/using-solana",
             "description": "Follow an active structured course. Some exercises still use legacy-compatible packages, so compare setup and client choices with current docs."
-          },
-          {
-            "hyperlink": "create-solana-dapp",
-            "url": "https://github.com/solana-foundation/create-solana-dapp",
-            "description": "Generate an app from a maintained Solana Foundation template, then inspect the selected template's client dependencies."
           }
         ]
       }
