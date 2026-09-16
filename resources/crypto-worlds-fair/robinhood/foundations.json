@@ -19,11 +19,6 @@
             "description": "Copy the official mainnet and testnet chain IDs, public RPCs, explorers, sequencer feeds, and wallet configuration; public endpoints are rate-limited and not for production."
           },
           {
-            "hyperlink": "Deploy smart contracts",
-            "url": "https://docs.robinhood.com/chain/deploy-smart-contracts/",
-            "description": "Deploy and verify Solidity contracts with Foundry or Hardhat, using testnet first and Blockscout for source verification."
-          },
-          {
             "hyperlink": "Robinhood Chain testnet faucet",
             "url": "https://faucet.testnet.chain.robinhood.com/",
             "description": "Request 0.01 testnet ETH and five of each listed Stock Token once every 24 hours. Faucet eligibility and actual claim execution remain untested."
@@ -32,6 +27,11 @@
             "hyperlink": "Differences from Ethereum",
             "url": "https://docs.robinhood.com/chain/differences-from-ethereum/",
             "description": "Required reading for Nitro block semantics, fee accounting, address aliasing, finality, transaction ordering and screening, and the 96 KB contract-size limit."
+          },
+          {
+            "hyperlink": "Deploy smart contracts",
+            "url": "https://docs.robinhood.com/chain/deploy-smart-contracts/",
+            "description": "Deploy and verify Solidity contracts with Foundry or Hardhat, using testnet first and Blockscout for source verification."
           },
           {
             "hyperlink": "Robinhood Chain status",

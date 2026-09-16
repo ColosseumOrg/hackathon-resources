@@ -32,14 +32,14 @@
         "title": "Rust alternatives and security",
         "links": [
           {
-            "hyperlink": "Zingolib",
-            "url": "https://github.com/zingolabs/zingolib",
-            "description": "Use a maintained alternative Rust wallet core that is pinned by current Zingo mobile and desktop releases."
-          },
-          {
             "hyperlink": "Zcash devtool wallet walkthrough",
             "url": "https://github.com/zcash/zcash-devtool/blob/main/doc/walkthrough.md",
             "description": "Prototype Unified Address, scanning, transaction, and PCZT flows in an explicitly non-production reference wallet."
+          },
+          {
+            "hyperlink": "Zingolib",
+            "url": "https://github.com/zingolabs/zingolib",
+            "description": "Use a maintained alternative Rust wallet core that is pinned by current Zingo mobile and desktop releases."
           },
           {
             "hyperlink": "Zcash wallet threat model",

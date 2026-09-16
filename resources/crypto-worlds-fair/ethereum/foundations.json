@@ -47,14 +47,14 @@
         "title": "Execution and networks",
         "links": [
           {
-            "hyperlink": "Ethereum gas and fees",
-            "url": "https://ethereum.org/developers/docs/gas/",
-            "description": "Budget L1 transactions by understanding gas used, base and priority fees, refunds, failed execution, and block demand."
-          },
-          {
             "hyperlink": "Ethereum networks and testnets",
             "url": "https://ethereum.org/developers/docs/networks/",
             "description": "Use Sepolia for application testing, reserve Hoodi for validator and protocol work, and avoid deprecated testnets."
+          },
+          {
+            "hyperlink": "Ethereum gas and fees",
+            "url": "https://ethereum.org/developers/docs/gas/",
+            "description": "Budget L1 transactions by understanding gas used, base and priority fees, refunds, failed execution, and block demand."
           }
         ]
       }

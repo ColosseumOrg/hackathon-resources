@@ -11,14 +11,14 @@ const ROOT_DIR = path.resolve(
 );
 
 const EXPECTED_TRACKS = [
-  ['solana', 'Solana', 87],
-  ['ethereum', 'Ethereum L1', 18],
-  ['hyperliquid', 'Hyperliquid', 18],
-  ['base', 'Base', 18],
-  ['tempo', 'Tempo', 18],
-  ['arbitrum', 'Arbitrum', 18],
-  ['zcash', 'Zcash', 18],
-  ['robinhood', 'Robinhood Chain', 18],
+  ['solana', 'Solana', 94],
+  ['ethereum', 'Ethereum L1', 25],
+  ['hyperliquid', 'Hyperliquid', 25],
+  ['base', 'Base', 25],
+  ['tempo', 'Tempo', 25],
+  ['arbitrum', 'Arbitrum', 25],
+  ['zcash', 'Zcash', 25],
+  ['robinhood', 'Robinhood Chain', 25],
 ];
 
 const ACCEPTED_SOLANA_URLS = [
@@ -122,7 +122,8 @@ test('uses CWF-only resource keys while preserving Frontier', async () => {
   assert.ok(
     cwf.tracks.every((track) =>
       track.resources.every((key) =>
-        key.startsWith(`crypto-worlds-fair/${track.id}/`),
+        key.startsWith(`crypto-worlds-fair/${track.id}/`) ||
+        key === 'crypto-worlds-fair/shared/company-formation',
       ),
     ),
   );
@@ -155,4 +156,15 @@ test('publishes discoverable track metadata', async () => {
     publicManifest.hackathons['crypto-worlds-fair'].tracks,
     EXPECTED_TRACKS.map(([id, name]) => ({ id, name })),
   );
+});
+
+
+test('publishes Meteora as a sponsor and Stablecorp as a resource in every ecosystem', async () => {
+  const payload = await readJson('dist/crypto-worlds-fair.json');
+  assert.ok(payload.sponsors.some((sponsor) => sponsor.slug === 'meteora'));
+  for (const track of payload.tracks) {
+    assert.ok(!track.sponsors.some((sponsor) => sponsor.slug === 'stablecorp'));
+    const links = resourceLinks(track);
+    assert.equal(links.filter((link) => link.url === 'https://mystablecorp.xyz').length, 1);
+  }
 });

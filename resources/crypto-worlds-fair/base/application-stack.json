@@ -1,28 +1,5 @@
 [
   {
-    "id": "wallets-onboarding",
-    "title": "Wallets and onboarding",
-    "summary": "Use the currently recommended Coinbase Wallet package directly or through Wagmi, while the product naming changes.",
-    "groups": [
-      {
-        "id": "coinbase-wallet",
-        "title": "Coinbase Wallet",
-        "links": [
-          {
-            "hyperlink": "Coinbase Wallet SDK overview",
-            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/overview",
-            "description": "Add Coinbase Wallet sign-in or USDC payments with the currently recommended @base-org/account package."
-          },
-          {
-            "hyperlink": "Coinbase Wallet with Wagmi",
-            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/framework-integrations/wagmi/setup",
-            "description": "Add the Base Account connector to an existing Wagmi React application and audit the resolved SDK version."
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "contracts-data",
     "title": "Contracts, testing, and data",
     "summary": "Use standard EVM contracts, Base-aware local tooling for native precompiles, and the current RPC reference.",
@@ -45,6 +22,29 @@
             "hyperlink": "Base RPC overview",
             "url": "https://docs.base.org/base-chain/api-reference/rpc-overview",
             "description": "Select JSON-RPC or Flashblocks methods and understand Base's pre-confirmed pending state."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wallets-onboarding",
+    "title": "Wallets and onboarding",
+    "summary": "Use the currently recommended Coinbase Wallet package directly or through Wagmi, while the product naming changes.",
+    "groups": [
+      {
+        "id": "coinbase-wallet",
+        "title": "Coinbase Wallet",
+        "links": [
+          {
+            "hyperlink": "Coinbase Wallet SDK overview",
+            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/overview",
+            "description": "Add Coinbase Wallet sign-in or USDC payments with the currently recommended @base-org/account package."
+          },
+          {
+            "hyperlink": "Coinbase Wallet with Wagmi",
+            "url": "https://docs.cdp.coinbase.com/coinbase-wallet/framework-integrations/wagmi/setup",
+            "description": "Add the Base Account connector to an existing Wagmi React application and audit the resolved SDK version."
           }
         ]
       }

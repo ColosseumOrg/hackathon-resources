@@ -121,11 +121,6 @@
         "title": "Videos",
         "links": [
           {
-            "hyperlink": "SolAndy",
-            "url": "https://www.youtube.com/solandy",
-            "description": "The channel published new Solana material in 2026 and remains an active teaching source. Videos are supplementary and each upload's code/version context must be checked independently."
-          },
-          {
             "hyperlink": "Solana Developer Bootcamp 2026",
             "url": "https://www.youtube.com/watch?v=2pcm7ICRJKU",
             "description": "This official 2026 bootcamp, published 2026-04-07, covers 12 projects and production-oriented lessons. Verify package versions, CLI commands, and generated scaffolds against current docs before copying them."
@@ -134,6 +129,11 @@
             "hyperlink": "Solana Bytes",
             "url": "https://www.youtube.com/watch?v=pRYs49MqapI&list=PLilwLeBwGuK51Ji870apdb88dnBr1Xqhm",
             "description": "The official 2022-09-01 video explains the Solana programming model. It remains conceptually useful but is not current SDK or setup documentation."
+          },
+          {
+            "hyperlink": "SolAndy",
+            "url": "https://www.youtube.com/solandy",
+            "description": "The channel published new Solana material in 2026 and remains an active teaching source. Videos are supplementary and each upload's code/version context must be checked independently."
           }
         ]
       }

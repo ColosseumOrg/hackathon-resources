@@ -14,16 +14,6 @@
             "description": "Navigate the maintained Zcash node, wallet, protocol, and library documentation from the official index."
           },
           {
-            "hyperlink": "ZIP 316: Unified Addresses",
-            "url": "https://zips.z.cash/zip-0316",
-            "description": "Implement Unified Address parsing and receiver selection using the active revision of the canonical specification."
-          },
-          {
-            "hyperlink": "ZIP 321: Payment Request URIs",
-            "url": "https://zips.z.cash/zip-0321",
-            "description": "Create interoperable ZEC payment links and QR payloads with addresses, amounts, messages, labels, and memos."
-          },
-          {
             "hyperlink": "librustzcash",
             "url": "https://github.com/zcash/librustzcash",
             "description": "Explore the canonical Rust workspace for Zcash addresses, keys, transactions, wallet backends, storage, and proofs."
@@ -32,6 +22,16 @@
             "hyperlink": "zcash_client_backend API",
             "url": "https://docs.rs/zcash_client_backend/latest/zcash_client_backend/",
             "description": "Build a Rust shielded light client with current synchronization, transaction, Orchard, PCZT, Tor, and lightwalletd APIs."
+          },
+          {
+            "hyperlink": "ZIP 316: Unified Addresses",
+            "url": "https://zips.z.cash/zip-0316",
+            "description": "Implement Unified Address parsing and receiver selection using the active revision of the canonical specification."
+          },
+          {
+            "hyperlink": "ZIP 321: Payment Request URIs",
+            "url": "https://zips.z.cash/zip-0321",
+            "description": "Create interoperable ZEC payment links and QR payloads with addresses, amounts, messages, labels, and memos."
           }
         ]
       }

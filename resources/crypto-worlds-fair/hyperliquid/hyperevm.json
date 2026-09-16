@@ -9,11 +9,6 @@
         "title": "HyperEVM integration",
         "links": [
           {
-            "hyperlink": "HyperCore and HyperEVM transfers",
-            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers",
-            "description": "Implement HYPE and linked-token transfers while accounting for system addresses, decimal conversion, and contract verification."
-          },
-          {
             "hyperlink": "HyperEVM JSON-RPC reference",
             "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/json-rpc",
             "description": "Check supported methods and the default node's limits on historical state, log ranges, and WebSocket access."
@@ -22,6 +17,11 @@
             "hyperlink": "Hyper-EVM Lib",
             "url": "https://github.com/hyperliquid-dev/hyper-evm-lib",
             "description": "Use this community Foundry library for precompiles, CoreWriter, token bridging, and local HyperCore simulation tests."
+          },
+          {
+            "hyperlink": "HyperCore and HyperEVM transfers",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers",
+            "description": "Implement HYPE and linked-token transfers while accounting for system addresses, decimal conversion, and contract verification."
           }
         ]
       }
