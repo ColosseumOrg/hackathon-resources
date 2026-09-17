@@ -121,7 +121,8 @@
         "cwf-helius",
         "rpc-fast",
         "cwf-fluxrpc",
-        "cwf-triton-one"
+        "cwf-triton-one",
+        "cwf-quicknode"
       ],
       "tracks": [
         {
@@ -200,7 +201,8 @@
             "cwf-helius",
             "rpc-fast",
             "cwf-fluxrpc",
-            "cwf-triton-one"
+            "cwf-triton-one",
+            "cwf-quicknode"
           ]
         },
         {
@@ -1053,6 +1055,20 @@
         {
           "label": "View pricing",
           "url": "https://triton.one/pricing"
+        }
+      ]
+    },
+    "cwf-quicknode": {
+      "name": "QuickNode",
+      "description": "Solana RPC endpoints for mainnet, devnet, and testnet, with JSON-RPC and WebSocket support for sending transactions and subscribing to on-chain updates.",
+      "links": [
+        {
+          "label": "Get started",
+          "url": "https://www.quicknode.com/chains/solana"
+        },
+        {
+          "label": "Solana RPC docs",
+          "url": "https://www.quicknode.com/docs/solana"
         }
       ]
     }
