@@ -1059,7 +1059,7 @@
       ]
     },
     "cwf-quicknode": {
-      "name": "QuickNode",
+      "name": "Quicknode",
       "description": "Solana RPC endpoints for mainnet, devnet, and testnet, with JSON-RPC and WebSocket support for sending transactions and subscribing to on-chain updates.",
       "links": [
         {
