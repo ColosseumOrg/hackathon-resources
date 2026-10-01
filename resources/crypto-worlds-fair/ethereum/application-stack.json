@@ -30,6 +30,17 @@
             "description": "Add wallet connections and reactive Ethereum state to React through viem-backed hooks and TanStack Query."
           }
         ]
+      },
+      {
+        "id": "cross-network-execution",
+        "title": "Cross-network execution",
+        "links": [
+          {
+            "url": "https://docs.sodax.com/quickstart",
+            "hyperlink": "SODAX SDK",
+            "description": "Optional TypeScript SDK and HTTP API for intent-based swaps and money market access between Ethereum and 20+ EVM and non-EVM networks. Evaluate its protocol and settlement model before production use."
+          }
+        ]
       }
     ]
   },

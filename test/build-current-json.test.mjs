@@ -11,14 +11,14 @@ const ROOT_DIR = path.resolve(
 );
 
 const EXPECTED_TRACKS = [
-  ['solana', 'Solana', 94],
-  ['ethereum', 'Ethereum L1', 25],
-  ['hyperliquid', 'Hyperliquid', 25],
-  ['base', 'Base', 25],
+  ['solana', 'Solana', 96],
+  ['ethereum', 'Ethereum L1', 26],
+  ['hyperliquid', 'Hyperliquid', 26],
+  ['base', 'Base', 26],
   ['tempo', 'Tempo', 25],
-  ['arbitrum', 'Arbitrum', 25],
+  ['arbitrum', 'Arbitrum', 26],
   ['zcash', 'Zcash', 25],
-  ['robinhood', 'Robinhood Chain', 25],
+  ['robinhood', 'Robinhood Chain', 26],
 ];
 
 const ACCEPTED_SOLANA_URLS = [

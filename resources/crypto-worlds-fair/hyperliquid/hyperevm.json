@@ -22,6 +22,11 @@
             "hyperlink": "HyperCore and HyperEVM transfers",
             "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/hyperevm/hypercore-less-than-greater-than-hyperevm-transfers",
             "description": "Implement HYPE and linked-token transfers while accounting for system addresses, decimal conversion, and contract verification."
+          },
+          {
+            "url": "https://docs.sodax.com/quickstart",
+            "hyperlink": "SODAX cross-network swaps",
+            "description": "Intent-based swaps between HyperEVM and 20+ other networks. The SDK also includes a delivery hook that deposits delivered USDC into the recipient's HyperCore account."
           }
         ]
       }
