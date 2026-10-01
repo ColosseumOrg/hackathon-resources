@@ -27,6 +27,11 @@
             "hyperlink": "x402 network and token support",
             "url": "https://docs.x402.org/core-concepts/network-and-token-support",
             "description": "Configure Base CAIP-2 IDs, USDC, transfer methods, and a production-capable facilitator path."
+          },
+          {
+            "url": "https://docs.sodax.com/developers/http-api/swaps",
+            "hyperlink": "SODAX Swaps API",
+            "description": "Quote and execute intent-based swaps from 20+ networks into Base assets over plain HTTP, useful when payers hold funds on other networks. Unsigned transactions are returned for the app or wallet to sign."
           }
         ]
       }

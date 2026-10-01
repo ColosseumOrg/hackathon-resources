@@ -22,6 +22,11 @@
             "hyperlink": "Cross-chain messaging",
             "url": "https://docs.arbitrum.io/arbitrum-essentials/bridging/cross-chain-messaging",
             "description": "Implement retryable tickets and outbox messages with the required fees, status handling, proofs, and address aliasing."
+          },
+          {
+            "url": "https://docs.sodax.com/quickstart",
+            "hyperlink": "SODAX cross-network swaps",
+            "description": "Optional intent-based route between Arbitrum and 20+ EVM and non-EVM networks, including Solana and Bitcoin, through one SDK or HTTP API. Status is tracked per intent until settlement."
           }
         ]
       }

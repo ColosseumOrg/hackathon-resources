@@ -94,6 +94,11 @@
             "hyperlink": "LI.FI Solana API",
             "url": "https://docs.li.fi/introduction/lifi-architecture/solana-overview",
             "description": "Use LI.FI for cross-chain Solana routing, with the documented single-step route limitation. It is an optional bridge layer, not core Solana infrastructure."
+          },
+          {
+            "url": "https://docs.sodax.com/solana",
+            "hyperlink": "SODAX Solana SDK",
+            "description": "Intent-based cross-network swaps and money market access for Solana apps. Users sign on Solana and execution settles through SODAX's hub on Sonic; mainnet only."
           }
         ]
       }
@@ -273,6 +278,11 @@
             "hyperlink": "Agentic Market",
             "url": "https://agentic.market/",
             "description": "The live catalog exposes paid, x402-discoverable services and includes Solana among its network labels. Keep only as an optional discovery directory: listings, capability claims, and prices are provider-supplied and can change independently of the catalog."
+          },
+          {
+            "url": "https://docs.sodax.com/builders-mcp",
+            "hyperlink": "SODAX Builders MCP",
+            "description": "Keyless MCP server with live SODAX network, token, quote and intent data plus docs search, paired with version-locked SDK skills. It never holds keys or signs transactions."
           }
         ]
       },

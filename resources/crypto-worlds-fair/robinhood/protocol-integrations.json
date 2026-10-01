@@ -22,6 +22,11 @@
             "hyperlink": "Cross-chain messaging",
             "url": "https://docs.robinhood.com/chain/cross-chain-messaging/",
             "description": "Register the custom network with the Arbitrum SDK and handle retryable tickets, address aliasing, and the seven-day L2-to-L1 challenge period."
+          },
+          {
+            "url": "https://docs.sodax.com/quickstart",
+            "hyperlink": "SODAX cross-network swaps",
+            "description": "Third-party intent-based route that supports Robinhood Chain alongside 20+ EVM and non-EVM networks, so apps can move value in and out of Robinhood Chain without the canonical bridge's withdrawal delay."
           }
         ]
       }
